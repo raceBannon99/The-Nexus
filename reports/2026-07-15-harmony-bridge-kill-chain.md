@@ -93,3 +93,41 @@ Two structural facts about this attack hold true regardless of whether the multi
 ## What This Means for Rick
 
 Treat this report as two separate documents fused into one. The back half — the theft and laundering — is about as solid as crypto forensics gets: on-chain, immutable, checkable by anyone. The front half — everything that explains *how* the attackers got in — is a single company's account of its own worst day, told by the only party with both the full picture and a strong reason to shape it. Both things can be true at once: the phishing-and-trojan story is plausible and consistent with Lazarus's well-documented MO at Ronin, *and* it is the only account we have, from a source that had already been publicly warned its multisig was too weak before the hack happened. The forward-looking signal worth tracking is the Bybit comparison: the industry's post-Harmony fix (raise the signer threshold) was already circumvented by a smarter attack (spoof what the signers see) within three years — so "harden the multisig" alone should not be treated as a durable defense going forward.
+
+## Sources
+
+### Primary & Official Sources
+- **Harmony Labs (Jack Chan) — "Summary of the Harmony Horizon Bridge Incident,"** Medium: https://medium.com/harmony-one/summary-of-the-harmony-horizon-bridge-incident-f9bd87c0c68e (mirrored on Harmony's forum: https://talk.harmony.one/t/summary-of-the-horizon-bridge-incident/20990) — Sole source for the entire Tier 2 reconnaissance/delivery/exploitation/installation narrative; the 2-of-4 multisig and 11-transaction figures.
+- **FBI — "FBI Confirms Lazarus Group Cyber Actors Responsible for Harmony's Horizon Bridge Currency Theft"** (Jan 23, 2023): https://www.fbi.gov/news/press-releases/fbi-confirms-lazarus-group-cyber-actors-responsible-for-harmonys-horizon-bridge-currency-theft — FBI attribution to Lazarus/APT38/DPRK; WMD/missile-program funding link.
+- **CISA/FBI/Treasury — Joint Cybersecurity Advisory AA22-108A, "TraderTraitor"** (Apr 2022): https://www.cisa.gov/news-events/cybersecurity-advisories/aa22-108a — General DPRK/TraderTraitor TTP background used for Tier 3 analogy material (weaponization, C2).
+- **U.S. Department of the Treasury — "Treasury Sanctions Mixer Used by the DPRK to Launder Stolen Virtual Currency"** (Sinbad, Nov 29, 2023): https://home.treasury.gov/news/press-releases/jy1933 — Sinbad mixer seizure; explicitly cites Harmony/Axie-linked laundering.
+- **U.S. Department of Justice — "Three North Korean Military Hackers Indicted in Wide-Ranging Scheme to Commit Cyberattacks and Financial Crimes Across the Globe"** (Feb 2021): https://www.justice.gov/archives/opa/pr/three-north-korean-military-hackers-indicted-wide-ranging-scheme-commit-cyberattacks-and — Precedent for DOJ's omnibus-indictment-bundling pattern (Park Jin Hyok et al.).
+- **U.S. Department of State — "Joint Statement on Cryptocurrency Thefts by the DPRK"** (Jan 2025): https://2021-2025.state.gov/office-of-the-spokesperson/releases/2025/01/joint-statement-on-cryptocurrency-thefts-by-the-democratic-peoples-republic-of-korea-and-public-private-collaboration/ — Broader DPRK sanctions/policy pattern underlying the forecast section.
+
+### Blockchain Forensics & Technical Analysis
+- **Elliptic — "The $100 million Horizon hack: Following the trail through Tornado Cash to North Korea"**: https://www.elliptic.co/blog/analysis/the-100-million-horizon-hack-following-the-trail-through-tornado-cash-to-north-korea — Laundering path tracing (Uniswap → Tornado Cash cadence); initial Lazarus attribution (~1 week post-hack).
+- **Elliptic — "FBI confirms North Korea's Lazarus Group as hackers behind $100 million Harmony Horizon Bridge theft"**: https://www.elliptic.co/blog/analysis/fbi-confirms-north-korea-s-lazarus-group-as-hackers-behind-100-million-harmony-horizon-bridge-theft — FBI attribution context.
+- **Elliptic — "The Harmony Horizon Bridge Hack"** (resource page): https://www.elliptic.co/resources/harmony-horizon-bridge-hack — Recovery-rate and laundering background used in the forecast section.
+- **Halborn — "Explained: The Harmony Horizon Bridge Hack"**: https://www.halborn.com/blog/post/explained-the-harmony-horizon-bridge-hack — Third-party 2-of-5 multisig figure; technical mechanics.
+- **Council on Foreign Relations — Cyber Operations Tracker, "Targeting of Harmony Cryptocurrency Bridge"**: https://www.cfr.org/cyber-operations/targeting-of-harmony-cryptocurrency-bridge — Third-party 14-transaction count; general incident summary.
+- **TRM Labs — "The Bybit Hack: Following North Korea's Largest Exploit"**: https://www.trmlabs.com/resources/blog/the-bybit-hack-following-north-koreas-largest-exploit — Bybit comparison/forecast section (supply-chain pivot).
+- **NCC Group — "In-Depth Technical Analysis of the Bybit Hack"**: https://www.nccgroup.com/research/in-depth-technical-analysis-of-the-bybit-hack/ — Bybit technical forensics detail supporting the blind-signing forecast.
+- **Crypto Impact Hub — "North Korea's Crypto Machine in 2026: $6.75 Billion Stolen"**: https://cryptoimpacthub.com/north-korea-lazarus-crypto-2026-update/ — Cumulative DPRK theft figures and recovery-rate trend data (Q1 2024 vs. Q1 2025 recovery-rate comparison). *Note: lower-authority source relative to others in this list; flagged as such.*
+
+### News Coverage
+- **CNBC — "Hackers steal $100 million in crypto from Harmony's Horizon bridge"** (June 24, 2022): https://www.cnbc.com/2022/06/24/hackers-steal-100-million-in-crypto-from-harmonys-horizon-bridge.html — 11-transaction count (paired with Harmony's own figure); original breaking coverage.
+- **TechCrunch — "Hacker exploits Harmony blockchain bridge, loots $100M in crypto"** (June 24, 2022): https://techcrunch.com/2022/06/24/harmony-blockchain-crypto-hack/ — General contemporaneous coverage of the theft.
+- **TechCrunch — "FBI accuses North Korean government hackers of stealing $100M in Harmony bridge theft"** (Jan 24, 2023): https://techcrunch.com/2023/01/24/north-korea-fbi-harmony-horizon-crypto/ — FBI attribution coverage.
+- **BleepingComputer — "FBI: North Korean hackers stole $100 million in Harmony crypto hack"** (Jan 2023): https://www.bleepingcomputer.com/news/security/fbi-north-korean-hackers-stole-100-million-in-harmony-crypto-hack/ — FBI attribution coverage.
+- **Decrypt — "FBI Confirms North Korea Behind $100 Million Harmony Hack"**: https://decrypt.co/119861/fbi-north-korea-lazarus-horizon-harmony-bridge-hack — FBI attribution coverage.
+- **Decrypt — "Harmony Publishes Revamped Horizon Bridge Recovery Plan"**: https://decrypt.co/110379/harmony-publishes-revamped-horizon-bridge-recovery-plan — Failed 2022 bounty/recovery plan reference.
+- **The Hacker News — "Bybit Hack Traced to Safe{Wallet} Supply Chain Attack"**: https://thehackernews.com/2025/02/bybit-hack-traced-to-safewallet-supply.html?m=1 — Bybit blind-signing/supply-chain attack detail.
+- **TechCrunch — "Feds seize Sinbad crypto mixer allegedly used by North Korean hackers"**: https://techcrunch.com/2023/11/29/feds-seize-sinbad-crypto-mixer-allegedly-used-by-north-korean-hackers/ — Sinbad seizure coverage.
+
+### Ronin/Axie Infinity Cross-Incident Analogy (Tier 3 — imported by analogy, not Harmony-specific evidence)
+- **The Block — "How a fake job offer took down the world's most popular crypto game"**: https://www.theblock.co/post/156038/how-a-fake-job-offer-took-down-the-worlds-most-popular-crypto-game — Fake-LinkedIn-recruiter/malicious-PDF delivery vector used as the Tier 3 analogy for Harmony's likely (unconfirmed) delivery mechanism.
+- **The Hacker News — "Hackers Used Fake Job Offer to Hack and Steal $540 Million from Axie Infinity"** (July 2022): https://thehackernews.com/2022/07/hackers-used-fake-job-offer-to-hack-and.html — Same Ronin analogy.
+- **Infosecurity Magazine — "Spear Phishing Fake Job Offer Likely Behind Axie Infinity's Lazarus $600m Hack"**: https://www.infosecurity-magazine.com/news/fake-job-offer-behind-axie/ — Same Ronin analogy.
+
+### General DPRK-TTP / Precedent Background
+- **Wikipedia — "Park Jin Hyok"**: https://en.wikipedia.org/wiki/Park_Jin_Hyok — Background on the 2018/2021 indictment precedent referenced in the DOJ-bundling forecast.
