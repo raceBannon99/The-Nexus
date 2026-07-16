@@ -1,6 +1,6 @@
 # First Principles Daily Intelligence Report — July 16, 2026
 
-*Produced by The Nexus (Sherlock → Alexandria → Turing) per [Nexus Workflow](https://github.com/raceBannon99/The-Nexus). Second run of this recurring product — [2026-07-14's report](https://github.com/raceBannon99/The-Nexus/blob/main/reports/2026-07-14-daily-intelligence-report.md) is the only precedent. This report reflects the daily report's standing reduced workflow: Sherlock gathers facts and CIR-tags each item as it's found, Alexandria curates against prior reports (flagging duplicates/carryovers), and Turing assembles and publishes. There is no Euclid first-principles synthesis, Popper stress-testing, or Seldon forecasting in this product.*
+*Produced by The Nexus (Sherlock → Alexandria → Turing) per [Nexus Workflow](https://github.com/raceBannon99/The-Nexus). Second run of this recurring product — [2026-07-14's report](https://github.com/raceBannon99/The-Nexus/blob/main/reports/2026-07-14-daily-intelligence-report.md) is the only precedent. This report reflects the daily report's standing reduced workflow: Sherlock gathers facts and CIR-tags each item as it's found, Alexandria curates against prior reports (flagging duplicates/carryovers), and Turing assembles and publishes. There is no Euclid first-principles synthesis, Popper stress-testing, or Seldon forecasting in this product. Per standing rule, there is also no end-of-report Sources section — every CIR-matched story below already carries its own inline hotlink.*
 
 ---
 
@@ -89,60 +89,3 @@ Three of the four entries found this month are **carried over from 07-14's repor
 - **Gmail Newsletters — Adulting bucket (technically CIR-matched, non-operational).** [A Glimmer of Death (Merry Gentry, #10)](https://www.goodreads.com/book/show/247570899-a-glimmer-of-death) (Goodreads giveaway); [VA & HHS sign MOU on psychedelic drug trials for Veterans](https://news.va.gov/press-room/va-hhs-sign-mou-to-improve-cooperation-on-psychedelic-drug-trials/).
 - **FFX Now — local/Adulting remainder** (date used: 2026-07-15, fallback — nothing published yet today at pull time; ~9 items is within the typical range, no second pass needed). Standalone articles: [FCPS adopts two new school year calendars](https://www.ffxnow.com/2026/07/15/fcps-adopts-two-new-school-year-calendars-increasing-number-of-five-day-weeks/); [County board offers fee relief to Burke area residents impacted by microburst](https://www.ffxnow.com/2026/07/15/county-board-offers-fee-relief-to-burke-area-residents-impacted-by-microburst/); [Residents affected by boundary changes for Skyview High School air concerns](https://www.ffxnow.com/2026/07/15/residents-affected-by-boundary-changes-for-skyview-high-school-air-concerns-before-final-vote/); [NOW: Teen bicyclist hospitalized after crash in Herndon](https://www.ffxnow.com/2026/07/15/now-teen-bicyclist-hospitalized-after-crash-in-herndon/); [Proposed mixed-use development in McLean](https://www.ffxnow.com/2026/07/15/mixed-use-residential-building-proposed-to-replace-downtown-mclean-offices/); [Fairfax Tree Commission could be axed](https://www.ffxnow.com/2026/07/15/fairfax-tree-commission-could-be-axed-in-merger-of-environmental-panels/); [Taxes, paid leave program on minds of N. Va. business leaders](https://www.ffxnow.com/2026/07/15/n-va-business-leaders-share-optimism-worries-after-general-assembly-session/). Morning Notes for July 15 sub-items (Cash App item already pulled into the Legal & Financial Consequences section above): Capital Weather heat item, Loudoun Now drug-ring item (local law enforcement, not a CIR nation-state/cybercrime-group match), plus 6 more local-interest items (coffee shop, development, nursing-center renovation, pageant, library event, weather blurb). Excluded from the count per standing instructions: "FFXnow Daily Debrief for Jul 15" (same-day recap, would double-count), "Listing of the Day" (July 9, out of date scope), a no-byline George Mason book sale event listing.
 
----
-
-## Sources
-
-### Government / Official Advisories
-- **FBI — Russian Cyber Campaign Targeting Vulnerable Routers**, via CircleID: https://circleid.com/posts/fbi-warns-of-russian-cyber-campaign-targeting-vulnerable-routers — FSB "Center 16"/Military Unit 71330 attribution.
-- **White House "Gold Eagle" AI clearinghouse for cyber vulnerabilities**, reported via Cyberwire Daily Briefing directory: https://thecyberwire.com/newsletters/daily-briefing — stems from a June 2 executive order.
-
-### Threat Intelligence & Vendor Research
-- **Citizen Lab research on Iran-linked mobile network/ad-tech tracking**, via DIYA TV: https://diyatvusa.com/report-iran-linked-actors-exploited-mobile-networks-ad-tech-to-track-us-personnel-during-gulf-conflict/ — Citizen Lab assessment, ad-tech/device-inference attribution chain.
-- **Daxin backdoor resurfacing in Taiwan**, via Security.com, reported through Cyberwire Daily Briefing directory: https://thecyberwire.com/newsletters/daily-briefing — vendor/researcher analytic attribution.
-- **Bitdefender — "Bind Link Abuse: One Windows Feature, Many Ways to Blind Your EDR,"** via Cyberwire Daily Briefing directory: https://thecyberwire.com/newsletters/daily-briefing — vendor-sourced EDR-bypass research.
-- **Oasis Security — "PromptFiction" one-click prompt injection in Claude Desktop**, via Cyberwire Daily Briefing directory: https://thecyberwire.com/newsletters/daily-briefing — patched by Anthropic, no observed exploitation.
-- **OpenAI — "GPT-Red" automated prompt-injection red-teaming**, via The Hacker News: https://thehackernews.com/2026/07/openais-gpt-red-automates-prompt.html — self-graded vendor metric, unreplicated.
-
-### News Coverage
-- **Colombia's Outgoing President Says Israeli Firm Meddled in Election**, Novara Media: https://novaramedia.com/2026/07/15/colombias-outgoing-president-says-israeli-firm-meddled-in-election/
-- **Trump Could Hire Digital 'Privateers' To Combat Cyber Crime Thanks To Mike Lee's New Bill**, AOL: https://www.aol.com/articles/exclusive-trump-could-hire-digital-170106000.html
-- **AI Can Find Bugs, But Human Knowledge Still Proves Them**, The Hacker News: https://thehackernews.com/2026/07/ai-can-find-bugs-but-human-knowledge.html
-- **Unpatched Shark Vacuum Flaw Could Let Attackers Control Other Vacuums Region-Wide**, The Hacker News: https://thehackernews.com/2026/07/unpatched-shark-vacuum-flaw-could-let.html
-- **Zoom Patches Critical Windows Flaw That Could Enable Account Takeover**, The Hacker News: https://thehackernews.com/2026/07/zoom-patches-critical-windows-flaw-that.html
-- **Cash App owner to pay $45 million to settle allegations of lax security**, originally Virginia Mercury (direct URL not captured), linked via FFX Now Morning Notes for July 15: https://www.ffxnow.com/2026/07/15/morning-notes-for-july-15-2026/
-
-### Policy & Strategy Papers
-- **CSIS — "Making AI Work for Cyber Defenders: A Strategy for Strengthening U.S. Cybersecurity"**: https://www.csis.org/analysis/making-ai-work-cyber-defenders-strategy-strengthening-us-cybersecurity
-- **Yale Journal on Regulation — "A Procedural Framework for Frontier-AI Cyber Risk Convenings: The Case of Anthropic's Project Glasswing"**: https://www.yalejreg.com/nc/a-procedural-framework-for-frontier-ai-cyber-risk-convenings-the-case-of-anthropics-project-glasswing/
-
-### Zero Trust, Supply Chain & Market Signals
-- **AppGate — "Impossible, Not Tedious: How AppGate ZTNA Meets Anthropic's Zero Trust Standard for AI Agents"**: https://www.appgate.com/blog/impossible-not-tedious-how-appgate-ztna-meets-anthropics-zero-trust-standard-for-ai-agents
-- **Lineation.ai Launches First Zero Trust Runtime Security Control Plane**, Yahoo Finance: https://finance.yahoo.com/technology/ai/articles/lineation-ai-launches-first-zero-183000026.html
-- **Lineaje Recognized as a Visionary in the 2026 Gartner Magic Quadrant for Software Supply Chain Security**, Yahoo Finance: https://finance.yahoo.com/technology/ai/articles/lineaje-recognized-visionary-2026-gartner-154300110.html
-- **AM Best cyber insurance outlook**: https://news.ambest.com/newscontent.aspx?refnum=275658&altsrc=23
-- **S&P Global cyber insurance outlook — "Soft Market, Hard Reality: Cyber Insurance Is At An Inflection Point"**: https://www.spglobal.com/ratings/en/regulatory/article/soft-market-hard-reality-cyber-insurance-is-at-an-inflection-point-s101693973
-- **Peloton's engineering team makes the case for test in production**, TechTarget: https://www.techtarget.com/searchcloudcomputing/feature/Pelotons-engineering-team-makes-the-case-for-test-in-production
-- **Prosegur Cybersecurity Names William "Bill" Phillips President of North American Operations**, Las Vegas Sun: https://lasvegassun.com/news/2026/jul/15/prosegur-cybersecurity-names-william-bill-phillips/
-- **Ironton native publishes book on empathy in cybersecurity leadership**, Daily Independent: https://www.dailyindependent.com/news/ironton-native-publishes-book-on-empathy-in-cybersecurity-leadership/article_8ec5b490-dab1-4ee7-b4af-65dcf3d3a818.html
-
-### Cybersecurity Canon Project Book Reviews
-- **Critical Infrastructure Security: Cybersecurity Lessons Learned From Real-World Breaches**: https://cybercanon.org/critical-infrastructure-security-cybersecurity-lessons-learned-from-real-world-breaches/
-- **Cybersecurity Architect's Handbook**: https://cybercanon.org/cybersecurity-architects-handbook-an-end-to-end-guide-to-implementing-and-maintaining-robust-security-architecture/
-- **Louis D. Brandeis: A Life**: https://cybercanon.org/louis-d-brandeis-a-life/
-- **Cyber Recon: My Life in Cyber Espionage and Ransomware Negotiation**: https://cybercanon.org/cyber-recon-my-life-in-cyber-espionage-and-ransomware-negotiation/
-
-### No-CIR-Match / Adulting Items Cited Above
-- **A Glimmer of Death (Merry Gentry, #10)**, Goodreads: https://www.goodreads.com/book/show/247570899-a-glimmer-of-death
-- **VA & HHS sign MOU on psychedelic drug trials for Veterans**, VA.gov: https://news.va.gov/press-room/va-hhs-sign-mou-to-improve-cooperation-on-psychedelic-drug-trials/
-- **FCPS adopts two new school year calendars**, FFX Now: https://www.ffxnow.com/2026/07/15/fcps-adopts-two-new-school-year-calendars-increasing-number-of-five-day-weeks/
-- **County board offers fee relief to Burke area residents impacted by microburst**, FFX Now: https://www.ffxnow.com/2026/07/15/county-board-offers-fee-relief-to-burke-area-residents-impacted-by-microburst/
-- **Residents affected by boundary changes for Skyview High School air concerns**, FFX Now: https://www.ffxnow.com/2026/07/15/residents-affected-by-boundary-changes-for-skyview-high-school-air-concerns-before-final-vote/
-- **NOW: Teen bicyclist hospitalized after crash in Herndon**, FFX Now: https://www.ffxnow.com/2026/07/15/now-teen-bicyclist-hospitalized-after-crash-in-herndon/
-- **Proposed mixed-use development in McLean**, FFX Now: https://www.ffxnow.com/2026/07/15/mixed-use-residential-building-proposed-to-replace-downtown-mclean-offices/
-- **Fairfax Tree Commission could be axed**, FFX Now: https://www.ffxnow.com/2026/07/15/fairfax-tree-commission-could-be-axed-in-merger-of-environmental-panels/
-- **Taxes, paid leave program on minds of N. Va. business leaders**, FFX Now: https://www.ffxnow.com/2026/07/15/n-va-business-leaders-share-optimism-worries-after-general-assembly-session/
-- **Morning Notes for July 15, 2026**, FFX Now: https://www.ffxnow.com/2026/07/15/morning-notes-for-july-15-2026/
-
-### Cross-Referenced Prior Reports
-- **2026-07-14 Daily Intelligence Report** (this project's repo): https://github.com/raceBannon99/The-Nexus/blob/main/reports/2026-07-14-daily-intelligence-report.md — source of the Patch Tuesday correction (622→570) referenced above.
