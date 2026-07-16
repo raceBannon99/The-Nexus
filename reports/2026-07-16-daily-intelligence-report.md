@@ -1,5 +1,7 @@
 # First Principles Daily Intelligence Report — July 16, 2026
 
+<img src="https://raw.githubusercontent.com/raceBannon99/The-Nexus/main/assets/first-principles-consulting-logo.png" align="right" width="220">
+
 *Produced by The Nexus (Sherlock → Alexandria → Turing) per [Nexus Workflow](https://github.com/raceBannon99/The-Nexus). Second run of this recurring product — [2026-07-14's report](https://github.com/raceBannon99/The-Nexus/blob/main/reports/2026-07-14-daily-intelligence-report.md) is the only precedent. This report reflects the daily report's standing reduced workflow: Sherlock gathers facts and CIR-tags each item as it's found, Alexandria curates against prior reports (flagging duplicates/carryovers), and Turing assembles and publishes. There is no Euclid first-principles synthesis, Popper stress-testing, or Seldon forecasting in this product. Per standing rule, there is also no end-of-report Sources section — every CIR-matched story below already carries its own inline hotlink.*
 
 ---
