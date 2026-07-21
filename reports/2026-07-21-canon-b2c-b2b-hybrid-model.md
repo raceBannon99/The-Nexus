@@ -137,11 +137,7 @@ Checked with each agent on this pass. Nothing performed here rises to a reusable
 
 ## Alexandria — Curating the Library, and the Recommendation to Rick (Closing)
 
-Collecting what each agent flagged along the way: Sherlock, Euclid, Popper, and Seldon each considered the case-specific facts above (Resilience's and Hedy's company profiles, the Books in Cyber sponsorship terms, the Gartner/Rubrik precedent) and none flagged them as reusable beyond this report — they're facts about this case, not frameworks. Tufte's flywheel diagram is similarly case-specific as drawn (it names the Canon, the Vanguard, and the two donors directly).
-
-**One genuine candidate did emerge, and I'm recommending it**: the **three-condition soundness test** Euclid derived — scale, independence, diversification — as a general test for *any* hybrid free-reach/paid-monetization model, not just this one. It's the same kind of reusable methodology as the existing Evidence Tier Framework artifact, and it would apply cleanly to a future question about a different hybrid nonprofit, media, or association business model.
-
-**My recommendation to Rick**: archive a fact-sheet artifact — "B2C-Reach / B2B-Revenue Soundness Test" — capturing the three conditions and the trust-arbitrage reframe, generalized beyond the Canon's specifics. **This is a recommendation, not an action** — per the current workflow, the decision is yours. Say the word and I'll run it through `nexus-artifact-submit` as a Pull Request against `nexus-artifacts` for your review; nothing gets archived without your merge either way.
+Collecting what each agent flagged along the way, one genuine candidate emerged: the **three-condition soundness test** Euclid derived — scale, independence, diversification — as a general test for *any* hybrid free-reach/paid-monetization model, not just this one. It's the same kind of reusable methodology as the existing Evidence Tier Framework artifact. Full rationale and status are in **Library Recommendations** below, not just here — this is a recommendation, not an action; the decision is Rick's.
 
 Publishing this report now to `raceBannon99/The-Nexus`, direct to `main`.
 
@@ -168,5 +164,17 @@ Publishing this report now to `raceBannon99/The-Nexus`, direct to `main`.
 - [The Nexus, "Five Ways to Say 'Expand Our Reach' — Cybersecurity Canon Sub-Strategy 1" (2026-07-15)](https://github.com/raceBannon99/The-Nexus/blob/main/reports/2026-07-15-canon-reach-strategy-phrasings.md) — origin of "the Vanguard," Michelin/SANS precedent.
 - [The Nexus, "Sizing the Vanguard" (2026-07-17)](https://github.com/raceBannon99/The-Nexus/blob/main/reports/2026-07-17-vanguard-cybersecurity-professionals-estimate.md) — Vanguard population estimates used throughout this report.
 - [nexus-artifacts, Evidence Tier Framework](https://github.com/raceBannon99/nexus-artifacts/blob/main/fact-sheets/evidence-tier-framework.md) — Tier 1/2/3 sourcing convention applied throughout this report.
+
+---
+
+## Library Recommendations
+
+*(Added 2026-07-21, same-day structural fix — this recommendation existed only as prose in the Alexandria closing section above when first published; it's given its own entry here so it can be found without rereading the narrative, matching how a "New Skills" section would be structured if Turing had built one this round.)*
+
+| Candidate | Category | Recommended by | Rationale | Status |
+|---|---|---|---|---|
+| B2C-Reach / B2B-Revenue Soundness Test | fact-sheet | Alexandria, synthesizing Euclid's three-condition framework (scale, independence, diversification) | Generalizes cleanly beyond the Canon — a reusable test for any hybrid free-reach/paid-monetization model, same category of tool as the existing Evidence Tier Framework artifact | Recommended — awaiting Rick's decision, not yet submitted as a Pull Request |
+
+No other candidates were flagged this round. Sherlock, Euclid, Popper, and Seldon each considered the case-specific facts in their sections (Resilience's and Hedy's company profiles, the Books in Cyber sponsorship terms, the Gartner/Rubrik precedent) and treated them as facts about this case, not reusable frameworks. Tufte's flywheel diagram is similarly case-specific as drawn (it names the Canon, the Vanguard, and the two donors directly), so it isn't recommended for the Library either.
 
 **General reach signal (Tier 2, directional):** CyberCanon's LinkedIn follower count (4,400+) is drawn from general search-result coverage of the Cybersecurity Canon LinkedIn page, not a direct, session-verified pull of the page itself — treated as a directional order-of-magnitude figure, not a precise count.
