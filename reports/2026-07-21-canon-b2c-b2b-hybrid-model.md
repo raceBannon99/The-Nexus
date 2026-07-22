@@ -164,6 +164,7 @@ Publishing this report now to `raceBannon99/The-Nexus`, direct to `main`.
 - [The Nexus, "Five Ways to Say 'Expand Our Reach' — Cybersecurity Canon Sub-Strategy 1" (2026-07-15)](https://github.com/raceBannon99/The-Nexus/blob/main/reports/2026-07-15-canon-reach-strategy-phrasings.md) — origin of "the Vanguard," Michelin/SANS precedent.
 - [The Nexus, "Sizing the Vanguard" (2026-07-17)](https://github.com/raceBannon99/The-Nexus/blob/main/reports/2026-07-17-vanguard-cybersecurity-professionals-estimate.md) — Vanguard population estimates used throughout this report.
 - [nexus-artifacts, Evidence Tier Framework](https://github.com/raceBannon99/nexus-artifacts/blob/main/fact-sheets/evidence-tier-framework.md) — Tier 1/2/3 sourcing convention applied throughout this report.
+- [nexus-artifacts, B2C-Reach / B2B-Revenue Soundness Test](https://github.com/raceBannon99/nexus-artifacts/blob/main/fact-sheets/b2c-reach-b2b-revenue-soundness-test.md) — the generalized three-condition framework this report derived (scale, independence, diversification); added to the Library 2026-07-21, cited here as the artifact this report's own reasoning produced.
 
 ---
 
@@ -173,9 +174,9 @@ Publishing this report now to `raceBannon99/The-Nexus`, direct to `main`.
 
 | Candidate | Category | Recommended by | Rationale | Status |
 |---|---|---|---|---|
-| B2C-Reach / B2B-Revenue Soundness Test | fact-sheet | Alexandria, synthesizing Euclid's three-condition framework (scale, independence, diversification) | Generalizes cleanly beyond the Canon — a reusable test for any hybrid free-reach/paid-monetization model, same category of tool as the existing Evidence Tier Framework artifact | **Submitted** — [PR #4](https://github.com/raceBannon99/nexus-artifacts/pull/4), awaiting Rick's merge |
+| B2C-Reach / B2B-Revenue Soundness Test | fact-sheet | Alexandria, synthesizing Euclid's three-condition framework (scale, independence, diversification) | Generalizes cleanly beyond the Canon — a reusable test for any hybrid free-reach/paid-monetization model, same category of tool as the existing Evidence Tier Framework artifact | **Added to Library** — [`fact-sheets/b2c-reach-b2b-revenue-soundness-test.md`](https://github.com/raceBannon99/nexus-artifacts/blob/main/fact-sheets/b2c-reach-b2b-revenue-soundness-test.md) |
 
-**Updated 2026-07-21**: Rick approved this recommendation; [PR #4](https://github.com/raceBannon99/nexus-artifacts/pull/4) is now open against `nexus-artifacts`. Per [[Nexus Artifact Repository]]'s "Closing the Loop" section, one step remains: once Rick merges it, a further Update Pass changes this row's status to "Added to Library," linked to the artifact's final path, **and** a new entry gets added to the Sources section above citing it directly.
+**Updated 2026-07-21**: Rick merged [PR #4](https://github.com/raceBannon99/nexus-artifacts/pull/4). The loop is closed — this row now points at the artifact's permanent path, and a Sources entry citing it directly has been added above.
 
 No other candidates were flagged this round. Sherlock, Euclid, Popper, and Seldon each considered the case-specific facts in their sections (Resilience's and Hedy's company profiles, the Books in Cyber sponsorship terms, the Gartner/Rubrik precedent) and treated them as facts about this case, not reusable frameworks. Tufte's flywheel diagram is similarly case-specific as drawn (it names the Canon, the Vanguard, and the two donors directly), so it isn't recommended for the Library either.
 
