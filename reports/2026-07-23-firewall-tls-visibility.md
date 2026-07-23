@@ -1,0 +1,128 @@
+# How Does a Firewall "Look At" TLS-Encrypted Traffic?
+
+**Question posed:** If I'm behind a firewall and initiate a connection to the NYT outside the firewall, the connection is encrypted with TLS. How does the firewall look at that traffic?
+
+*Produced by The Nexus (Alexandria → Sherlock → Euclid → Popper → Seldon → Tufte → Turing → Alexandria) per the current [Nexus Workflow](https://github.com/raceBannon99/The-Nexus).*
+
+---
+
+## Bottom Line
+
+A firewall that stays a passive third party can only ever see what TLS necessarily leaves outside the encryption boundary — destination IP, and (absent a newer, still-not-default protection) the hostname in the cleartext Server Name Indication field, plus a fingerprint of the handshake itself. To see the actual content, the firewall has to stop being a third party and become one of the two cryptographic endpoints — terminating its own TLS session with you and separately originating a second TLS session to the real destination. That's not TLS being broken; it's TLS working exactly as designed, authenticating a certificate authority your device was told to trust. The whole question of "can my firewall read my HTTPS traffic" reduces to one narrower factual question: does your device's trust store contain a CA certificate your network operator controls? That's a trust-store question, not a cryptography-strength question.
+
+---
+
+## Alexandria — What Do We Already Know? (Opening)
+
+Checked Alexandria's Library (`nexus-artifacts`): nothing on point — the four archived artifacts (Evidence Tier Framework, D&D Alignment Chart, First Principles Infographic, B2C-Reach/B2B-Revenue Soundness Test) don't touch networking, cryptography, or firewalls.
+
+Checked `raceBannon99/The-Nexus` for prior reports: no prior engagement has covered TLS, firewalls, or network traffic inspection — new ground.
+
+## Sherlock — What Are the Facts?
+
+**What's visible without decrypting anything:**
+
+- **IP address, port, protocol** — ordinary L3/L4 visibility every firewall has.
+- **Server Name Indication (SNI)** — defined in [RFC 6066](https://datatracker.ietf.org/doc/html/rfc6066), the TLS extension that lets a client tell a server which hostname it wants (needed because many sites share an IP address behind the same server/CDN). It's sent in the `ClientHello` — **in the clear, by default, even under TLS 1.3** — so a firewall can read `www.nytimes.com` directly off the wire without touching anything encrypted.
+- **The server's certificate, under TLS 1.2** — sent unencrypted during the handshake. Under **TLS 1.3** ([RFC 8446](https://datatracker.ietf.org/doc/html/rfc8446)), the Certificate message is protected by the handshake traffic key derived right after the key exchange, so this particular leak closed when 1.3 became the default — but SNI, negotiated earlier in the same handshake, is unaffected by that change.
+- **TLS/JA3 fingerprinting** — the specific cipher suites, extensions, and their ordering in the `ClientHello` form a stable fingerprint of the *client application* (not the content), independent of destination IP or domain. Invented at Salesforce in 2017 by John Althouse, Jeff Atkinson, and Josh Atkins; now supported by most major security platforms (Darktrace, Suricata, Zscaler, AWS/Azure/GCP firewalls, and more). The project's own examples: Tor's client fingerprint is stable at `e7d705a3286e19ea42f587b344ee6865`; Trickbot and Emotet malware each have their own stable JA3 hash regardless of which C2 domain or IP they're using that day. → [salesforce/ja3](https://github.com/salesforce/ja3)
+
+**What requires the firewall to become an active party — TLS interception ("break-and-inspect"):**
+
+A firewall configured for full content inspection terminates the client's TLS connection itself, using a certificate it generates on the fly (signed by an internal CA), then opens its own, separate TLS connection to the real destination. Two independent encrypted sessions exist — client↔firewall and firewall↔destination — and the firewall decrypts/re-encrypts on the boundary between them. This only avoids a certificate warning because the firewall's root CA is pre-installed in the device's trust store, typically pushed via enterprise MDM. The **NSA published a formal advisory on the risks of this practice** in December 2019, flagging (per corroborating summaries of the document) improper handling of decrypted traffic, downgraded TLS protection introduced by the inspecting appliance, and the CA itself becoming a high-value compromise target. → [NSA, "Managing Risk from Transport Layer Security Inspection," Dec. 2019](https://media.defense.gov/2019/Dec/16/2002225460/-1/-1/0/manage_risk_from_tls_inspection_20191216.pdf)
+
+**Where this is heading — Encrypted Client Hello (ECH):** the IETF/Cloudflare/Mozilla/Fastly-developed successor to the earlier ESNI extension encrypts the *entire* `ClientHello`, including SNI, closing the metadata leak described above. As of Cloudflare's own account, ECH was, at time of writing, "not yet ready for Internet-scale deployment" — a real, standardized mechanism, but not yet the default anywhere near universally. → [Cloudflare, "Good-bye ESNI, hello ECH!"](https://blog.cloudflare.com/encrypted-client-hello/)
+
+**A practical enterprise wrinkle — QUIC:** QUIC (HTTP/3) runs over UDP with its own encryption, bypassing the TCP-based point where a traditional inspecting firewall inserts itself. The well-documented enterprise response, confirmed across multiple independent vendor sources, is simply to **block QUIC outright**, forcing the client to fall back to TCP/TLS where inspection works normally. → [Microsoft Learn, "Understanding implications when using network intermediation"](https://learn.microsoft.com/en-us/security/zero-trust/network-intermediation) · corroborated by Zscaler, Palo Alto Networks LIVEcommunity, and Check Point CheckMates vendor documentation.
+
+## Euclid — What Must Be Fundamentally True?
+
+Strip away vendor mechanics. Two things must be true simultaneously:
+
+1. **Encryption is a property of the two endpoints, not a property of the wire.** TLS guarantees confidentiality between exactly the two parties who hold the negotiated keys. A firewall sitting on the path between client and server is, by definition, not one of those parties — unless it makes itself one.
+2. **A firewall therefore has exactly two fundamentally different postures toward encrypted traffic, and nothing in between at the cryptographic level:**
+   - **Stay a third party.** It can only ever see what TLS necessarily exposes outside the encryption boundary by protocol design (SNI, handshake fingerprint) or infer from ciphertext shape (packet size/timing) — it never touches the plaintext.
+   - **Become an endpoint.** It terminates its own TLS session with the client and originates a second, separate TLS session to the real destination. It decrypts nothing it wasn't itself a legitimate cryptographic party to.
+
+The second posture is only achievable, without the client's browser throwing a certificate error, because the client's device was configured in advance to trust an additional root CA the network operator controls. **This is not TLS's cryptography failing — TLS is doing exactly its job, authenticating whoever presents a certificate chaining to a trusted root.** The interception capability is a PKI/trust-store policy decision made before the connection ever happens, not a weakness discovered during the connection. So the question "can my firewall see my HTTPS traffic" reduces to a narrower, answerable factual question: **does this device's trust store contain a CA certificate my network operator controls?** — not a question about how strong TLS is.
+
+## Popper — How Could We Be Wrong?
+
+Four challenges, none left unaddressed:
+
+**1. Calling the passive posture "no visibility" understates it.** SNI and JA3 fingerprinting give a firewall real, meaningful signal — domain names and malware-family identification — without decrypting anything. Presenting this as a clean binary (see everything / see nothing) misrepresents a spectrum as two points.
+
+**2. The question says "a firewall," but most firewalls people actually sit behind — home routers, basic stateful firewalls — never do TLS interception at all.** Break-and-inspect is overwhelmingly a managed-enterprise-device phenomenon requiring MDM-pushed CA certificates. Answering as though every firewall does deep inspection risks badly miscalibrating the answer for a home-network reading of the question.
+
+**3. Is it accurate that TLS 1.3 closes the certificate-in-the-clear gap without more nuance?** Yes for the Certificate message specifically — but SNI, negotiated earlier in the same handshake, is unaffected by that particular improvement, and conflating "TLS 1.3 encrypts more of the handshake" with "TLS 1.3 hides which site you're visiting" would be a real, avoidable error.
+
+**4. Citing ECH as a mitigation without flagging its deployment status overstates present-day protection.** Cloudflare's own source material frames ECH as not yet ready for internet-scale deployment — citing it without that caveat implies a level of real-world SNI protection that doesn't broadly exist yet.
+
+## Seldon — Resolving Popper, and What's Likely Next
+
+**On #1 (binary understates the passive posture):** *Revised.* The Bottom Line and Sherlock's section above are restructured around three tiers, not two: passive metadata-only visibility (IP/port/SNI), active fingerprinting (JA3, still no decryption), and full interception (becoming an endpoint). This is reflected in Tufte's diagram below.
+
+**On #2 (most firewalls don't intercept):** *Stood by, stated explicitly rather than left implicit.* Full TLS interception is essentially never present on a home router or a basic consumer firewall — it requires an enterprise-managed device with a network-operator-controlled CA already installed, typically via MDM. Absent that specific setup, "how does the firewall look at that traffic" has a much shorter answer: SNI and fingerprinting only.
+
+**On #3 (TLS 1.3 nuance):** *Revised.* Sherlock's section above now states plainly that SNI remains cleartext by default under TLS 1.3 even though the Certificate message is now encrypted — two different parts of the same handshake, improved on different timelines.
+
+**On #4 (ECH deployment caveat):** *Revised.* The ECH discussion above now states Cloudflare's own "not yet ready for Internet-scale deployment" framing directly, rather than presenting ECH as a mitigation already broadly in effect.
+
+**Forecasts** — expressed as a range with a median, in plain language, per standing convention:
+
+- **Time until Encrypted Client Hello (or an equivalent full-handshake-encryption mechanism) becomes the deployed default across major browsers and CDNs**, such that SNI-based firewall visibility mostly disappears for traffic to major sites: **the range runs from about 2 years to 10+ years (or this may never reach full default-on deployment), with a median around 5 years.** The near end reflects that meaningful pieces (Cloudflare's edge support, Firefox's experimental opt-in) already exist today; the long tail reflects the same "network ossification" problem Cloudflare's own account describes with TLS 1.3's rollout — middleboxes that don't understand a changed handshake tend to break in unpredictable ways, and fixing that at internet scale has historically taken years, not months.
+- **Share of enterprise firewalls that respond to wider ECH deployment by simply blocking non-decryptable connections outright** (the same pattern already used against QUIC today) rather than tolerating reduced visibility: **the range runs from about 30% to 70%, with a median around 50%.** The median reflects strong precedent — QUIC-blocking is already standard, well-documented practice across Zscaler, Palo Alto, and Check Point's own guidance — but the wide band reflects real uncertainty about whether compliance/privacy pressure and vendor UX concerns temper that instinct for encrypted-handshake traffic the way they haven't yet for QUIC. **Treat this as reasoned judgment, not a measured statistic** — no survey of actual enterprise firewall configurations was collected for this estimate.
+
+## Tufte — Seeing the Two Postures
+
+```mermaid
+flowchart TD
+    A["You initiate a TLS connection<br/>to nytimes.com"] --> B{"Is the firewall configured<br/>for full TLS interception?"}
+
+    B -->|"No — most home routers<br/>and basic firewalls"| C["Passive third party"]
+    C --> C1["Sees: destination IP, port<br/>SNI = 'www.nytimes.com' (cleartext)<br/>JA3 fingerprint of your client"]
+    C --> C2["Cannot see: the actual page content,<br/>URLs within the site, form data"]
+
+    B -->|"Yes — enterprise device with<br/>network operator's CA pre-installed"| D["Becomes a cryptographic endpoint"]
+    D --> D1["Session 1: You &harr; Firewall<br/>(firewall's own fake cert for nytimes.com)"]
+    D --> D2["Session 2: Firewall &harr; nytimes.com<br/>(the real cert, validated normally)"]
+    D1 -.->|"decrypt / inspect / re-encrypt<br/>at the boundary"| D2
+
+    classDef passive fill:#1c1c1e,stroke:#38383a,color:#f5f5f7;
+    classDef active fill:#3a1f1f,stroke:#7a3b3b,color:#f5f5f7;
+    class C,C1,C2 passive;
+    class D,D1,D2 active;
+```
+
+The left branch never decrypts anything — it reads what TLS necessarily leaves exposed. The right branch works only because your device already trusts the firewall's CA; it isn't cracking the NYT's encryption, it's running two separate, fully legitimate TLS sessions back to back.
+
+## Turing — Anything Become a Skill?
+
+Checked with each stage on this pass. Nothing here rises to a reusable, automatable skill — the research was general-purpose lookups against public documentation (RFCs, an NSA advisory, a vendor blog, vendor forums), and Euclid's reduction is one-off reasoning for this specific question. **No new skill built this round.**
+
+---
+
+## Library Recommendations
+
+| Candidate | Category | Recommended by | Rationale | Status |
+|---|---|---|---|---|
+| Encrypted-Traffic Visibility Test | fact-sheet | Alexandria, synthesizing Euclid's endpoint-vs-third-party reduction and the three-tier model (passive metadata / active fingerprinting / full interception) | Generalizes past firewalls specifically — the same reduction ("can this observer become a cryptographic endpoint, or is it stuck reading only what the protocol necessarily leaks?") applies to VPNs, proxies, mesh-network observers, or any future "can X see my encrypted Y" question brought to the Nexus. Same category of reusable methodology as the Evidence Tier Framework and the B2C/B2B Soundness Test. | Recommended — awaiting Rick's decision, not yet submitted as a Pull Request |
+
+No other candidates were flagged this round — the specific facts about SNI, JA3, ECH, and QUIC-blocking are case facts supporting this answer, not reusable frameworks in themselves.
+
+---
+
+## Sources
+
+**Primary/official (Tier 1 — standards bodies and the US government):**
+- [IETF, RFC 6066 — TLS Extension Definitions (Server Name Indication)](https://datatracker.ietf.org/doc/html/rfc6066) — defines the SNI extension and its cleartext transmission in the `ClientHello`.
+- [IETF, RFC 8446 — The Transport Layer Security (TLS) Protocol Version 1.3](https://datatracker.ietf.org/doc/html/rfc8446) — defines TLS 1.3's handshake encryption, including the Certificate message's protection under the handshake traffic key.
+- [NSA, "Managing Risk from Transport Layer Security Inspection," December 2019](https://media.defense.gov/2019/Dec/16/2002225460/-1/-1/0/manage_risk_from_tls_inspection_20191216.pdf) — official US government advisory on TLS break-and-inspect risks (PDF is canvas-rendered; content corroborated via multiple independent secondary summaries quoting the same document, including Calyptix Security and WaterISAC).
+
+**Technical/forensic (Tier 1 — created by the original authors of the technique):**
+- [salesforce/ja3 — GitHub](https://github.com/salesforce/ja3) — JA3/JA3S TLS fingerprinting, documented directly by its creators (John Althouse, Jeff Atkinson, Josh Atkins), including the Tor/Trickbot/Emotet fingerprint examples cited above.
+- [Cloudflare, "Good-bye ESNI, hello ECH!" (Christopher Patton, Dec. 2020)](https://blog.cloudflare.com/encrypted-client-hello/) — the most complete public account of why SNI leaks today, ESNI's predecessor mechanism, and ECH's design and deployment status.
+
+**Vendor/practitioner documentation (Tier 2 — corroborated across multiple independent sources):**
+- [Microsoft Learn, "Understanding implications when using network intermediation"](https://learn.microsoft.com/en-us/security/zero-trust/network-intermediation) — QUIC-blocking-to-force-TLS-fallback as standard enterprise practice.
+- Corroborating vendor sources for the same QUIC-blocking practice (not independently fetched in full, cross-checked via search snippets only): Zscaler product documentation and white papers, Palo Alto Networks LIVEcommunity forum guidance, Check Point CheckMates community guidance.
