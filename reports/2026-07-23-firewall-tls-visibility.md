@@ -99,9 +99,12 @@ Rick's follow-up question surfaces new data that touches Challenge #2 directly, 
 
 Direct answer to "do most organizations configure TLS intercept": **no, not in the blanket sense** — measured full-decryption adoption is low even where the hardware supports it, and best practice explicitly steers organizations toward tier 2 (decrypt-with-named-exclusions) rather than tier 3 (decrypt-everything). This doesn't change the report's existing forecasts (both concern ECH/QUIC-era visibility trends, not present-day interception adoption rates), so they stand as published below.
 
-## Tufte — Seeing the Postures (redrawn 2026-07-23 against the new reference artifact)
+## Tufte — Seeing the Postures (second redraw, 2026-07-23, against the fuller reference set)
 
-**Why this diagram changed.** The original version of this diagram (below, for the record, is gone — replaced in place) drew a clean binary: "does the firewall intercept, yes or no." That was already an approximation when first drawn, and Seldon's re-review above made it an outright mismatch — the report's own text now says the enterprise branch is really three tiers (no interception deployed / selective with exclusions / blanket), not one. A diagram that still shows a binary while the prose next to it describes three postures is exactly the kind of failure Agent Tufte's new standing reference — [Edward Tufte: Work, Principles, and Practical Tests](https://github.com/raceBannon99/nexus-artifacts/blob/main/fact-sheets/edward-tufte-visualization-principles.md), added to the Library this session — flags first: a graphic can be honest and still be wrong once the underlying facts move past it. The redraw below applies that artifact's two tests directly: **truthfulness** (match the diagram to Seldon's three-tier finding, not the earlier two-tier draft) and **density** (four real branches, each one earning its place, colored only where color marks a genuine distinction rather than decorating one).
+**Why this diagram changed again.** Since the first redraw (preserved below for the record), Agent Tufte's reference material grew substantially: the fact-sheet gained the Six Fundamental Principles of Analytical Design and a set of table/typography rules, a worked example (the Truthfulness vs. Density quadrant image) showing those principles actually executed, and a private style reference for general visual polish (not reproduced here — see `Agent Tufte Concept.md` for why). Re-checking the prior redraw against the newly-available **Documentation** principle ("thoroughly describe the evidence") and **Comparisons** principle ("always ask compared to what") surfaced one real gap: the diagram's edge labels asserted "majority," "best-practice default," and "rare" without saying which of those are measured survey data and which are vendor guidance — exactly the kind of undocumented evidence-tier gap the Evidence Tier Framework and this fact-sheet both exist to catch. Two concrete changes below, not cosmetic churn:
+
+1. **Documentation:** edge labels now state plainly which claims are measured (the Vanson Bourne survey figures already cited in Sherlock's section above) versus qualitative/best-practice guidance versus a point where the underlying data simply doesn't support a precise split.
+2. **Comparisons:** the "no interception" and "some interception" edges now carry the actual approximate shares derived directly from the already-cited survey (96% / ≤3.5%), rather than the vaguer "majority"/"rare" wording — but the diagram stops short of inventing a precise measured split between "selective" and "blanket" within that ≤3.5%, because no such split was measured. Overclaiming precision there would be exactly the "well-designed lie" quadrant from Agent Tufte's own reference image — dense but dishonest.
 
 ```mermaid
 flowchart TD
@@ -111,11 +114,13 @@ flowchart TD
     C --> C1["Sees: destination IP/port,<br/>SNI = 'www.nytimes.com' (cleartext),<br/>JA3 fingerprint of your client"]
     C --> C2["Cannot see: page content,<br/>in-site URLs, form data"]
 
-    B -->|"Enterprise NGFW with<br/>MDM-pushed CA"| E{"How is it actually configured?<br/>(measured adoption, not capability)"}
+    B -->|"Enterprise NGFW with<br/>MDM-pushed CA"| E{"How is it actually configured?<br/>(measured, not just capability)"}
 
-    E -->|"~majority even here:<br/>decryption left off"| C
-    E -->|"Best-practice default:<br/>selective, with exclusions"| F["Endpoint — except for<br/>'Do Not Decrypt' categories"]
-    E -->|"Rare, not recommended:<br/>blanket interception"| G["Endpoint for<br/>essentially all traffic"]
+    E -->|"~96% even here — measured<br/>(Vanson Bourne survey)"| C
+    E -->|"&le;3.5% combined — measured<br/>(same survey)"| H{"Where interception exists,<br/>which kind?"}
+
+    H -->|"Vendor best-practice default —<br/>selective, with exclusions"| F["Endpoint — except for<br/>'Do Not Decrypt' categories"]
+    H -->|"Smallest share, not recommended —<br/>exact split not measured"| G["Endpoint for<br/>essentially all traffic"]
 
     F --> F1["Financial / healthcare / gov't traffic:<br/>passed through uninspected, like the passive case"]
     F --> F2["Everything else — Session 1: you&harr;firewall,<br/>Session 2: firewall&harr;site, decrypt/inspect/re-encrypt"]
@@ -130,9 +135,11 @@ flowchart TD
     class G,G1,G2 blanket;
 ```
 
-Color now carries three real distinctions, not two: grey for "no visibility beyond protocol-necessary leakage" (whether that's a home router or an enterprise NGFW with decryption switched off — same outcome, same color, on purpose), blue for the documented best-practice posture (selective interception with named exclusions), and red for the smallest and least-recommended slice (blanket interception of everything). The home-router branch and the "enterprise, but decryption left off" branch both terminate at the same grey node deliberately — from the traffic's point of view, they're indistinguishable, and the diagram now says so instead of implying enterprise status alone changes what's visible.
+Color still carries the same three real distinctions as before, unchanged: grey for "no visibility beyond protocol-necessary leakage" (home router or enterprise-with-decryption-off — same outcome, same color, on purpose), blue for the documented best-practice posture, red for the smallest and least-recommended slice. The two new decision points (`E`'s numbers, `H`'s split) stay uncolored like the diagram's other two decision diamonds (`B`), consistent with the fact-sheet's table/typography rule that color should mark a real category distinction, not decorate a structural node — a decision point isn't a category, so it doesn't get one.
 
-*For the historical record, the two-tier version this replaced is preserved in this file's git history (commit `61fbc49` and earlier) rather than deleted from the record — only the currently published version changes.*
+**One deliberate departure from the fact-sheet's letter, stated rather than left implicit:** the table/typography rules say gray is the default color reserved for context (gridlines, backgrounds), not data. Here, grey *is* one of three data-bearing categories, not background decoration. That rule was written for tables and charts with axes; this is a categorical flow diagram, where color legitimately marks category membership. Applying the rule literally would mean removing grey's meaning entirely — worse, not better — so the underlying principle (color must earn its place, never decorate) is honored while the specific prescription is adapted to a different diagram type, per the fact-sheet's own guidance on applying Tufte's work at the level of intent rather than literal print-era tactics.
+
+*For the historical record, both the original two-tier version and the first three-tier redraw are preserved in this file's git history (commits `61fbc49` and `7296af2`) rather than deleted — only the currently published version changes.*
 
 ## Turing — Anything Become a Skill?
 
@@ -169,4 +176,6 @@ No other candidates were flagged this round — the specific facts about SNI, JA
 - [Palo Alto Networks, "Exclude Traffic from Decryption for Business, Legal, or Other Reasons"](https://docs.paloaltonetworks.com/network-security/pan-os/administration/decryption/decryption-exclusions/exclude-traffic-from-decryption-for-business-legal-or-other-reasons) — vendor's own official documentation of the "Do Not Decrypt" category-exclusion best practice (financial, healthcare, government/legal), cross-checked against consistent independent practitioner guidance (r/paloaltonetworks, and multiple vendor/practitioner write-ups describing the same category list).
 
 **Internal (Nexus artifacts library):**
-- [Edward Tufte: Work, Principles, and Practical Tests](https://github.com/raceBannon99/nexus-artifacts/blob/main/fact-sheets/edward-tufte-visualization-principles.md) — Agent Tufte's standing reference, applied directly in the 2026-07-23 redraw of this report's diagram (truthfulness/density test, semantic-color-only-where-it-marks-a-real-distinction).
+- [Edward Tufte: Work, Principles, and Practical Tests](https://github.com/raceBannon99/nexus-artifacts/blob/main/fact-sheets/edward-tufte-visualization-principles.md) — Agent Tufte's standing reference, applied directly in both redraws of this report's diagram (truthfulness/density test, semantic-color-only-where-it-marks-a-real-distinction; second redraw also applies the Documentation and Comparisons principles).
+- [Truthfulness vs. Density Quadrant](https://github.com/raceBannon99/nexus-artifacts/blob/main/fact-sheets/edward-tufte-truthfulness-density-quadrant.png) — Agent Tufte's own worked example, consulted as a model of the "well-designed lie" failure mode this redraw specifically avoided (not overclaiming a measured split that doesn't exist).
+- [The Da Vinci of Data (Buteau style reference)](https://github.com/raceBannon99/nexus-artifacts/blob/main/images/the-da-vinci-of-data-tufte-principles-by-antoine-buteau.png) — consulted for general visual restraint/polish only, per its recorded usage restriction; not reproduced.
