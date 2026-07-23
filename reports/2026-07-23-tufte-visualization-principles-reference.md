@@ -64,6 +64,19 @@ He also wrote the standalone essay *The Cognitive Style of PowerPoint* (2003, la
 
 **Recognition.** Fellow of the American Statistical Association; fellowships from the Guggenheim Foundation and the Center for Advanced Study in the Behavioral Sciences; ACM SIGDOC Rigo Award (1992). → [Wikipedia](https://en.wikipedia.org/wiki/Edward_Tufte)
 
+**The Six Fundamental Principles of Analytical Design, from *Beautiful Evidence* (added 2026-07-23, following Rick's pointer to Antoine Buteau's write-up).** One level above graphical integrity — these describe what an analytical presentation must *accomplish*, not just how it must look:
+1. Show comparisons, contrasts, differences.
+2. Show causality, mechanism, explanation, systematic structure.
+3. Show multivariate data.
+4. Completely integrate words, numbers, images, and diagrams.
+5. Thoroughly document the evidence (sources, calibration, uncertainty).
+6. Content is what matters most — design craft can't rescue weak or irrelevant content.
+→ [Antoine Buteau, "Lessons from Edward Tufte"](https://www.antoinebuteau.com/lessons-from-edward-tufte/), independently cross-checked against [Medium (Jennifer Newsome), "Edward Tufte: 6 Fundamental Principles of Analytic Design"](https://jenniferjnewsome.medium.com/edward-tufte-6-fundamental-principles-of-analytic-design-82fcf09ec59a) and other independent restatements of *Beautiful Evidence*.
+
+**Practical typography and table rules (same addition, independently corroborated beyond Buteau's page):** gray as the default color for context (gridlines, backgrounds) rather than data, reserving saturated color for the data itself; direct labeling preferred over legends (a legend forces the eye to travel and hold a color-mapping in memory, a direct label doesn't); serif type for numeric tables (easier column alignment/scanning at small sizes); thin, light gridlines rather than heavy ones; and avoiding zebra-striping in tables (alternating row shading is decoration that doesn't track any real distinction in the data — chartjunk applied to tables specifically). → [Georgia Tech, "Tufte's Design Principles" course notes (CS 7450, Information Visualization)](https://faculty.cc.gatech.edu/~stasko/7450/16/Notes/tufte.pdf), corroborating [Antoine Buteau, "Lessons from Edward Tufte"](https://www.antoinebuteau.com/lessons-from-edward-tufte/).
+
+**A sourcing note worth stating plainly:** Buteau's page carries no stated license, so his own text and — especially — his two original infographics are all-rights-reserved by default. Nothing from his page was copied verbatim, and his graphics were not reproduced anywhere in this report or the artifact it produced; only the underlying facts, independently cross-checked against other sources above, were incorporated in original wording.
+
 ## Euclid — What Must Be Fundamentally True?
 
 Strip away the specific vocabulary — chartjunk, lie factor, data-ink ratio, small multiples, sparklines — and Tufte's entire body of work reduces to two commitments a graphic must satisfy at the same time, independent of each other:
@@ -149,7 +162,7 @@ Worth naming as an idea for Rick, not a skill: the same treatment applied here �
 
 | Candidate | Category | Recommended by | Rationale | Status |
 |---|---|---|---|---|
-| Edward Tufte Visualization Principles Reference | fact-sheet | Alexandria, synthesizing Sherlock's research and Euclid's two-axis (truthfulness/density) reduction | This entire report was commissioned specifically to serve as Agent Tufte's standing reference — its value is in being reused across every future Nexus report Agent Tufte touches, not in this one report alone. Same category of durable, cross-report reference as the Evidence Tier Framework and the B2C/B2B Soundness Test. | **Added to Library — merged as [`fact-sheets/edward-tufte-visualization-principles.md`](https://github.com/raceBannon99/nexus-artifacts/blob/main/fact-sheets/edward-tufte-visualization-principles.md) (PR #5)** |
+| Edward Tufte Visualization Principles Reference | fact-sheet | Alexandria, synthesizing Sherlock's research and Euclid's two-axis (truthfulness/density) reduction | This entire report was commissioned specifically to serve as Agent Tufte's standing reference — its value is in being reused across every future Nexus report Agent Tufte touches, not in this one report alone. Same category of durable, cross-report reference as the Evidence Tier Framework and the B2C/B2B Soundness Test. | **Added to Library — merged as [`fact-sheets/edward-tufte-visualization-principles.md`](https://github.com/raceBannon99/nexus-artifacts/blob/main/fact-sheets/edward-tufte-visualization-principles.md) (PR #5); updated with analytical-design and table-typography content via [PR #6](https://github.com/raceBannon99/nexus-artifacts/pull/6), awaiting Rick's merge** |
 
 No other candidates were flagged this round.
 
@@ -168,6 +181,9 @@ No other candidates were flagged this round.
 - [Study.com, "Edward Tufte | Background, Data Visualization & Principles"](https://study.com/academy/lesson/edward-tufte-6-principles-of-graphical-integrity.html) — restatement of the Six Principles of Graphical Integrity, cross-checked against several independent summaries for consistency.
 - [eclass.uth.gr, course PDF excerpting Tufte's *Envisioning Information*](https://eclass.uth.gr/modules/document/file.php/PRE_P_122/Edward%20R.%20Tufte%20Envisioning%20Information%201990.pdf) — "Escaping Flatland" framing, layering/separation, small multiples.
 - [Fast Company, "Infographics Win! Obama Appoints Data-Viz Demigod to Chart the Stimulus"](https://www.fastcompany.com/1575265/infographics-win-obama-appoints-data-viz-demigod-chart-stimulus) — corroborates the 2010 Recovery Independent Advisory Panel appointment and Tufte's chairmanship.
+- [Antoine Buteau, "Lessons from Edward Tufte"](https://www.antoinebuteau.com/lessons-from-edward-tufte/) — pointed to by Rick; source for the Six Fundamental Principles of Analytical Design and the practical typography/table rules added 2026-07-23. **No license stated on this page — treated as all-rights-reserved; underlying facts cross-checked against other sources below and written in original wording, no text or graphics copied.**
+- [Medium (Jennifer Newsome), "Edward Tufte: 6 Fundamental Principles of Analytic Design"](https://jenniferjnewsome.medium.com/edward-tufte-6-fundamental-principles-of-analytic-design-82fcf09ec59a) — independent corroboration of the Analytical Design principles from *Beautiful Evidence*.
+- [Georgia Tech, "Tufte's Design Principles" (CS 7450 course notes)](https://faculty.cc.gatech.edu/~stasko/7450/16/Notes/tufte.pdf) — independent, academic corroboration of the table/typography rules (gray-as-context, direct labeling, gridline weight).
 
 **Sourcing-confidence note (per the Evidence Tier Framework's practice of flagging limitations rather than implying false certainty):** the "data-ink ratio" and "sparklines invented by Tufte" claims each carry a documented caveat above (heuristic-not-validated-metric; contested sole attribution, respectively) rather than being stated as uncontested fact.
 
