@@ -149,7 +149,7 @@ Worth naming as an idea for Rick, not a skill: the same treatment applied here �
 
 | Candidate | Category | Recommended by | Rationale | Status |
 |---|---|---|---|---|
-| Edward Tufte Visualization Principles Reference | fact-sheet | Alexandria, synthesizing Sherlock's research and Euclid's two-axis (truthfulness/density) reduction | This entire report was commissioned specifically to serve as Agent Tufte's standing reference — its value is in being reused across every future Nexus report Agent Tufte touches, not in this one report alone. Same category of durable, cross-report reference as the Evidence Tier Framework and the B2C/B2B Soundness Test. | **Submitted — [PR #5](https://github.com/raceBannon99/nexus-artifacts/pull/5), awaiting Rick's merge** |
+| Edward Tufte Visualization Principles Reference | fact-sheet | Alexandria, synthesizing Sherlock's research and Euclid's two-axis (truthfulness/density) reduction | This entire report was commissioned specifically to serve as Agent Tufte's standing reference — its value is in being reused across every future Nexus report Agent Tufte touches, not in this one report alone. Same category of durable, cross-report reference as the Evidence Tier Framework and the B2C/B2B Soundness Test. | **Added to Library — merged as [`fact-sheets/edward-tufte-visualization-principles.md`](https://github.com/raceBannon99/nexus-artifacts/blob/main/fact-sheets/edward-tufte-visualization-principles.md) (PR #5)** |
 
 No other candidates were flagged this round.
 
@@ -170,3 +170,6 @@ No other candidates were flagged this round.
 - [Fast Company, "Infographics Win! Obama Appoints Data-Viz Demigod to Chart the Stimulus"](https://www.fastcompany.com/1575265/infographics-win-obama-appoints-data-viz-demigod-chart-stimulus) — corroborates the 2010 Recovery Independent Advisory Panel appointment and Tufte's chairmanship.
 
 **Sourcing-confidence note (per the Evidence Tier Framework's practice of flagging limitations rather than implying false certainty):** the "data-ink ratio" and "sparklines invented by Tufte" claims each carry a documented caveat above (heuristic-not-validated-metric; contested sole attribution, respectively) rather than being stated as uncontested fact.
+
+**Internal (Nexus artifacts library):**
+- [Edward Tufte: Work, Principles, and Practical Tests](https://github.com/raceBannon99/nexus-artifacts/blob/main/fact-sheets/edward-tufte-visualization-principles.md) — the distilled fact-sheet this report produced, now Agent Tufte's standing reference; first applied in the 2026-07-23 update to `reports/2026-07-23-firewall-tls-visibility.md`, which redrew its diagram against this artifact.
