@@ -149,7 +149,7 @@ Worth naming as an idea for Rick, not a skill: the same treatment applied here �
 
 | Candidate | Category | Recommended by | Rationale | Status |
 |---|---|---|---|---|
-| Edward Tufte Visualization Principles Reference | fact-sheet | Alexandria, synthesizing Sherlock's research and Euclid's two-axis (truthfulness/density) reduction | This entire report was commissioned specifically to serve as Agent Tufte's standing reference — its value is in being reused across every future Nexus report Agent Tufte touches, not in this one report alone. Same category of durable, cross-report reference as the Evidence Tier Framework and the B2C/B2B Soundness Test. | Recommended — awaiting Rick's decision, not yet submitted as a Pull Request |
+| Edward Tufte Visualization Principles Reference | fact-sheet | Alexandria, synthesizing Sherlock's research and Euclid's two-axis (truthfulness/density) reduction | This entire report was commissioned specifically to serve as Agent Tufte's standing reference — its value is in being reused across every future Nexus report Agent Tufte touches, not in this one report alone. Same category of durable, cross-report reference as the Evidence Tier Framework and the B2C/B2B Soundness Test. | **Submitted — [PR #5](https://github.com/raceBannon99/nexus-artifacts/pull/5), awaiting Rick's merge** |
 
 No other candidates were flagged this round.
 
