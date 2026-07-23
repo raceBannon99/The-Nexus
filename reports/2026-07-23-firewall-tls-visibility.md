@@ -99,28 +99,40 @@ Rick's follow-up question surfaces new data that touches Challenge #2 directly, 
 
 Direct answer to "do most organizations configure TLS intercept": **no, not in the blanket sense** — measured full-decryption adoption is low even where the hardware supports it, and best practice explicitly steers organizations toward tier 2 (decrypt-with-named-exclusions) rather than tier 3 (decrypt-everything). This doesn't change the report's existing forecasts (both concern ECH/QUIC-era visibility trends, not present-day interception adoption rates), so they stand as published below.
 
-## Tufte — Seeing the Two Postures
+## Tufte — Seeing the Postures (redrawn 2026-07-23 against the new reference artifact)
+
+**Why this diagram changed.** The original version of this diagram (below, for the record, is gone — replaced in place) drew a clean binary: "does the firewall intercept, yes or no." That was already an approximation when first drawn, and Seldon's re-review above made it an outright mismatch — the report's own text now says the enterprise branch is really three tiers (no interception deployed / selective with exclusions / blanket), not one. A diagram that still shows a binary while the prose next to it describes three postures is exactly the kind of failure Agent Tufte's new standing reference — [Edward Tufte: Work, Principles, and Practical Tests](https://github.com/raceBannon99/nexus-artifacts/blob/main/fact-sheets/edward-tufte-visualization-principles.md), added to the Library this session — flags first: a graphic can be honest and still be wrong once the underlying facts move past it. The redraw below applies that artifact's two tests directly: **truthfulness** (match the diagram to Seldon's three-tier finding, not the earlier two-tier draft) and **density** (four real branches, each one earning its place, colored only where color marks a genuine distinction rather than decorating one).
 
 ```mermaid
 flowchart TD
-    A["You initiate a TLS connection<br/>to nytimes.com"] --> B{"Is the firewall configured<br/>for full TLS interception?"}
+    A["You initiate a TLS connection<br/>to nytimes.com"] --> B{"Home/consumer firewall,<br/>or enterprise NGFW?"}
 
-    B -->|"No — most home routers<br/>and basic firewalls"| C["Passive third party"]
-    C --> C1["Sees: destination IP, port<br/>SNI = 'www.nytimes.com' (cleartext)<br/>JA3 fingerprint of your client"]
-    C --> C2["Cannot see: the actual page content,<br/>URLs within the site, form data"]
+    B -->|"Home or basic consumer —<br/>the overwhelming majority"| C["Passive third party only —<br/>no interception capability at all"]
+    C --> C1["Sees: destination IP/port,<br/>SNI = 'www.nytimes.com' (cleartext),<br/>JA3 fingerprint of your client"]
+    C --> C2["Cannot see: page content,<br/>in-site URLs, form data"]
 
-    B -->|"Yes — enterprise device with<br/>network operator's CA pre-installed"| D["Becomes a cryptographic endpoint"]
-    D --> D1["Session 1: You &harr; Firewall<br/>(firewall's own fake cert for nytimes.com)"]
-    D --> D2["Session 2: Firewall &harr; nytimes.com<br/>(the real cert, validated normally)"]
-    D1 -.->|"decrypt / inspect / re-encrypt<br/>at the boundary"| D2
+    B -->|"Enterprise NGFW with<br/>MDM-pushed CA"| E{"How is it actually configured?<br/>(measured adoption, not capability)"}
+
+    E -->|"~majority even here:<br/>decryption left off"| C
+    E -->|"Best-practice default:<br/>selective, with exclusions"| F["Endpoint — except for<br/>'Do Not Decrypt' categories"]
+    E -->|"Rare, not recommended:<br/>blanket interception"| G["Endpoint for<br/>essentially all traffic"]
+
+    F --> F1["Financial / healthcare / gov't traffic:<br/>passed through uninspected, like the passive case"]
+    F --> F2["Everything else — Session 1: you&harr;firewall,<br/>Session 2: firewall&harr;site, decrypt/inspect/re-encrypt"]
+    G --> G1["Session 1: you &harr; firewall<br/>(firewall's own cert for nytimes.com)"]
+    G --> G2["Session 2: firewall &harr; nytimes.com<br/>(the real cert, validated normally)"]
 
     classDef passive fill:#1c1c1e,stroke:#38383a,color:#f5f5f7;
-    classDef active fill:#3a1f1f,stroke:#7a3b3b,color:#f5f5f7;
+    classDef selective fill:#1c2e38,stroke:#3b5a6e,color:#f5f5f7;
+    classDef blanket fill:#3a1f1f,stroke:#7a3b3b,color:#f5f5f7;
     class C,C1,C2 passive;
-    class D,D1,D2 active;
+    class F,F1,F2 selective;
+    class G,G1,G2 blanket;
 ```
 
-The left branch never decrypts anything — it reads what TLS necessarily leaves exposed. The right branch works only because your device already trusts the firewall's CA; it isn't cracking the NYT's encryption, it's running two separate, fully legitimate TLS sessions back to back.
+Color now carries three real distinctions, not two: grey for "no visibility beyond protocol-necessary leakage" (whether that's a home router or an enterprise NGFW with decryption switched off — same outcome, same color, on purpose), blue for the documented best-practice posture (selective interception with named exclusions), and red for the smallest and least-recommended slice (blanket interception of everything). The home-router branch and the "enterprise, but decryption left off" branch both terminate at the same grey node deliberately — from the traffic's point of view, they're indistinguishable, and the diagram now says so instead of implying enterprise status alone changes what's visible.
+
+*For the historical record, the two-tier version this replaced is preserved in this file's git history (commit `61fbc49` and earlier) rather than deleted from the record — only the currently published version changes.*
 
 ## Turing — Anything Become a Skill?
 
@@ -155,3 +167,6 @@ No other candidates were flagged this round — the specific facts about SNI, JA
 - Corroborating vendor sources for the same QUIC-blocking practice (not independently fetched in full, cross-checked via search snippets only): Zscaler product documentation and white papers, Palo Alto Networks LIVEcommunity forum guidance, Check Point CheckMates community guidance.
 - [Global Data Systems, "Why You Need the Ability to Inspect Encrypted Network Traffic"](https://www.getgds.com/resources/blog/cybersecurity/why-you-need-the-ability-to-inspect-encrypted-network-traffic) — cites Statista (63%/23% extensive/partial TLS-SSL use) and a Vanson Bourne survey of 3,100 IT managers (91% own capable NGFWs, 3.5% actually decrypt/inspect) plus NGFW performance-cost figures for decryption.
 - [Palo Alto Networks, "Exclude Traffic from Decryption for Business, Legal, or Other Reasons"](https://docs.paloaltonetworks.com/network-security/pan-os/administration/decryption/decryption-exclusions/exclude-traffic-from-decryption-for-business-legal-or-other-reasons) — vendor's own official documentation of the "Do Not Decrypt" category-exclusion best practice (financial, healthcare, government/legal), cross-checked against consistent independent practitioner guidance (r/paloaltonetworks, and multiple vendor/practitioner write-ups describing the same category list).
+
+**Internal (Nexus artifacts library):**
+- [Edward Tufte: Work, Principles, and Practical Tests](https://github.com/raceBannon99/nexus-artifacts/blob/main/fact-sheets/edward-tufte-visualization-principles.md) — Agent Tufte's standing reference, applied directly in the 2026-07-23 redraw of this report's diagram (truthfulness/density test, semantic-color-only-where-it-marks-a-real-distinction).
