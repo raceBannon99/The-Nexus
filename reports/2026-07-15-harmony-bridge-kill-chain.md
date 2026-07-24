@@ -69,6 +69,22 @@ Two structural facts about this attack hold true regardless of whether the multi
 
 (A third candidate invariant — "large, fast extraction over stealth once signing authority is obtained" — was considered and rejected: that behavior is expected and unremarkable once an attacker holds sufficient keys, and isn't diagnostic of this actor or attack specifically.)
 
+## Timeline
+
+*Added 2026-07-23, per Rick's standing instruction that every kill-chain report include a chronological Timeline section alongside the phase-ordered kill chain — see `Nexus Workflow.md`. No new facts here; this reorders what's already documented above by calendar time rather than by attacker phase, which for this incident compresses the entire pre-theft kill chain into about three weeks before a long tail of laundering and attribution activity that stretched over eighteen months.*
+
+| Date / Time | Event | Kill Chain Phase | Evidence Tier |
+|---|---|---|---|
+| ~June 2, 2022 | Harmony states server logs show attacker(s) reviewing the Horizon Bridge implementation | Reconnaissance | Tier 2 — Harmony's own claim |
+| ~June 17, 2022 | Harmony states a developer was targeted via phishing and installed malicious software | Delivery | Tier 2 |
+| June 18, 2022 | A vulnerability in Harmony's "subgraph" service exposes private-cloud server addresses; Harmony states this was chained into the same intrusion | Exploitation | Tier 2 |
+| June 23, 2022, 11:06 UTC | Attacker uses compromised signing keys to authorize fraudulent withdrawals — ≈$100M across 11 transactions per Harmony/CNBC, or 14 per Halborn/CFR | Actions on Objectives | Tier 1 |
+| June 27, 2022 onward | Stolen tokens swapped to ≈85,837 ETH, laundered into Tornado Cash (idle periods consistent with APAC nighttime hours) | Laundering | Tier 1 |
+| ~June 30, 2022 (~1 week post-hack) | Elliptic attributes the hack to Lazarus/APT38 via blockchain wallet-clustering analysis; Chainalysis corroborates | Attribution | Tier 1 — public statement, methodology undisclosed |
+| Jan 13, 2023 onward | ≈$60M of remaining funds moved through the RAILGUN privacy protocol, partially converted to BTC | Laundering | Tier 1 |
+| Jan 23, 2023 | FBI formally attributes the hack to Lazarus Group/APT38/DPRK | Attribution | Tier 1 — official statement, methodology undisclosed |
+| Nov 29, 2023 | U.S. Treasury sanctions the Sinbad mixer, explicitly citing Harmony/Axie-linked laundering | Enforcement action | Tier 1 |
+
 ## Forward Look: What's Likely Next
 
 | Forecast | Confidence | Basis |
