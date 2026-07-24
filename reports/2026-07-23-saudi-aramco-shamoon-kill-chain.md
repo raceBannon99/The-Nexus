@@ -43,6 +43,27 @@ The malware included a communication module (compiled as NETINIT.EXE) designed t
 ### 7. Actions on Objectives — Tier 1
 At 11:08 a.m. on August 15, 2012, the wipe fired across the network: data on an estimated 30,000-35,000 machines (roughly three-quarters of Aramco's corporate PCs) was destroyed and MBRs overwritten with the burning-flag image; infected-machine IP addresses were collected and later published publicly as proof of the attack. "Cutting Sword of Justice" claimed responsibility the same morning. Aramco's IT staff physically disconnected offices worldwide from the internet to halt the spread. Fourteen days later, on August 29, the same actors posted a further batch of Aramco usernames and passwords online — including the CEO's — demonstrating they still had some form of access to company systems after the initial wipe, a second, distinct "actions on objectives" moment. Throughout, Aramco's oil production and exploration systems — physically and logically segregated from the corporate network — were unaffected; production held steady at roughly 9.5 million barrels a day.
 
+## Timeline
+
+The kill chain above orders events by attacker *phase*. This orders the same facts (plus the years of post-incident analysis and attribution that followed) by *calendar time* — a genuinely different view for this incident, since the pre-detonation phases are almost entirely dateless in public reporting while the detonation itself and everything after it is precisely dated. Same evidence-tier discipline as above.
+
+| Date / Time | Event | Kill Chain Phase | Evidence Tier |
+|---|---|---|---|
+| Mid-2012 (exact date never disclosed) | Insider unleashes malware using privileged access (NYT/CCDCOE account) — **or** — an IT technician clicks a phishing link (Kubecka account, 2015) | Delivery | Tier 2 — disputed, two incompatible accounts |
+| Aug 15, 2012, 11:08 a.m. local | Shamoon detonates: MBRs wiped across ~30,000-35,000 machines, files overwritten, burning-flag image left | Actions on Objectives | Tier 1 |
+| Aug 15, 2012 (same morning) | "Cutting Sword of Justice" claims responsibility online | Actions on Objectives (messaging) | Tier 1 |
+| Aug 16, 2012 | Kaspersky publishes first technical malware analysis | Post-incident analysis | Tier 1 |
+| Aug 17, 2012 | Kaspersky telemetry update (very low sightings — targeted, not widespread); Seculert's two-stage/lateral-movement analysis referenced | Post-incident analysis | Tier 1 |
+| Aug 29, 2012 | Attackers post a further batch of Aramco usernames/passwords, including CEO Khalid Al-Falih's | Actions on Objectives (follow-on) | Tier 1 |
+| End of Aug 2012 | Aramco states main internal network services restored | Recovery | Tier 2 — company statement |
+| ~Early Sept 2012 (~2 weeks after Aramco) | RasGas (Qatar) hit by a similar suspected state-sponsored attack | Related incident | Tier 2 |
+| Sept 11, 2012 | Kaspersky publishes Part II technical analysis (C2 module, broken remote-execution code, hardcoded kill-switch timer, burning-flag detail) | Post-incident analysis | Tier 1 |
+| Oct 23, 2012 | *New York Times* (Perlroth) publishes the insider/USB delivery account, "Arabian Gulf" naming clue, Iran-attribution reporting, and the "probably red herrings" assessment of the hacktivist messaging | Post-incident analysis / attribution | Tier 2 |
+| ~Jan 2013 (~5 months post-attack) | Aramco's newly rebuilt, secured network fully back online, per Kubecka's account | Recovery | Tier 2 |
+| Aug 5, 2015 | Chris Kubecka's Black Hat talk (via CNNMoney) publishes the phishing-based delivery account, the hard-drive-purchase detail, and the 5-month recovery timeline | Retrospective account | Tier 2 |
+| Nov 2016 onward | "Shamoon 2" resurgence hits further Gulf-region energy organizations | Later, separate campaign | Tier 2 |
+| Dec 2018 | "Shamoon 3"/Filerase variant identified; McAfee attributes the 2016-17 wave to APT33 ("Elfin") | Later, separate campaign | Tier 2 |
+
 ## Attribution: How Solid Is "Iran"?
 
 Read this as **asserted by U.S. officials without disclosed evidence, supported by circumstantial code/motive clues, and never formalized in an on-the-record indictment or named press release the way the Harmony/Lazarus attribution eventually was** — not as settled fact.
@@ -128,7 +149,7 @@ This incident is remembered, correctly, as a landmark case in the history of des
 
 | Candidate | Category | Recommended by | Rationale | Status |
 |---|---|---|---|---|
-| Cyber Kill Chain + Evidence Tier Analysis Template | fact-sheet | Alexandria, generalizing the structure used both in the Harmony Bridge report and this report | This is the second time the Nexus has produced an evidence-tiered, phase-by-phase kill-chain analysis (Lockheed Martin's 7 stages, per-phase Tier 1/2/3 labeling, an explicit "Evidence Discrepancies" section, an explicit "What Doesn't Depend on Disputed Details" invariant-extraction step, and a plain-language range-forecast close). Two independent uses is exactly the threshold for treating a report-specific structure as a reusable methodology rather than a one-off. Same category of durable, cross-report reference as the Evidence Tier Framework itself. | Recommended — awaiting Rick's decision, not yet submitted as a Pull Request |
+| Cyber Kill Chain + Evidence Tier Analysis Template | fact-sheet | Alexandria, generalizing the structure used both in the Harmony Bridge report and this report | This is the second time the Nexus has produced an evidence-tiered, phase-by-phase kill-chain analysis (Lockheed Martin's 7 stages, per-phase Tier 1/2/3 labeling, an explicit "Evidence Discrepancies" section, an explicit "What Doesn't Depend on Disputed Details" invariant-extraction step, a **Timeline section** per Rick's standing instruction of 2026-07-23, and a plain-language range-forecast close). Two independent uses is exactly the threshold for treating a report-specific structure as a reusable methodology rather than a one-off. Same category of durable, cross-report reference as the Evidence Tier Framework itself. | Recommended — awaiting Rick's decision, not yet submitted as a Pull Request |
 
 No other candidates were flagged this round — the specific facts about Shamoon, attribution, and the delivery discrepancy are case facts supporting this analysis, not reusable frameworks in themselves.
 
