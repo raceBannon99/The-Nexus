@@ -22,7 +22,7 @@ Checked the artifact library (`nexus-artifacts`): nothing on classical literatur
 
 **A structural note before the sequence itself, because it matters for reading the book:** Homer does not actually narrate these events in the order they happened. The poem opens *in medias res* with Telemachus in Ithaca (Books 1–4), then finds Odysseus stuck on Calypso's island (Book 5), has him arrive at the Phaeacians' court (Books 6–8), where **Odysseus himself narrates his entire journey from Troy to Calypso as a flashback, told in his own words** (Books 9–12) — only then does the poem return to the present and follow him home (Books 13–24). The table and diagram below present events in **story-chronological order** (the order they happened), per your request — not book order. If you go back to the text, keep that distinction in mind or the numbering will seem scrambled.
 
-**The starting numbers.** Homer's *Iliad* (Catalogue of Ships, Book 2) lists Odysseus contributing 12 ships to the force at Troy; a commonly cited convention estimates roughly 50 men per ship by analogy with other contingents in that same catalogue (crew sizes across the fleet actually varied — Boeotian ships reportedly carried 120, Philoctetes' only 50). **Neither epic states an exact headcount for Odysseus's own ships specifically** — treat "~600 men" as a widely used, reasonable estimate, not a hard textual fact.
+**The starting numbers — now traced all the way back to Ithaca, added 2026-07-25 at Rick's request.** The *Iliad*'s Catalogue of Ships (Book 2) names Odysseus's contingent the **Cephallenians** — drawn from Ithaca, Same (Samos), Zacynthus, and the adjoining mainland — and states he brought **12 ships** to Troy. Ten years later, at the start of his own narration in Book 9 of the *Odyssey*, Odysseus again gives his departing fleet from Troy as 12 ships. Both figures come from the primary text directly. What the text does **not** do is explicitly say these are "the same twelve, unchanged" — the two counts simply happen to match, and neither epic tells us anything about crew losses or replacements among Odysseus's men during the decade of actual fighting at Troy (unlike the return voyage, where losses are tracked place by place). The same ~50-men-per-ship convention used throughout this report therefore gives the same estimate at both bookends: **roughly 600 men leaving Ithaca, and roughly 600 men leaving Troy ten years later** — not because the text confirms zero wartime attrition, but because it's the only figure either epic provides, and there's no alternative number to use instead.
 
 **Telemachus's journey is a separate track, not part of this sequence.** While Odysseus is still trapped on Calypso's island, his son Telemachus separately travels from Ithaca to Pylos (meeting **King Nestor**) and then to Sparta (meeting **Menelaus and Helen**) searching for news of his father. This happens in parallel, with Telemachus's own crew — not Odysseus's men — and doesn't belong on a "how many of Odysseus's men died where" diagram. Worth knowing the names exist, but keep the two journeys mentally separate.
 
@@ -91,13 +91,21 @@ No — but it requires being more careful with the same honesty, not less. The o
 
 *Extends the original resolutions rather than reversing them.* The redone table below keeps every number Homer states exactly as exact (Cicones: 72; Cyclops: 6; Scylla: 6), and builds the running total by straightforward subtraction from the ~600 estimated starting figure. At Laestrygonians, where Homer gives a ship count (11 of 12) but no head count, the table states the assumption used to derive a number — even distribution of the ~522 men remaining at that point across the fleet's 12 ships — rather than presenting "≈478 lost" as if Homer said so. Because the running total is built by subtraction from an estimated starting figure, **every number in the "Remaining" column inherits that estimate's uncertainty**, even at stops where the loss amount itself is textually exact — this is stated once, in a table footnote, rather than repeated on every row (repeating it would be its own violation of the density principle this report's own Tufte section already commits to).
 
+## Popper — Second Re-Review (Update Pass, 2026-07-25)
+
+Rick asked for a new first row: how many men Odysseus had leaving Ithaca for Troy in the first place. This directly extends Challenge #1 (the 600-men estimate) to a new claim, so per the update-pass rules it needs re-review rather than a silent assumption. **The specific risk here: "the ship count matches at both ends of the war" is not the same claim as "no men were lost during the war."** A contingent can field the same 12 ships after ten years of active combat and still be significantly under-strength — ships don't sink from losing crew one at a time, only from being destroyed outright. Presenting "~600 men left Ithaca, ~600 men left Troy" as if that equality were established would overclaim.
+
+## Seldon — Resolving the Second Re-Review
+
+*Stood by as an explicit gap, not resolved either way — because it can't be.* Neither epic gives any information about crew losses or replacement during the Trojan War itself for Odysseus's contingent specifically (unlike named individual losses elsewhere in the *Iliad*, none of which are his own men). The honest position: the same ~600 estimate is used at both bookends because it's the only figure either epic supports, not because wartime attrition has been ruled out. This is stated directly in Sherlock's section above and carried into the table's Tier column below, rather than letting the matching "12 ships" numbers imply a certainty about headcount that the text doesn't actually provide.
+
 ## Tufte — The Diagram
 
 Built against Agent Tufte's standing reference material — the [truthfulness/density test](https://github.com/raceBannon99/nexus-artifacts/blob/main/fact-sheets/edward-tufte-visualization-principles.md) and its [worked quadrant example](https://github.com/raceBannon99/nexus-artifacts/blob/main/fact-sheets/edward-tufte-truthfulness-density-quadrant.png) — this is a genuine density problem: 14 locations, each with gods/people/deaths, is too much detail to cram legibly into diagram nodes without either becoming unreadable or lying by omission. Split across two views instead, each doing one job well: the diagram below shows the *shape* of the journey — the sequence and the severity of loss at each stop, at a glance — and the table underneath carries the actual names, numbers, and sourcing detail. Color marks exactly one real distinction, consistently: **grey = no deaths at this stop, blue = some losses but the expedition continues, red = catastrophic loss (a ship or the whole remaining crew).**
 
 ```mermaid
 flowchart TD
-    A["TROY<br/>Departs with ~12 ships<br/>(~600 men, estimated)"] --> B["Cicones / Ismarus<br/>Lost: 72 (6 per ship)"]
+    A["TROY<br/>Departs with ~12 ships<br/>(~600 men, estimated —<br/>same estimate as leaving Ithaca 10 yrs earlier)"] --> B["Cicones / Ismarus<br/>Lost: 72 (6 per ship)"]
     B --> C["Lotus-Eaters<br/>Lost: 0"]
     C --> D["Cyclops (Polyphemus)<br/>Lost: 6<br/>Poseidon's curse begins here"]
     D --> E["Aeolia (Aeolus)<br/>Lost: 0<br/>Bag of winds opened, blown back"]
@@ -120,27 +128,29 @@ flowchart TD
     class F,L catastrophic;
 ```
 
-**The full reference table** — redone 2026-07-25 with a running men-lost total and a Year-of-journey column, per Rick's request. Exact figures where Homer gives them; his own qualitative language, plus a clearly-labeled assumption, where he doesn't.
+**The full reference table** — redone 2026-07-25 with a running men-lost total, a Year-of-journey column, and (as of this update) a starting row for the original departure from Ithaca. Exact figures where Homer gives them; his own qualitative language, plus a clearly-labeled assumption, where he doesn't. **The Year column now spans the full 20-year absence Homer himself states** (10 years at Troy + 10 years wandering) — every year number below shifted by +10 from the previous version of this table to make room for the war years at the front.
 
-| Order | Place | Year of journey | Gods encountered (domain / role) | People / beings met (title) | Men lost at this stop | Remaining after | Tier |
+| Order | Place | Year (of 20 total away from home) | Gods encountered (domain / role) | People / beings met (title) | Men lost at this stop | Remaining after | Tier |
 |---|---|---|---|---|---|---|---|
-| — | Troy (departure) | Year 0 (departure) | — | — | — | Started with ~600 (est.) | T2 |
-| 1 | Cicones / Ismarus | Year 1 | — | The Cicones — Thracian people, Trojan allies (no individual named) | 72 (6/ship, explicit) | ~528 | T1 |
-| 2 | Lotus-Eaters | Year 1 | — | The Lotus-Eaters — a peaceful island people (no individual named) | 0 | ~528 | T1 |
-| 3 | Land of the Cyclopes | Year 1 | Poseidon — god of the sea and earthquakes (indirectly; his son is wronged here) | Polyphemus — a Cyclops, son of Poseidon | 6 (explicit) | ~522 | T1 |
-| 4 | Aeolia | Year 1 | — | Aeolus — Keeper of the Winds, a mortal favored by the gods | 0 | ~522 | T1 |
-| 5 | Laestrygonians | Year 1 | — | The Laestrygonians, led by King Antiphates — giant cannibals | ~478 (assumption: even distribution of ~522 across 12 ships → 11 ships' worth lost)* | ~44 (one ship's crew) | T2 |
-| 6 | Aeaea (Circe, arrival) | Year 1–2 (spans the "full year" stay) | Circe — sorceress-goddess of magic and transformation, daughter of Helios; Hermes — messenger god, guide of travelers | Circe (Sorceress-Queen of Aeaea) | 1 (Elpenor — accident, not a monster) | ~43 | T1 |
-| 7 | The Underworld | Year 2 (early) | (the realm of Hades and Persephone; neither acts directly on-page) | Tiresias (blind Prophet of Thebes), Anticleia (his mother, Queen of Ithaca by marriage), Elpenor's shade, Achilles, Agamemnon (King of Mycenae), Ajax (Greek heroes of Troy) | 0 (the already-dead, not a new hazard) | ~43 | T1 |
-| 8 | Aeaea (return) | Year 2 | Circe | Circe (Sorceress-Queen of Aeaea) | 0 (Elpenor's funeral) | ~43 | T1 |
-| 9 | The Sirens | Year 2 | — | The Sirens — monstrous singing creatures | 0 | ~43 | T1 |
-| 10 | Scylla & Charybdis | Year 2 | — | Scylla (six-headed sea monster), Charybdis (monstrous whirlpool) | 6 (to Scylla, explicit; Charybdis avoided) | ~37 | T1 |
-| 11 | Thrinacia | Year 2–3 (includes the "month" stranded) | Helios — god of the sun, owner of the cattle; Zeus — king of the gods, god of sky and thunder, executes judgment | — | ~37 ("all but Odysseus," per text) | 0 | T1 for the outcome, T2 for the number |
-| 12 | Ogygia (Calypso) | Years 3–9 (the stated "seven years") | Calypso — a nymph/minor goddess, daughter of the Titan Atlas; Hermes — messenger god, delivers Zeus's order to release him | Calypso (Nymph of Ogygia) | n/a — already alone | 0 | T1 |
-| 13 | Scheria (Phaeacians) | Year 10 (the stated "17 days" raft, then arrival) | Athena — goddess of wisdom and strategy, in disguise as a guide | Nausicaa (Princess of the Phaeacians), Alcinous (King of the Phaeacians), Arete (Queen of the Phaeacians) | n/a — alone | 0 | T1 |
-| 14 | Ithaca | Year 10 (arrival) | Athena — goddess of wisdom and strategy | Telemachus (Prince of Ithaca, his son), Penelope (Queen of Ithaca, his wife), Eumaeus (his loyal swineherd), Eurycleia (his old nurse), Laertes (his father, former King of Ithaca) | 0 of his own men; **108 suitors killed separately** (antagonists — see note below) | 0 | T1 for "0 of his own men"; T2 for "108" |
+| — | **Ithaca (departure for Troy)** | **Year 0** | — | The Cephallenians — Odysseus's own people, from Ithaca, Same, Zacynthus, and the mainland (his contingent's collective name, per the Catalogue of Ships) | — | Started with ~600 (est., 12 ships) | T1 for the 12-ship count; T2 for the ~600 headcount |
+| — | *(The Trojan War itself)* | *Years 0–10* | *— (not itemized here; this is the Iliad's subject, not a place-by-place sequence)* | — | *Unknown — neither epic documents wartime losses to Odysseus's contingent specifically* | *Unconfirmed* | *Gap* |
+| — | Troy (departure for home) | Year 10 | — | — | — | Still ~600 (est.) — same estimate as departure; see Popper/Seldon above on why this isn't confirmed | T2 |
+| 1 | Cicones / Ismarus | Year 11 | — | The Cicones — Thracian people, Trojan allies (no individual named) | 72 (6/ship, explicit) | ~528 | T1 |
+| 2 | Lotus-Eaters | Year 11 | — | The Lotus-Eaters — a peaceful island people (no individual named) | 0 | ~528 | T1 |
+| 3 | Land of the Cyclopes | Year 11 | Poseidon — god of the sea and earthquakes (indirectly; his son is wronged here) | Polyphemus — a Cyclops, son of Poseidon | 6 (explicit) | ~522 | T1 |
+| 4 | Aeolia | Year 11 | — | Aeolus — Keeper of the Winds, a mortal favored by the gods | 0 | ~522 | T1 |
+| 5 | Laestrygonians | Year 11 | — | The Laestrygonians, led by King Antiphates — giant cannibals | ~478 (assumption: even distribution of ~522 across 12 ships → 11 ships' worth lost)* | ~44 (one ship's crew) | T2 |
+| 6 | Aeaea (Circe, arrival) | Year 11–12 (spans the "full year" stay) | Circe — sorceress-goddess of magic and transformation, daughter of Helios; Hermes — messenger god, guide of travelers | Circe (Sorceress-Queen of Aeaea) | 1 (Elpenor — accident, not a monster) | ~43 | T1 |
+| 7 | The Underworld | Year 12 (early) | (the realm of Hades and Persephone; neither acts directly on-page) | Tiresias (blind Prophet of Thebes), Anticleia (his mother, Queen of Ithaca by marriage), Elpenor's shade, Achilles, Agamemnon (King of Mycenae), Ajax (Greek heroes of Troy) | 0 (the already-dead, not a new hazard) | ~43 | T1 |
+| 8 | Aeaea (return) | Year 12 | Circe | Circe (Sorceress-Queen of Aeaea) | 0 (Elpenor's funeral) | ~43 | T1 |
+| 9 | The Sirens | Year 12 | — | The Sirens — monstrous singing creatures | 0 | ~43 | T1 |
+| 10 | Scylla & Charybdis | Year 12 | — | Scylla (six-headed sea monster), Charybdis (monstrous whirlpool) | 6 (to Scylla, explicit; Charybdis avoided) | ~37 | T1 |
+| 11 | Thrinacia | Year 12–13 (includes the "month" stranded) | Helios — god of the sun, owner of the cattle; Zeus — king of the gods, god of sky and thunder, executes judgment | — | ~37 ("all but Odysseus," per text) | 0 | T1 for the outcome, T2 for the number |
+| 12 | Ogygia (Calypso) | Years 13–19 (the stated "seven years") | Calypso — a nymph/minor goddess, daughter of the Titan Atlas; Hermes — messenger god, delivers Zeus's order to release him | Calypso (Nymph of Ogygia) | n/a — already alone | 0 | T1 |
+| 13 | Scheria (Phaeacians) | Year 20 (the stated "17 days" raft, then arrival) | Athena — goddess of wisdom and strategy, in disguise as a guide | Nausicaa (Princess of the Phaeacians), Alcinous (King of the Phaeacians), Arete (Queen of the Phaeacians) | n/a — alone | 0 | T1 |
+| 14 | Ithaca (return) | Year 20 (arrival) | Athena — goddess of wisdom and strategy | Telemachus (Prince of Ithaca, his son), Penelope (Queen of Ithaca, his wife), Eumaeus (his loyal swineherd), Eurycleia (his old nurse), Laertes (his father, former King of Ithaca) | 0 of his own men; **108 suitors killed separately** (antagonists — see note below) | 0 | T1 for "0 of his own men"; T2 for "108" |
 
-*T1 = Homer's text states this directly, cross-checked across independent sources. T2 = a reasonable, clearly-labeled estimate or scholarly convention, not a number either epic states outright — see the Evidence Tier Framework precedent used across other Nexus reports.*
+*T1 = Homer's text states this directly, cross-checked across independent sources. T2 = a reasonable, clearly-labeled estimate or scholarly convention, not a number either epic states outright. "Gap" = neither epic addresses this at all — see the Evidence Tier Framework precedent used across other Nexus reports.*
 
 *\*Laestrygonian figure is a computed estimate, not a Homeric number: Homer states 11 of 12 ships were destroyed but gives no head count. The ~478 figure assumes the ~522 men remaining at that point were distributed evenly across the fleet — a reasonable but invented assumption, stated here rather than hidden inside a clean-looking number.*
 
@@ -168,10 +178,11 @@ No other candidates flagged this round. Per Turing's note above, a generalized "
 
 **Primary text (the actual source for the sequence and facts above):**
 - Homer, *The Odyssey* — Books 1–4 (Telemachus's parallel journey), 5 (Calypso, present-day), 6–8 (Phaeacians), 9–12 (Odysseus's own flashback narration: Cicones through Thrinacia), 13–24 (return to Ithaca, the suitors).
-- Homer, *The Iliad* — Book 2, the Catalogue of Ships, for the 12-ships figure and general crew-size conventions used across the fleet.
+- Homer, *The Iliad* — Book 2, the Catalogue of Ships, for the 12-ships figure and general crew-size conventions used across the fleet, and for Odysseus's contingent's name (the Cephallenians) and home territories (Ithaca, Same, Zacynthus, the adjoining mainland).
 
 **Secondary/reference (used to confirm sequence, exact quoted figures, and cross-check consistency across independent summaries):**
 - [Theoi Classical Texts Library — Odyssey Book 9](https://www.theoi.com/Text/HomerOdyssey9.html) and [Book 12](https://www.theoi.com/Text/HomerOdyssey12.html) — primary-text-adjacent reference translation, used to confirm the Cicones ("six... from each ship") and Scylla ("seized six of my comrades") figures directly.
+- [Perseus Digital Library — Iliad, Book 2 (Catalogue of Ships)](https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0134:book%3D2:card%3D615) — direct source for the Cephallenians, their home territories, and the 12-ship figure at the outbound departure from Ithaca.
 - [SparkNotes, *The Odyssey* Book 9 summary](https://www.sparknotes.com/lit/odyssey/section5/) — corroborates the Cicones and Cyclops sequence and figures.
 - [the-odyssey-journey.com — Land of the Laestrygonians](https://the-odyssey-journey.com/en/locations/laestrygonians) and [Thrinacia](https://the-odyssey-journey.com/en/locations/thrinacia) — corroborates the "11 of 12 ships" and "all but Odysseus" outcomes.
 - [Ancient-literature.com — Elpenor in the Odyssey](https://ancient-literature.com/elpenor-in-the-odyssey/) and [Wikipedia — Elpenor](https://en.wikipedia.org/wiki/Elpenor) — corroborates the Circe-island death and burial-request sequence.
