@@ -51,6 +51,8 @@ Checked the artifact library (`nexus-artifacts`): nothing on classical literatur
 - **Helios** — the sun god, whose sacred cattle are eaten at Thrinacia; demands and receives justice from Zeus.
 - **Circe** and **Calypso** — both minor goddesses (not Olympians) who detain Odysseus for extended periods; Circe as a temporary threat-turned-ally, Calypso as a seven-year captivity.
 
+**The timeline, added 2026-07-25 at Rick's request.** Homer's own text gives explicit durations at only four points: **1 full year at Circe's island**, **1 month stranded at Thrinacia** by contrary winds, **7 years at Calypso's island**, and **17 days rafting** from Calypso's island to the Phaeacians (a storm hits on the 18th day). Everything else — the string of disasters from Cicones through Laestrygonians, and the later stretch from the Underworld through Thrinacia — happens in relatively quick succession with no day-by-day count given in the text. The Year column in the table below is built by anchoring to those four explicit markers and placing the undated quick-succession stretches in the time that's left, consistent with the poem's own stated total: 10 years wandering (on top of 10 years at Troy, for "twenty years" away from home altogether — a figure Homer states directly and repeatedly, unlike the per-stop breakdown). **Treat individual year assignments for the undated stretches as a reasonable reconstruction, not something Homer states outright.**
+
 ## Euclid — What Must Be Fundamentally True?
 
 Strip away the individual monsters and the poem reduces to one very clean structural fact: **Odysseus's crew is destroyed almost entirely by their own repeated failures of discipline, not by superior enemy force.** Two deaths are pure bad luck or genuine external threat with no human error involved (the Laestrygonians ambush an already-cautious fleet; Scylla's toll is a calculated, unavoidable sacrifice Circe herself prescribed). But the two *biggest-consequence* moments — opening the bag of winds within sight of home, and eating the forbidden cattle after being warned twice — are both failures of the crew's own impulse control, and Homer's own opening lines (Book 1) state this outright as the poem's moral framing, not as something this report is reading into the text. The single event that changes everything (Polyphemus's curse to Poseidon) is itself caused by Odysseus's own choice to taunt the blinded Cyclops with his real name on the way out — an act of pride, not necessity. So the whole poem's back half is the working-out of one specific, self-inflicted curse, layered on top of a crew that keeps failing the same basic test (patience) in slightly different forms.
@@ -78,6 +80,16 @@ Four challenges, addressed directly rather than softened:
 **On #4 (movie-fidelity risk):** *Resolved* by the disclaimer placed at the very top of this report, ahead of even the Bottom Line, since that's the risk most likely to matter to Rick specifically, watching the film tomorrow.
 
 **No forecast section this round.** Like the recent Gandalf report, this is a literary-reference question with nothing genuinely probabilistic to reason about going forward — manufacturing a forward-looking estimate here would be padding, not analysis, so this stage is skipped rather than forced.
+
+## Popper — Re-Review (Update Pass, 2026-07-25)
+
+Rick asked for the reference table to be redone with a running men-lost total (started with X, Y remain after each stop) and a Year-of-journey column. Both directly touch Challenge #1 (the 600-men estimate) and Challenge #3 (no manufacturing false precision at Laestrygonians/Thrinacia) from the original run — a running total literally requires doing arithmetic through both of those uncertain points, and a Year column requires placing undated events on a timeline. Per the Nexus's update-pass rules, a prior resolution can't be silently overridden just because the new request is more demanding — so: **does satisfying this request require walking back either of the original resolutions?**
+
+No — but it requires being more careful with the same honesty, not less. The original resolutions said "don't invent precise numbers Homer doesn't give." Rick's request is a legitimate, different use case — a personal study aid that needs running totals to be useful as a reference — not a demand that the report claim more textual authority than it has. The two are compatible as long as every computed number in the new table is clearly labeled as computed, and the reasoning behind each assumption (even distribution of losses across ships at Laestrygonians; remaining crew size at Thrinacia) is stated, not hidden inside a clean-looking number.
+
+## Seldon — Resolving the Re-Review
+
+*Extends the original resolutions rather than reversing them.* The redone table below keeps every number Homer states exactly as exact (Cicones: 72; Cyclops: 6; Scylla: 6), and builds the running total by straightforward subtraction from the ~600 estimated starting figure. At Laestrygonians, where Homer gives a ship count (11 of 12) but no head count, the table states the assumption used to derive a number — even distribution of the ~522 men remaining at that point across the fleet's 12 ships — rather than presenting "≈478 lost" as if Homer said so. Because the running total is built by subtraction from an estimated starting figure, **every number in the "Remaining" column inherits that estimate's uncertainty**, even at stops where the loss amount itself is textually exact — this is stated once, in a table footnote, rather than repeated on every row (repeating it would be its own violation of the density principle this report's own Tufte section already commits to).
 
 ## Tufte — The Diagram
 
@@ -108,25 +120,33 @@ flowchart TD
     class F,L catastrophic;
 ```
 
-**The full reference table** — exact figures where Homer gives them, his own qualitative language where he doesn't:
+**The full reference table** — redone 2026-07-25 with a running men-lost total and a Year-of-journey column, per Rick's request. Exact figures where Homer gives them; his own qualitative language, plus a clearly-labeled assumption, where he doesn't.
 
-| Order | Place | Gods encountered | People / beings met | Men lost | Evidence tier |
-|---|---|---|---|---|---|
-| — | Troy (departure) | — | — | Starting force: ~12 ships, ~600 men (estimated) | Tier 2 — analogy/convention, not stated in either epic |
-| 1 | Cicones / Ismarus | — | The Cicones (Trojan allies) | 72 (6 per ship, explicit) | Tier 1 — direct text |
-| 2 | Lotus-Eaters | — | The Lotus-Eaters | 0 | Tier 1 |
-| 3 | Land of the Cyclopes | Poseidon (indirectly, via his son) | Polyphemus | 6 (explicit) | Tier 1 |
-| 4 | Aeolia | — | Aeolus | 0 | Tier 1 |
-| 5 | Laestrygonians | — | The Laestrygonians (King Antiphates) | 11 of 12 ships ("the overwhelming majority") | Tier 1 for the ship count; no exact head count given |
-| 6 | Aeaea (Circe) | Circe, Hermes | Circe | 1 (Elpenor — accident, not a monster) | Tier 1 |
-| 7 | The Underworld | — (visits the realm of Hades) | Tiresias, Anticleia, Elpenor's shade, Achilles, Agamemnon, Ajax | 0 (encounters the already-dead) | Tier 1 |
-| 8 | Aeaea (return) | Circe | Circe | 0 (Elpenor's funeral) | Tier 1 |
-| 9 | The Sirens | — | The Sirens | 0 | Tier 1 |
-| 10 | Scylla & Charybdis | — | Scylla, Charybdis | 6 (to Scylla; Charybdis avoided) | Tier 1 |
-| 11 | Thrinacia | Helios, Zeus | — | "All but Odysseus" (no exact number given) | Tier 1 for the outcome; no head count given |
-| 12 | Ogygia | Calypso, Hermes | Calypso | Odysseus alone (0 crew remain) | Tier 1 |
-| 13 | Scheria | Athena (in disguise) | Nausicaa, Alcinous, Arete | Odysseus alone | Tier 1 |
-| 14 | Ithaca | Athena | Telemachus, Penelope, Eumaeus, Eurycleia, Laertes | 0 of his own men; **108 suitors killed** (antagonists, separate count) | Tier 2 for the exact "108" figure — a well-corroborated scholarly tally summing several passages, not one single stated total |
+| Order | Place | Year of journey | Gods encountered (domain / role) | People / beings met (title) | Men lost at this stop | Remaining after | Tier |
+|---|---|---|---|---|---|---|---|
+| — | Troy (departure) | Year 0 (departure) | — | — | — | Started with ~600 (est.) | T2 |
+| 1 | Cicones / Ismarus | Year 1 | — | The Cicones — Thracian people, Trojan allies (no individual named) | 72 (6/ship, explicit) | ~528 | T1 |
+| 2 | Lotus-Eaters | Year 1 | — | The Lotus-Eaters — a peaceful island people (no individual named) | 0 | ~528 | T1 |
+| 3 | Land of the Cyclopes | Year 1 | Poseidon — god of the sea and earthquakes (indirectly; his son is wronged here) | Polyphemus — a Cyclops, son of Poseidon | 6 (explicit) | ~522 | T1 |
+| 4 | Aeolia | Year 1 | — | Aeolus — Keeper of the Winds, a mortal favored by the gods | 0 | ~522 | T1 |
+| 5 | Laestrygonians | Year 1 | — | The Laestrygonians, led by King Antiphates — giant cannibals | ~478 (assumption: even distribution of ~522 across 12 ships → 11 ships' worth lost)* | ~44 (one ship's crew) | T2 |
+| 6 | Aeaea (Circe, arrival) | Year 1–2 (spans the "full year" stay) | Circe — sorceress-goddess of magic and transformation, daughter of Helios; Hermes — messenger god, guide of travelers | Circe (Sorceress-Queen of Aeaea) | 1 (Elpenor — accident, not a monster) | ~43 | T1 |
+| 7 | The Underworld | Year 2 (early) | (the realm of Hades and Persephone; neither acts directly on-page) | Tiresias (blind Prophet of Thebes), Anticleia (his mother, Queen of Ithaca by marriage), Elpenor's shade, Achilles, Agamemnon (King of Mycenae), Ajax (Greek heroes of Troy) | 0 (the already-dead, not a new hazard) | ~43 | T1 |
+| 8 | Aeaea (return) | Year 2 | Circe | Circe (Sorceress-Queen of Aeaea) | 0 (Elpenor's funeral) | ~43 | T1 |
+| 9 | The Sirens | Year 2 | — | The Sirens — monstrous singing creatures | 0 | ~43 | T1 |
+| 10 | Scylla & Charybdis | Year 2 | — | Scylla (six-headed sea monster), Charybdis (monstrous whirlpool) | 6 (to Scylla, explicit; Charybdis avoided) | ~37 | T1 |
+| 11 | Thrinacia | Year 2–3 (includes the "month" stranded) | Helios — god of the sun, owner of the cattle; Zeus — king of the gods, god of sky and thunder, executes judgment | — | ~37 ("all but Odysseus," per text) | 0 | T1 for the outcome, T2 for the number |
+| 12 | Ogygia (Calypso) | Years 3–9 (the stated "seven years") | Calypso — a nymph/minor goddess, daughter of the Titan Atlas; Hermes — messenger god, delivers Zeus's order to release him | Calypso (Nymph of Ogygia) | n/a — already alone | 0 | T1 |
+| 13 | Scheria (Phaeacians) | Year 10 (the stated "17 days" raft, then arrival) | Athena — goddess of wisdom and strategy, in disguise as a guide | Nausicaa (Princess of the Phaeacians), Alcinous (King of the Phaeacians), Arete (Queen of the Phaeacians) | n/a — alone | 0 | T1 |
+| 14 | Ithaca | Year 10 (arrival) | Athena — goddess of wisdom and strategy | Telemachus (Prince of Ithaca, his son), Penelope (Queen of Ithaca, his wife), Eumaeus (his loyal swineherd), Eurycleia (his old nurse), Laertes (his father, former King of Ithaca) | 0 of his own men; **108 suitors killed separately** (antagonists — see note below) | 0 | T1 for "0 of his own men"; T2 for "108" |
+
+*T1 = Homer's text states this directly, cross-checked across independent sources. T2 = a reasonable, clearly-labeled estimate or scholarly convention, not a number either epic states outright — see the Evidence Tier Framework precedent used across other Nexus reports.*
+
+*\*Laestrygonian figure is a computed estimate, not a Homeric number: Homer states 11 of 12 ships were destroyed but gives no head count. The ~478 figure assumes the ~522 men remaining at that point were distributed evenly across the fleet — a reasonable but invented assumption, stated here rather than hidden inside a clean-looking number.*
+
+**On the "Remaining" column generally:** every figure in this column is only as reliable as the ~600 starting estimate it's built from — even at stops where the *loss amount* is textually exact (Cicones, Cyclops, Scylla), the *running total* still inherits the starting estimate's uncertainty. Treat this whole column as a useful approximation for following the shape of the attrition, not as numbers Homer wrote down.
+
+**On the suitors:** the 108 figure is a well-corroborated scholarly tally (52 from Dulichium, 24 from Same, 20 from Zacynthus, 12 from Ithaca) summing several passages in Book 16 and elsewhere, not a single stated total in one place — Tier 2, not Tier 1, but about as solid as an inferred count gets.
 
 ## Turing — Anything Become a Skill?
 
