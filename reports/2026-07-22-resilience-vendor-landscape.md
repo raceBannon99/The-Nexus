@@ -99,7 +99,7 @@ Checked with each stage on this pass. Nothing here rises to a reusable, automata
 
 | Candidate | Category | Recommended by | Rationale | Status |
 |---|---|---|---|---|
-| Buzzword-vs-Category Test | fact-sheet | Alexandria, synthesizing Euclid's core reframe (resilience as outcome, not technology category) | The general pattern here — check whether a market buzzword corresponds to a real, analyst-recognized category or is draped across several existing ones — is reusable well beyond resilience specifically (the same test would apply to "Zero Trust," "XDR," "AI security," or any other term multiple unrelated vendor types now claim). Same category of reusable methodology as the Evidence Tier Framework and the B2C/B2B Soundness Test. | Recommended — awaiting Rick's decision, not yet submitted as a Pull Request |
+| Buzzword-vs-Category Test | fact-sheet | Alexandria, synthesizing Euclid's core reframe (resilience as outcome, not technology category) | The general pattern here — check whether a market buzzword corresponds to a real, analyst-recognized category or is draped across several existing ones — is reusable well beyond resilience specifically (the same test would apply to "Zero Trust," "XDR," "AI security," or any other term multiple unrelated vendor types now claim). Same category of reusable methodology as the Evidence Tier Framework and the B2C/B2B Soundness Test. | **Declined by Rick (2026-07-31)** — not submitted to `nexus-artifacts` |
 
 No other candidates were flagged this round — the vendor table and quadrant citations are case-specific facts about today's market, not reusable frameworks.
 

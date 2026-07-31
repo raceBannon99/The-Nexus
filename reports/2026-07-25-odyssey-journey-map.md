@@ -171,7 +171,7 @@ Checked. This was one-off literary research and diagramming, not a repeatable te
 
 | Candidate | Category | Recommended by | Rationale | Status |
 |---|---|---|---|---|
-| Odyssey Journey Map (this report) | book-review | Alexandria | A durable reference Rick can return to for any future Odyssey discussion, book club, or comparison to the film — not a generalizable methodology yet on its own, but worth keeping as a standing fact-sheet on this specific text. | Recommended — awaiting Rick's decision, not yet submitted as a Pull Request |
+| Odyssey Journey Map (this report) | book-review | Alexandria | A durable reference Rick can return to for any future Odyssey discussion, book club, or comparison to the film — not a generalizable methodology yet on its own, but worth keeping as a standing fact-sheet on this specific text. | **Declined by Rick (2026-07-31)** — not submitted to `nexus-artifacts` |
 
 No other candidates flagged this round. Per Turing's note above, a generalized "epic journey mapping" template is a *future* candidate if a third literary-mapping request arrives, not something to build preemptively off one data point.
 

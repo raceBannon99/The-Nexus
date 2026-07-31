@@ -151,7 +151,7 @@ Checked with each stage on this pass. Nothing here rises to a reusable, automata
 
 | Candidate | Category | Recommended by | Rationale | Status |
 |---|---|---|---|---|
-| Encrypted-Traffic Visibility Test | fact-sheet | Alexandria, synthesizing Euclid's endpoint-vs-third-party reduction and the three-tier model (passive metadata / active fingerprinting / full interception) | Generalizes past firewalls specifically — the same reduction ("can this observer become a cryptographic endpoint, or is it stuck reading only what the protocol necessarily leaks?") applies to VPNs, proxies, mesh-network observers, or any future "can X see my encrypted Y" question brought to the Nexus. Same category of reusable methodology as the Evidence Tier Framework and the B2C/B2B Soundness Test. | Recommended — awaiting Rick's decision, not yet submitted as a Pull Request |
+| Encrypted-Traffic Visibility Test | fact-sheet | Alexandria, synthesizing Euclid's endpoint-vs-third-party reduction and the three-tier model (passive metadata / active fingerprinting / full interception) | Generalizes past firewalls specifically — the same reduction ("can this observer become a cryptographic endpoint, or is it stuck reading only what the protocol necessarily leaks?") applies to VPNs, proxies, mesh-network observers, or any future "can X see my encrypted Y" question brought to the Nexus. Same category of reusable methodology as the Evidence Tier Framework and the B2C/B2B Soundness Test. | **Declined by Rick (2026-07-31)** — not submitted to `nexus-artifacts` |
 
 No other candidates were flagged this round — the specific facts about SNI, JA3, ECH, and QUIC-blocking are case facts supporting this answer, not reusable frameworks in themselves.
 
