@@ -10,6 +10,8 @@
 
 **Update (2026-08-01):** Rick asked specifically why Black Hat is called "Black Hat" — a naming question the original report explained for DEF CON in detail but never actually addressed for Black Hat itself. This is a lighter Update Pass: Sherlock researched the "black hat"/"white hat" terminology's general origin and searched extensively for any direct account of Moss's own reasoning, coming up with a real, notable gap rather than an answer — see below. Euclid adds a light observation about the naming choice's apparent tension with everything else about Black Hat's founding, explicitly framed as speculation. Popper pushes back on that speculation and flags the sourcing gap itself. Seldon resolves both by recommending Rick simply ask Moss directly, since he's attending the same event next week. Tufte's table and Turing's conclusion are unaffected.
 
+**Update (2026-08-01, second pass):** Rick asked to add the Back Orifice/BO2k story (researched today as its own dedicated report) into this report's combined timeline. This is a Sherlock + Tufte Update Pass: Sherlock adds the previously-missing 1998 Back Orifice release to the DEF CON inflection points and enriches the existing 1999 BO2k entry with detail from the dedicated report (open-source GPL release, expanded OS support, the CIH-virus-infected CD incident). Tufte's table gets a new 1998 row and a richer 1999 row. Euclid, Popper, and Seldon's existing material is unaffected — this doesn't change any causal argument or forecast, just adds documented detail to an event already on the timeline. Turing's conclusion is unchanged.
+
 ## Alexandria — What do we already know?
 
 Nothing in the artifact library or prior Nexus reports covers the history of any of the three conferences — today's two other Black Hat reports (bookstore hours and signing schedules) are pure logistics with no historical content. This is a clean-slate research question. One note worth carrying forward: unlike those two logistics reports, this one produces durable reference material — see the Library Recommendation at the end.
@@ -28,7 +30,8 @@ Nothing in the artifact library or prior Nexus reports covers the history of any
 
 - **1994 (DEF CON 2):** Moved to the Sahara Hotel, July 22–24. **Corrected this pass:** the commonly cited "~200 attendees" figure (from retrospective sources) understates it — a contemporaneous eyewitness account puts registration at 360 (about 20% self-identified security professionals, "plus whoever snuck in," per organizer Jeff Moss), run on a total budget of roughly $5,000 with a $15 door fee. First sign the 1993 gathering wasn't a one-off, and bigger than usually remembered.
 - **1996 (DEF CON 4):** First Capture the Flag competition — a format that would become one of DEF CON's defining cultural exports.
-- **1999 (DEF CON 7):** Cult of the Dead Cow released Back Orifice 2000, then DEF CON's largest-ever presentation.
+- **1998 (DEF CON 6):** Cult of the Dead Cow member Sir Dystic released **Back Orifice**, a working remote-administration tool exposing real, exploitable holes in Windows 95/98 — cDc's deliberate answer to Microsoft's standard line that such vulnerabilities were "theoretical." Covered by *The New York Times* days later as a legitimate security story, not a stunt.
+- **1999 (DEF CON 7):** Cult of the Dead Cow followed up with **Back Orifice 2000 ("BO2k")**, written by member Dildog — DEF CON's largest-ever presentation to that point. A real escalation, not a rerun: expanded to Windows NT/2000/XP, released free and open-source under the GPL, and added a strong-encryption plugin architecture (3DES, AES, and others) — daring Microsoft to explain why a tool matching their own SMS product was dangerous only because outsiders built it. cDc's own DEF CON giveaway CDs of BO2k were separately, accidentally infected with the real CIH ("Chernobyl") virus, which had bricked an estimated 60 million machines worldwide weeks earlier — a genuine mishap layered on top of the deliberate provocation. Full story in [today's dedicated report](https://github.com/raceBannon99/The-Nexus/blob/main/reports/2026-08-01-cult-of-the-dead-cow-back-orifice-defcon-story.md).
 - **~2000–2001:** Attendance was not a smooth climb — per Moss's own 2007 account, it peaked around 7,000 the year before the dot-com bubble burst, then fell back to roughly 5,000 by 2007 as the security industry's boom-era hiring cooled, before resuming growth toward the 8,000+ figure DEF CON 18 would post in 2010 (below). Not independently corroborated with a specific year or figure beyond Moss's own recollection — treat as directionally reliable, not precise.
 - **2001:** Russian programmer Dmitry Sklyarov was arrested the day *after* the conference for writing e-book decryption software — a DMCA case that became a flashpoint in the security research/free-speech debate.
 - **2007:** An NBC reporter's attempt at covert filming was discovered in advance; Moss publicly outed her to the assembled crowd.
@@ -112,7 +115,8 @@ The combined chronological timeline now carries a third column instead of two �
 | 1994 | DEF CON 2 — Sahara Hotel, July 22–24; 360 registered (~20% security pros) per eyewitness account, run for ~$5,000; NYT, *Business Week*, LA TV crew attend | — | — |
 | 1996 | DEF CON 4 — first Capture the Flag competition | — | — |
 | 1997 | — | **Founded** — spun off from DEF CON to solve the "can't expense the party" problem; July 7–10, right before DEF CON 5 | — |
-| 1999 | DEF CON 7 — Cult of the Dead Cow releases Back Orifice 2000, then the largest talk in DEF CON history | — | — |
+| 1998 | DEF CON 6 — cDc's Sir Dystic releases Back Orifice, exposing real Windows 95/98 holes; covered by the *NYT* as a legitimate security story | — | — |
+| 1999 | DEF CON 7 — cDc's Dildog releases BO2k (open-source, GPL, strong encryption, Windows NT/2000/XP); DEF CON's largest talk to that point; giveaway CDs accidentally infected with the real CIH/Chernobyl virus | — | — |
 | 2001 | Dmitry Sklyarov arrested the day after the conference (DMCA case) | James Bamford's NSA-history talk previews the whistleblower-vs-traitor debate, 12 years before Snowden | — |
 | 2005 | — | **"Ciscogate"** — Mike Lynn's suppressed Cisco IOS talk; front page of the WSJ. Same year, Moss sells Black Hat to CMP Media | — |
 | ~2006 | — | Joanna Rutkowska's "Blue Pill" rootkit talk | — |
@@ -162,6 +166,9 @@ No. This was a one-off historical research question — real depth was needed, b
 
 **Book (subject of the question)**
 - *Cult of the Dead Cow: How the Original Hacking Supergroup Might Just Save the World* by Joseph Menn (PublicAffairs, 2019) — [publisher page](https://www.hachettebookgroup.com/titles/joseph-menn/cult-of-the-dead-cow/9781541762374/).
+
+**Back Orifice / BO2k detail (update pass, 2026-08-01, second pass)**
+- [The Back Orifice Story: Cult of the Dead Cow's DEF CON Exploit Releases, Nexus report (2026-08-01)](https://github.com/raceBannon99/The-Nexus/blob/main/reports/2026-08-01-cult-of-the-dead-cow-back-orifice-defcon-story.md) — the dedicated report this timeline update draws from; full sourcing (Wikipedia, RSAC book review, The Outline) is cited there rather than duplicated here.
 
 ## New Skills
 
