@@ -34,13 +34,15 @@ Checked `raceBannon99/nexus-artifacts` (the Library) and ran a content grep acro
 - **Competing/converging estimates:** Rep. Don Bacon (R-NE): "about 20 admirals and generals." Sen. Elissa Slotkin's office: "over 20." *The New York Times*, March 2026: "at least two dozen." *The Washington Post*, April 2026: "more than a dozen" (a more conservative framing). A claimed *NYT* "nearly three dozen" figure surfaced in one search synthesis but could not be independently verified against a specific *NYT* article — excluded from the confirmed count as unreliable.
 - **Named removals, roughly chronological:**
   - **Feb 2025:** Gen. Charles Q. "CQ" Brown Jr. (Chairman, Joint Chiefs of Staff — fired directly by Trump per some reporting); Adm. Lisa Franchetti (Chief of Naval Operations); Gen. Jim Slife (Vice Chief of Staff, Air Force); Vice Adm. Shoshana Chatfield (U.S. Military Representative to NATO's Military Committee).
-  - **Aug 2025:** Lt. Gen. Jeffrey Kruse (Director, Defense Intelligence Agency — his firing followed a DIA assessment that U.S. strikes on Iranian nuclear sites hadn't fully destroyed them, contradicting the President's public claim); Vice Adm. Nancy Lacore (Chief, Navy Reserve); Rear Adm. Milton Sands (Commander, Naval Special Warfare Command); Gen. David Allvin (Air Force Chief of Staff — announced retirement roughly two years early, reported as pressured rather than explicitly fired). Also: the Army, Navy, and Air Force's top uniformed lawyers (Judge Advocates General) were removed this period.
+  - **Feb 21, 2025 (update pass, 08-20):** Also named this period, previously listed only as "unnamed JAGs": Lt. Gen. Charles L. Plummer (Air Force Judge Advocate General) and Lt. Gen. Joseph B. Berger III (Army Judge Advocate General), both fired the same day as Brown, Franchetti, and Slife. Hegseth said he removed the Army and Air Force TJAGs because they were "roadblocks to orders." The Navy's top lawyer, Vice Adm. Christopher French, resigned rather than being explicitly fired — not counted in this report's named roster since the mechanism differs from the others.
+  - **Aug 2025:** Lt. Gen. Jeffrey Kruse (Director, Defense Intelligence Agency — his firing followed a DIA assessment that U.S. strikes on Iranian nuclear sites hadn't fully destroyed them, contradicting the President's public claim); Vice Adm. Nancy Lacore (Chief, Navy Reserve); Rear Adm. Milton Sands (Commander, Naval Special Warfare Command); Gen. David Allvin (Air Force Chief of Staff — announced retirement roughly two years early, reported as pressured rather than explicitly fired).
   - **2025–2026 (date less precisely reported):** Lt. Gen. Telita Crosland (Director, Defense Health Agency); Adm. Alvin Holsey (Commander, U.S. Southern Command); Gen. James Mingus (Vice Chief of Staff, Army — removed after less than two years in the role).
   - **April 2026:** Gen. Randy George (Army Chief of Staff — asked to retire immediately, reportedly after refusing an order to strike two Black and two women officers from a promotion list); Gen. David Hodne (Commanding General, Army Training and Doctrine Command); Maj. Gen. William Green Jr. (Army Chief of Chaplains).
   - **~July 2026:** Gen. Christopher Donahue (Commander, U.S. Army Europe and Africa — forced to retire mid-tour; retirement ceremony held July 2, 2026).
 - **A separate, structural action — not a firing, and not counted in the 24**: Hegseth has directed the active-duty military to cut 20 of its four-star general officer billets, a reduction in authorized senior positions rather than a personnel dismissal.
 - **A false viral claim, debunked**: Snopes confirmed no mass resignation of "300 generals and officers" occurred in August 2026; this figure has no basis in the reporting.
 - **Reported pattern**: multiple outlets state that roughly 60% of officers removed have been Black or female, and that no performance-based public justification has accompanied most removals — a pattern several retired officers and lawmakers have called unprecedented in scale and manner.
+- **Individual-level demographic check (added 08-20, at Rick's request):** researched service branch, gender, and race for each of the 17 individually-named officers in Tufte's roster below. Gender is reliably determinable for all 17 (rank prefix/pronoun in direct reporting). Race is explicitly, reliably reported for only **4 of the 17** — Gen. Charles Q. Brown Jr., Lt. Gen. Telita Crosland, Adm. Alvin Holsey, and Maj. Gen. William Green Jr. — each because their removal coverage specifically framed them as a "first" or "third" Black officer to hold that post. For the other 13, no reliable public reporting states race at all. **This report does not infer race for those 13** — not from names, photos, or any other proxy — since doing so would fabricate a personal characteristic about real, named individuals with no verifiable basis. The 60%-Black-or-female aggregate figure above (Guardian-sourced) cannot be reconciled against this individual-level count, since it isn't clear which of the other ~7 officers in the Guardian's full 24 (beyond these 17) are counted toward that 60% or on what basis.
 
 **Worth archiving?** Sherlock flags nothing here as a standalone Library candidate — this is a fast-moving current-events tally better tracked in this report's own Sources than turned into a static fact-sheet that would go stale within weeks.
 
@@ -81,28 +83,35 @@ Addressing Popper's three objections directly, then forecasting:
 
 This is genuine tabular data — named individuals, ranks, roles, dates, and removal type sitting side by side with no meaningful spatial/flow relationship between them — so it stays a markdown table per the standing table-vs-diagram test, rather than being forced into a rendered image.
 
-| Officer | Role | Removal Type | Date |
-|---|---|---|---|
-| Gen. Charles Q. "CQ" Brown Jr. | Chairman, Joint Chiefs of Staff | Fired (reportedly by Trump directly) | Feb 2025 |
-| Adm. Lisa Franchetti | Chief of Naval Operations | Fired | Feb 2025 |
-| Gen. Jim Slife | Vice Chief of Staff, Air Force | Fired | Feb 2025 |
-| Vice Adm. Shoshana Chatfield | U.S. Military Rep., NATO Military Committee | Fired | 2025 |
-| Lt. Gen. Jeffrey Kruse | Director, Defense Intelligence Agency | Fired | Aug 2025 |
-| Vice Adm. Nancy Lacore | Chief, Navy Reserve | Fired | Aug 2025 |
-| Rear Adm. Milton Sands | Commander, Naval Special Warfare Command | Fired | Aug 2025 |
-| Gen. David Allvin | Chief of Staff, Air Force | Early retirement (reported as pressured, not explicitly fired) | Aug 2025 |
-| — (unnamed) | Judge Advocates General, Army/Navy/Air Force | Fired | 2025 |
-| Lt. Gen. Telita Crosland | Director, Defense Health Agency | Removed | 2025–2026 |
-| Adm. Alvin Holsey | Commander, U.S. Southern Command | Removed | 2025–2026 |
-| Gen. James Mingus | Vice Chief of Staff, Army | Removed (after <2 years in role) | 2025–2026 |
-| Gen. Randy George | Chief of Staff, Army | Asked to retire immediately | April 2026 |
-| Gen. David Hodne | Commanding General, Army Training and Doctrine Command | Fired | April 2026 |
-| Maj. Gen. William Green Jr. | Chief of Chaplains, Army | Fired | April 2026 |
-| Gen. Christopher Donahue | Commander, U.S. Army Europe and Africa | Forced retirement mid-tour | Retirement ceremony July 2, 2026 |
+| Officer | Service | Role | Removal Type | Date |
+|---|---|---|---|---|
+| Gen. Charles Q. "CQ" Brown Jr. | Air Force | Chairman, Joint Chiefs of Staff | Fired (reportedly by Trump directly) | Feb 2025 |
+| Adm. Lisa Franchetti | Navy | Chief of Naval Operations | Fired | Feb 2025 |
+| Gen. Jim Slife | Air Force | Vice Chief of Staff | Fired | Feb 2025 |
+| Lt. Gen. Charles L. Plummer | Air Force | Judge Advocate General | Fired | Feb 2025 |
+| Lt. Gen. Joseph B. Berger III | Army | Judge Advocate General | Fired | Feb 2025 |
+| Vice Adm. Shoshana Chatfield | Navy | U.S. Military Rep., NATO Military Committee | Fired | Apr 2025 |
+| Lt. Gen. Jeffrey Kruse | Air Force | Director, Defense Intelligence Agency | Fired | Aug 2025 |
+| Vice Adm. Nancy Lacore | Navy | Chief, Navy Reserve | Fired | Aug 2025 |
+| Rear Adm. Milton Sands III | Navy | Commander, Naval Special Warfare Command | Fired | Aug 2025 |
+| Gen. David Allvin | Air Force | Chief of Staff | Early retirement (reported as pressured, not explicitly fired) | Aug 2025 |
+| Lt. Gen. Telita Crosland | Army | Director, Defense Health Agency | Removed | 2025 |
+| Adm. Alvin Holsey | Navy | Commander, U.S. Southern Command | Removed | 2025 |
+| Gen. James Mingus | Army | Vice Chief of Staff | Removed | Oct 2025 |
+| Gen. Randy George | Army | Chief of Staff | Asked to retire immediately | Apr 2026 |
+| Gen. David Hodne | Army | Commanding General, TRADOC | Fired | Apr 2026 |
+| Maj. Gen. William Green Jr. | Army | Chief of Chaplains | Fired | Apr 2026 |
+| Gen. Christopher Donahue | Army | Commander, Europe and Africa | Forced retirement mid-tour | Retirement ceremony Jul 2, 2026 |
 
-*This table lists the ~16 named or specifically-described removals identifiable in this research; the Guardian's tally of 24 includes additional cases not individually named in the sources reviewed here. Not a complete roster — a floor, not the full count.*
+*This table lists the 17 named or specifically-described removals identifiable in this research (up from 16 as of the initial pass — the two Judge Advocates General previously listed as "unnamed" are now named); the Guardian's tally of 24 includes additional cases not individually named in the sources reviewed here. Not a complete roster — a floor, not the full count.*
 
-**Worth archiving?** Not this table specifically (it will be stale within weeks as the count grows) — but the table *structure* (Officer / Role / Removal Type / Date) is a reusable pattern for any future update pass on this topic.
+**Diagram added 08-20, at Rick's request** — a breakdown of the same 17 officers by service branch, gender, and reported race. Genuine three-dimensional composition across named individuals is exactly the case where spatial grouping (by service) plus color (gender) plus a status marker (race, where confirmed) carries a pattern a table's rows can't show as fast — so this gets a real rendered image, not a fourth and fifth text column. Built with the `dataviz` skill's validated palette (categorical blue/orange for gender, both checked against CVD and contrast floors in light and dark) and rendered via headless Chrome CLI, the same mechanism as every other Tufte diagram in this project.
+
+<img src="https://raw.githubusercontent.com/raceBannon99/The-Nexus/main/reports/images/2026-08-20-secretary-of-war-flag-officer-firings/officer-roster.png" width="900">
+
+**On the race encoding specifically:** the diagram marks race only for the 4 officers (Brown, Crosland, Holsey, Green) whose removal coverage explicitly reported it, each because the coverage framed them as a "first" or "third" Black officer in that post. The other 13 are shown as "not stated," not defaulted to any other category — this diagram does not assert, and should not be read as implying, that the other 13 are white. It's an honest floor on a fact this research can verify, not a representative racial breakdown of the full roster.
+
+**Worth archiving?** Not this table or diagram specifically (both will be stale within weeks as the count grows) — but the table *structure* (Officer / Service / Role / Removal Type / Date) and the diagram's race-confirmed-vs-not-stated convention are reusable patterns for any future update pass on this topic, or for any other Nexus question involving demographic breakdowns of named individuals where public reporting is incomplete.
 
 ## New Skills (Turing)
 
@@ -129,6 +138,15 @@ No new repeatable procedure came out of this run — standard WebSearch/WebFetch
 - [Hegseth terminates Defense Intelligence Agency head, Lt. Gen. Jeffrey Kruse](https://thehill.com/policy/defense/5466512-kruse-ouster-trump-administration-dia/) (The Hill).
 - [Pete Hegseth calls himself secretary of war but he's actually not. Here's why.](https://www.yahoo.com/news/articles/pete-hegseth-calls-himself-secretary-100019500.html) (Yahoo/AP) — legal status of the title.
 - [Hegseth directs active duty military to cut 20 of its four star general officers](https://www.pbs.org/newshour/nation/hegseth-directs-active-duty-military-to-cut-20-of-its-four-star-general-officers) (PBS NewsHour) — the separate structural billet-reduction policy, not counted in the firing tally.
+
+**News coverage — added 08-20, service/gender/race update pass:**
+- [Charles L. Brown Jr.](https://en.wikipedia.org/wiki/Charles_Q._Brown_Jr.) (Wikipedia, citing Academy of Achievement bio) — first African American to lead a branch of the U.S. Armed Forces (Air Force Chief of Staff, 2020) before becoming Chairman of the Joint Chiefs.
+- [Black Female U.S. Army Lieutenant General Forced to Retire With No Explanation](https://blacknews.com/news/us-army-lieutenant-general-telita-crosland-black-female-high-ranking-officer-forced-retire-without-explanation/) (BlackNews.com) — Crosland's race and gender.
+- [Adm. Alvin Holsey](https://www.southcom.mil/About/Leadership/Bio-Article-View/Article/3959139/adm-alvin-holsey/) (U.S. Southern Command, official bio) — commissioned via NROTC at Morehouse College; described in coverage as one of the Navy's most accomplished African American officers.
+- [Hegseth's removal of top Army chaplain raises "troubling questions" from Black denomination](https://religionnews.com/2026/04/09/army-chaplains-chiefs-firing-prompts-serious-concern-from-black-baptist-denomination/) (Religion News Service) and [For first time ever, Army chief of chaplains fired — by Hegseth](https://baptistnews.com/article/for-first-time-ever-army-chief-of-chaplains-fired-by-hegseth/) (Baptist News Global) — Green Jr. as the third African-American Chief of Chaplains.
+- [Hegseth fired the Air Force's top lawyer. The JAG who took on the job is stepping away.](https://www.govexec.com/defense/2025/10/hegseth-fired-air-forces-top-lawyer-jag-who-took-job-stepping-away/409070/) (Government Executive) — names Lt. Gen. Charles L. Plummer and Lt. Gen. Joseph B. Berger III as the fired Air Force and Army JAGs, and Vice Adm. Christopher French's resignation as the Navy's distinct case.
+- [Vice Admiral Nancy S. Lacore](https://www.navy.mil/Leadership/Flag-Officer-Biographies/Article/2236442/vice-admiral-nancy-s-lacore/) (U.S. Navy, official bio); [Rear Admiral Milton "Jamie" Sands III](https://news.usni.org/2025/08/22/navy-reserve-naval-special-warfare-leaders-removed-from-command) (USNI News) — service/gender confirmation, no race reported in either.
+- [James Mingus](https://en.wikipedia.org/wiki/James_Mingus) (Wikipedia) — confirms October 2025 removal date, one year earlier than expected.
 
 ## Library Recommendations (Alexandria — Closing)
 
