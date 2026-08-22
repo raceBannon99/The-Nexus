@@ -1,0 +1,195 @@
+<img src="https://raw.githubusercontent.com/raceBannon99/The-Nexus/main/assets/first-principles-consulting-logo.png" align="right" width="160">
+
+# Publicly Reported Cyber Operations From Israel, the U.S., and Iran — 2026 Iran War
+
+**Question:** What are all of the publicly reported cyber operations from Israel, the U.S., and Iran as a result of the war that started in February 2026?
+
+## Bradlee's Synthesis
+
+Since Operation Epic Fury opened on 28 February 2026, publicly reported cyber activity attributable to Israel, the United States, and Iran falls into three confidence bands, and conflating them is the single biggest way to get this answer wrong. **Direct state-attributed operations** are few but well-sourced: the opening-day joint US–Israeli cyber offensive — US Cyber Command and Space Command "non-kinetic effects" (Gen. Dan Caine, on the record) paired with Israeli intelligence's compromise of Iran's BadeSaba prayer app, the IRNA/IRIB media hijacks, and long-held access to Tehran's traffic-camera network used to help locate Khamenei before the strike that killed him — plus the pre-existing Iranian state APT ecosystem (MuddyWater/MOIS, APT34/OilRig, APT42/IRGC, APT33, and CyberAv3ngers) that predates the war by years and continued operating through it, most visibly in the CISA/FBI/EPA/NSA-advised 12-state US water-utility intrusion campaign that was still active as of 21 August. **State-linked proxies with deniability built in** did most of the visible damage: Handala Hack Team (Iran's Ministry of Intelligence per open-source analysis, though it brands itself as independent) claimed the single most damaging incident of the war — a wiper attack that forced US medtech firm Stryker to confirm disruption via SEC filing — alongside dozens of smaller claims. **Independent hacktivism** supplied the volume: 70-plus pro-Iran-aligned Telegram-coordinated groups against roughly a dozen pro-Israel/allied ones, running thousands of DDoS, defacement, and leak claims, most unverified and some outright fabricated.
+
+The honest headline is that this war did not invent a new cyber playbook — it re-ran the June 2025 Twelve-Day War's pattern (state cyber paired with kinetic strikes, hacktivist swarm as the loud but low-damage layer) at greater scale and, as of today, without a settled ending: the ceasefire that held from roughly April through mid-August 2026 lapsed on 17 August, and hostilities including cyber activity are reported as escalating again. Two things resist easy resolution and deserve to be stated as open rather than papered over. First, several of this report's "Iran" attributions are hedged, not confirmed — most notably the July 2026 Minnesota water-system intrusion, which US officials suspect but President Trump has publicly disputed, an unusual public split between the investigating agencies and the President that this report does not resolve either way. Second, the stark size gap between the two hacktivist coalitions has at least two competing explanations — Israeli/US state capability making proxies redundant, versus covert operations on that side simply not surfacing publicly — and the public record cannot currently distinguish them; both possibilities are carried forward rather than picked.
+
+**How to apply this:** treat any single claim in isolation with real skepticism about which of the three confidence bands it sits in, and expect the picture to keep changing — CENTCOM's own tracker puts the war at Day 175 as of this report's publication date, with no ceasefire currently in force.
+
+## Clarifying Questions
+
+Before research began, three points of genuine scope ambiguity were resolved with Rick directly (Bradlee, pre-flight):
+
+1. **Which war?** Confirmed as the Israel–US–Iran war that began 28 February 2026 (Operation Epic Fury / Operation Roaring Lion), not the earlier June 2025 Twelve-Day War or any other regional conflict. The June 2025 war is referenced only as historical precedent/background where relevant.
+2. **Proxy scope.** Confirmed to include operations from groups credibly assessed or reported as state-linked or state-sponsored (e.g., Handala Hack Team, Predatory Sparrow), tagged with their own attribution-confidence level, alongside direct state-unit operations — not restricted to only formally, government-attributed activity.
+3. **Direction.** Confirmed to cover only cyber operations conducted *by* Israel, the US, and Iran (including their attributed proxies) — not operations conducted *against* them by unrelated third parties (e.g., unrelated Chinese or Russian activity that happened to occur during the war window).
+
+One additional judgment call, not put to Rick because it was low-stakes: the report treats "publicly reported" as of this report's publication date (21 August 2026, CENTCOM Day 175 of the war) rather than a fixed earlier cutoff, since the war and its cyber dimension are both explicitly ongoing.
+
+## What Do We Already Know? (Alexandria, Opening)
+
+A check of the artifact library (`raceBannon99/nexus-artifacts`) turned up two directly relevant items, both distilled from prior Nexus reporting rather than this war specifically: the **CyberAv3ngers / Iran-Affiliated PLC-Exploitation TTP Pattern** fact sheet (kill-chain reference spanning the Nov 2023 Aliquippa, PA incident through the Aug 2026 12-state US water-utility campaign, with full MITRE ATT&CK ICS mapping) and the **Campaign Attribution vs. Actor Attribution** fact sheet (the confidence-axis framework this report leans on throughout). Neither was written about the Feb 2026 war directly, but both apply squarely to it.
+
+A search of prior Nexus reports (`raceBannon99/The-Nexus`) surfaced no dedicated report on the war itself — the daily intelligence reports (which only go back to 14 July 2026) reference Iran's cyber posture repeatedly but always as ongoing threat-intel coverage, not as a history of the war. Two items stood out as directly on point and are carried into Sherlock's research below: the CSIS analysis **"How Tehran's Use of Cyber Operations in the U.S.-Iran Conflict Has Evolved"** (flagged in the 2026-08-07 daily report) and Israel Defense's **"Iran's Cyberwar Is Moving Closer to the Battlefield"** (flagged in the 2026-08-17 daily report, covering the SS7-enabled troop-tracking incident). The existing **Adversary Tracking Report** already carried 10 active Iran-attributed and 2 active Israel-attributed nation-state campaigns before this engagement — see Ryan's section below for what changed.
+
+## Sherlock: What Are the Facts?
+
+### Background: how the war started
+
+A full-scale war between the United States, Israel, and Iran began at approximately 09:45 IRST on **28 February 2026**, when the US and Israel launched coordinated strikes — codenamed **Operation Epic Fury** (US) and **Operation Roaring Lion** (Israel) — against Iranian military command, missile infrastructure, nuclear-program sites, and senior leadership. Iranian Supreme Leader Ali Khamenei, the Defense Minister, the IRGC commander, and the army chief of staff were reported killed within hours. Both governments framed the strikes as preemptive self-defense following the breakdown of nuclear negotiations. Iran retaliated (Operation True Promise IV) with missile and drone strikes against roughly 27 US and allied targets across the region. A ceasefire held from roughly early April through **17 August 2026**, when a 60-day ceasefire/MOU deadline lapsed without a deal on the Strait of Hormuz and frozen Iranian funds; hostilities — including a naval blockade and, per Iranian officials, missile-production activity — have since resumed, and no new ceasefire is in force as of this report's publication (CENTCOM Day 175, 21 August 2026, with no coalition strikes on Iranian territory for 22 consecutive nights but no de-escalation announced either).
+
+### Operations by Israel and the United States
+
+Cyber and electronic-warfare capability was integrated into the war's opening phase, not added afterward. Per US Joint Chiefs of Staff Chairman Gen. Dan Caine, US Cyber Command and Space Command launched "non-kinetic effects, disrupting and degrading and blinding Iran's ability to see, communicate, and respond" before the first bombs fell — consistent with standard US–Israeli joint doctrine of suppressing an adversary's ISR and command-and-control ahead of kinetic strikes, not a novel technique introduced for this war.
+
+Specific, named actions reported:
+
+- **Prayer-app compromise:** Israeli operators compromised the BadeSaba Calendar app (5M+ downloads), pushing Persian-language notifications urging Iranian military and civilians to defect or lay down arms ("Help has arrived," "It's time for reckoning").
+- **State-media hijacks:** Iran's state broadcaster IRNA was taken offline; the IRGC-linked outlet Tasnim and at least two IRIB television channels were hacked to display anti-Khamenei messages and recorded speeches by President Trump and Prime Minister Netanyahu.
+- **Traffic-camera and mobile-network exploitation:** Israeli intelligence reportedly maintained long-standing access to Tehran's traffic-camera network and mobile infrastructure, used to help locate senior Iranian leadership, including in the strike that killed Khamenei.
+- **National internet blackout:** Iranian connectivity fell to 1–4% of normal levels for 60+ hours in the war's opening days — NetBlocks and other monitors attributed this to a combination of physical strikes on data centers and cyber disruption that some Israeli sources called "the largest cyberattack in history."
+- **Electronic warfare:** GPS and AIS (Automatic Identification System) disruption affected 1,100+ ships in the Persian Gulf region.
+- **Third-party spillover:** On 1 March 2026, Pakistani TV channels Geo News, ARY News, and Samaa TV were hacked with pro-Mossad messaging urging viewers to oppose the Pakistan military — apparently collateral/opportunistic use of the same access or messaging playbook, unconnected to Pakistan's own role in the war. Pakistan's PTA/PakCERT investigated; a retaliatory group calling itself "Pakistan Cyber Force" hacked India's ABP News the next day.
+
+No further discrete, publicly reported US/Israeli offensive cyber operation carries the same level of on-the-record confirmation as the opening-day campaign — later Israeli/US activity in the public record is inferred mainly from Iranian-side reporting of degraded capability ("US/Israeli strikes on Iranian cyber infrastructure," per Israel Defense's August reporting) rather than from further US/Israeli disclosure. This asymmetry — loud on day one, then largely silent — recurs as a theme through Popper's and Seldon's sections below.
+
+### Operations by Iran and Iran-attributed/linked actors
+
+Iran's state cyber apparatus (IRGC- and Ministry of Intelligence-linked) predates the war by more than a decade, with documented capability in wiper malware, DDoS, and critical-infrastructure-focused espionage (see the artifact library's CyberAv3ngers fact sheet). Key state-linked clusters active before and during the war include **MuddyWater (MOIS)**, **APT34/OilRig**, **APT42/IRGC** (also tracked as TA453/SpearSpecter), **APT33**, **APT39**, **Tortoiseshell**, **Fox Kitten**, and **CyberAv3ngers**.
+
+War-specific developments:
+
+- **Pre-positioned access:** On 6 March 2026, it was revealed that MuddyWater had already planted backdoors inside a US bank, a US airport, and defense-adjacent firms *before* the conflict began — access built during peacetime and held ready for wartime use.
+- **Domestic paralysis limiting state coordination:** Iran's own internet blackout (16+ consecutive days at points in March, per SOCRadar) constrained the Iranian state's ability to coordinate sophisticated operations in the war's early weeks, pushing visible activity toward external proxies instead.
+- **Handala Hack Team:** A hacktivist-branded group linked by open-source analysis to Iran's Ministry of Intelligence. Its most damaging confirmed action was a wiper attack against US medtech firm **Stryker** (10–12 March 2026), abusing Microsoft Intune administrative access to remotely wipe devices after compromising privileged Entra ID accounts — Stryker confirmed disruption to order processing, manufacturing, and shipping via SEC 8-K filing; the actor's claim of 200,000+ devices wiped and 50TB exfiltrated is unverified. Check Point published campaign IOCs. Handala also claimed breaches of Israeli energy and healthcare firms and Jordanian fuel systems, and later (18 March) claimed 8.3M Israeli voter records and named a former Mossad chief in a hack-and-leak post; the FBI seized one of its domains on 19 March under a federal warrant, and DOJ posted a $10M bounty on its members.
+- **SS7-enabled troop tracking:** Per Israel Defense (reported 17 August 2026), Iranian actors compromised the SS7 telecommunications protocol in July 2026 to track US troop locations in the Middle East, with the resulting intelligence reportedly used to support kinetic strikes that injured US personnel — Iran's cyber activity described as shifting from disruption toward direct integration with the battlefield over the preceding four to six months.
+- **CyberAv3ngers water-sector campaign:** An IRGC-affiliated group exploiting exposed, default-credentialed PLCs, ongoing since 2023 (Aliquippa, PA) and, per CISA/FBI/EPA/NSA joint advisory, expanded to a 12-state US water-utility intrusion campaign — still the operative federal guidance and still holding at 12 states as of 21 August 2026, with no confirmed contamination of drinking water at any affected utility.
+- **Minnesota water-system cyberattack:** Roughly 30–36 municipal water systems across Minnesota were targeted 26–27 July 2026; a preliminary US intelligence assessment suspects Iranian involvement, but this is explicitly hedged ("probably," assessments "could change") and President Trump has publicly stated he does not believe Iran was responsible — an unusual public split between investigators and the President. No negative effect on drinking water was found at the four cities that confirmed impact.
+- **"Biggest wartime cyberattack against the US in history":** Per the Wall Street Journal (16 March 2026, referencing the Stryker/Handala incident), experts assessed this as the largest such attack to date in the conflict and warned more were likely.
+- **Pro-Iran hacktivist coalition:** SOCRadar tracked 70+ distinct pro-Iran-aligned groups (Handala, 313 Team, NoName057(16), Keymous Plus, DieNet, Cyber Islamic Resistance, APT Iran, Z-Pentest Alliance, INDOHAXSEC, Cyb3r Drag0nz Kurdish, Fynix, and dozens more) running DDoS, defacement, hack-and-leak, and OT/ICS-access claims — targeting Israel, the US, and Gulf states aligned with the coalition against Iran. Most operations were DDoS; verified impact varied widely and many OT/ICS "access" claims (Israeli water-pump HMI, Jordanian grain-silo systems) were narrative-heavy screenshots without independent technical verification.
+
+### Named US/Israel-side hacktivist and allied actors
+
+By contrast, SOCRadar identified only about 11 pro-Israel/allied-aligned groups, the most notable being **Predatory Sparrow** (Gonjeshke Darande) — the Israeli-intelligence-linked group previously responsible for Iran's June 2025 Bank Sepah and Nobitex attacks — alongside Indian Cyber Force and Anonymous Syria Hackers. Notably, no specific, named Predatory Sparrow operation during the Feb 2026 war itself surfaced in available reporting, in contrast to its well-documented June 2025 activity; its 2026 profile in available sourcing is limited to being listed among active allied-side actors, without a dated, specific claimed operation.
+
+### Timeline
+
+| Date | Event | Attributed To | Evidence Tier |
+|---|---|---|---|
+| 28 Feb 2026 | Opening-day cyber offensive: Iranian C2/sensor disruption, BadeSaba app hack, IRNA/IRIB hijacks, Tehran traffic-camera exploitation, 60+ hr internet blackout | US Cyber Command/Space Command + Israeli intelligence (joint) | Tier 1 — government-official on record (Gen. Dan Caine); Wikipedia/WSJ/CSIS corroboration |
+| 1 Mar 2026 | Pakistani TV channels (Geo News, ARY News, Samaa TV) hacked with pro-Mossad messaging | Unattributed (pro-Israel messaging; no named group) | Tier 3 — unattributed, spillover/opportunistic |
+| 6 Mar 2026 | Pre-planted backdoors discovered inside a US bank, airport, and defense-adjacent firms, predating the conflict | MuddyWater (MOIS) | Tier 1 — established, industry-consensus actor |
+| 10–12 Mar 2026 | Stryker Intune-abuse wiper attack; SEC 8-K confirms disruption | Handala Hack Team (Iran MOIS-linked per OSINT; self-branded hacktivist) | Tier 2 — single-source/OSINT state-link, not government-attributed |
+| 16 Mar 2026 | WSJ: Stryker hack assessed as "biggest wartime cyberattack against the US in history" to date | Handala Hack Team | Tier 2 |
+| 18 Mar 2026 | Handala claims 8.3M Israeli voter records, names a former Mossad official | Handala Hack Team | Tier 3 — unverified claim |
+| 19 Mar 2026 | FBI seizes a Handala domain under federal warrant; DOJ posts $10M bounty | Handala Hack Team (US law-enforcement action) | Tier 1 — government action confirms the group is a live investigative target, not the underlying claims |
+| Jul 2026 | SS7 protocol compromise tracks US troop locations; intelligence reportedly used to support kinetic strikes | Iranian state-linked actors (unattributed to a specific named group) | Tier 2 — Israel Defense reporting, hedged |
+| 26–27 Jul 2026 | ~30–36 Minnesota municipal water systems targeted; no confirmed water-quality impact | Suspected Iran (disputed — Trump publicly denies) | Tier 3 — preliminary, contested, hedged by the assessing agencies themselves |
+| 5 Aug 2026 (ongoing) | 12-state US water-utility PLC-exploitation campaign, per CISA/FBI/EPA/NSA advisory | CyberAv3ngers (IRGC-affiliated) | Tier 1 — joint federal advisory |
+| 17 Aug 2026 | 60-day ceasefire/MOU deadline lapses; IRGC signals shift toward "powerful offensive operations" | N/A — kinetic/strategic context for renewed cyber risk | N/A |
+| 21 Aug 2026 | Water-sector campaign holds at 12-state figure; no new incident reported; report published | CyberAv3ngers (ongoing) | Tier 1 |
+
+*Note on convention: this report spans dozens of distinct operations across a six-month war rather than a single kill-chain, so the Timeline omits the per-phase Kill Chain Phase column used in single-campaign reports (e.g., the Saudi Aramco Shamoon and Iran water-infrastructure kill-chain reports) and instead lists Evidence Tier only, per Ryan's adaptation below.*
+
+## Ryan: What Does the Adversary Playbook Look Like Here?
+
+This engagement involves not one campaign but a war-spanning mix of a single joint state operation, a persistent state APT ecosystem, at least one significant state-linked proxy, and a large independent hacktivist coalition — so rather than a single Lockheed Martin Kill Chain / Diamond Model walkthrough (appropriate for a single campaign like the Aramco Shamoon or Iran water-infrastructure reports), the more useful application here is consistent **attribution tagging across all of it**, since that is where this report is most exposed to error.
+
+**Attribution tagging, kept distinct per the standing convention:**
+
+- **Suspected nation-state:** United States, Israel (opening-day joint offensive — Tier 1, government-official on record); Iran (MuddyWater, APT34, APT42, APT33, CyberAv3ngers — Tier 1, established/industry-consensus designations).
+- **Vendor/OSINT-assigned group name, state-link asserted but not government-confirmed:** Handala Hack Team (Iran MOIS-linked per Wikipedia/OSINT synthesis, Tier 2) — a hacktivist-branded persona with a plausible but not formally confirmed state link; treating it as equivalent to "the Iranian government did this" would overclaim.
+- **Campaign name vs. malware/actor name kept distinct:** "Operation Epic Fury" and "Operation Roaring Lion" are the kinetic-campaign codenames, not cyber-operation names — the cyber activity riding alongside them has no separate codename in public reporting and is referred to descriptively throughout this report rather than inventing one.
+- **Independent/unaffiliated hacktivism, no state link asserted:** the 70+ pro-Iran-aligned and ~11 pro-Israel/allied-aligned Telegram-coordinated groups (NoName057(16), 313 Team, DieNet, Predatory Sparrow, etc.) — ideologically aligned but not state-directed by the reporting itself, per the same Actor Type discipline the Adversary Tracking Report already applies (a row lands under a nation-state only if the reporting itself asserts government/intelligence-service/military sponsorship).
+
+**Standing campaign-vs-actor-attribution check, applied here:** the Minnesota water-system incident and the SS7 troop-tracking incident both illustrate the distinction directly. Campaign-level pattern-matching (targeting profile, timing relative to the war) is what generates the "probably Iran" assessment in both cases; actor-level confirmation (a named unit, a government indictment) is absent from both, and in Minnesota's case is actively disputed by the President. Both are tagged Tier 2–3 rather than folded into the Tier 1 confidence that applies to, e.g., the CyberAv3ngers water-utility advisory or the MuddyWater/OilRig designations, which do carry government or industry-consensus backing.
+
+**Adversary Tracking Report update:** Two rows were added to `Intelligence Reports/Adversary Tracking Report.md` as a direct result of this engagement — a Handala Hack Team row under Iran (11 active Iran campaigns, up from 10) and an Operation Epic Fury opening-offensive row under Israel (3 active Israel campaigns, up from 2; this is also the table's first row naming the United States as a co-operator, which surfaces a taxonomy question — whether a standalone "United States" nation-state column is warranted — left open for Rick's decision rather than resolved unilaterally). Tufte reformatted both category tables and the overview heatmap to match; see his section below.
+
+## Euclid: What Must Be Fundamentally True?
+
+Stripped of vendor framing and viewed from first principles, three things hold regardless of which report or dashboard you read:
+
+**1. Cyber operations here are a force multiplier for existing strategic posture, not an independent domain with its own logic.** The US/Israeli opening-day cyber campaign did exactly what pre-strike ISR/C2 suppression has always done in joint US-Israeli doctrine — it was deployed precisely where kinetic action was already planned, not as a parallel or independent effort. Iran's cyber ecosystem (MuddyWater, OilRig, APT42, CyberAv3ngers) predates the war by a decade-plus and targeted the same sectors — energy, telecom, defense, NGOs — in peacetime; the war changed tempo and integration with kinetic targeting (SS7 → strikes), not the underlying capability base.
+
+**2. Attribution confidence tracks each state's incentive to be identified, not the underlying technical difficulty of attribution.** The US and Israel had a government official confirm the opening-day campaign on the record within days (Gen. Caine) because deterrence and credit-claiming served their interests. Iran's state operations are attributed almost entirely through private threat-intel vendors and hedged government assessments, and its most damaging action (Stryker) was carried out under a hacktivist brand (Handala) specifically because deniability serves Iran's interests. This is a structural feature of the incentive asymmetry between an actor claiming success and an actor avoiding formal responsibility — not a gap in research effort on either side.
+
+**3. The hacktivist volume asymmetry (70+ pro-Iran groups vs. ~11 pro-Israel/allied) reflects that state-level capability makes hacktivist proxies largely redundant for Israel/the US, while proxy hacktivism is one of Iran's only levers precisely because its state-level capacity was degraded by the war itself (leadership losses, the internet blackout).** In short: this war did not invent a new cyberwar model. It re-ran the June 2025 Twelve-Day War's playbook — state-level infrastructure sabotage from the Israeli side, hacktivist swarm from the Iran-aligned side — at greater scale and over a much longer, still-unresolved duration.
+
+## Popper: How Could We Be Wrong?
+
+Four challenges to Euclid's framing, taken seriously rather than nodded past:
+
+**Challenge 1 — "just tempo, not novelty" understates a real escalation.** The MuddyWater backdoors discovered inside a US bank, airport, and defense-adjacent firms on 6 March were *already in place before the conflict began*. That is peacetime prepositioning specifically anticipating this war, not merely accelerated wartime tempo of pre-existing capability. Calling this "the same old capability, just used faster" risks understating a genuine and consequential shift in peacetime posture.
+
+**Challenge 2 — the "capability makes proxies redundant" explanation is asserted by an interested party.** SOCRadar, the source for that claim, is a commercial threat-intel vendor with a direct incentive to frame Iran as more active and dangerous — that sells defensive subscriptions. An equally plausible account is pure reporting-visibility bias: covert, effective Israeli/US operations may simply never surface publicly, while Iranian and hacktivist claims are broadcast on Telegram precisely because their value *is* the broadcast. We may be comparing quiet, effective operations to loud, often-unverified claims — not comparing like to like.
+
+**Challenge 3 (standing campaign-vs-actor-attribution check) — several attributions in this report risk being flattened in public retelling.** Handala's "MOIS-linked" tag rests on OSINT synthesis, not a government or joint-agency attribution — Tier 2 at best — yet it is popularly summarized elsewhere as simply "an Iranian cyberattack." The Minnesota water-system attack is explicitly hedged by the investigating agencies themselves, and the President has publicly disputed it — treating this as a confirmed Iranian attack on US soil would overclaim well past what the evidence and the government's own public statements support.
+
+**Challenge 4 — the report's proxy-inclusion scope is doing more work than it looks like.** By counting hacktivist personas as "from Iran" or "from Israel," this report answers a broader and different question than "what did the Israeli, US, and Iranian governments do" — it answers "what happened in their name, including things they may not control or formally endorse." That's a defensible scope (Bradlee/Rick chose it deliberately), but it should not be allowed to quietly imply government responsibility for every hacktivist claim carried under it.
+
+## Seldon: What Is Likely to Happen Next?
+
+Resolving each of Popper's challenges explicitly, then forecasting forward:
+
+**Resolving Challenge 1:** Agreed, with a refinement rather than a reversal of Euclid's framing — pre-positioned access is consistent with "existing capability" only if peacetime access-gaining is itself counted as part of that capability, which prior CISA advisories on CyberAv3ngers already documented as a known Iranian pattern going back to 2023–2024. The distinction is one of degree and target selection (specifically prepositioning inside US domestic banks, an airport, and defense firms ahead of *this* conflict) rather than an entirely new kind of capability. Judgment call, not measured data: **roughly 60–85% of Iran's demonstrated wartime cyber activity likely drew on pre-positioned or repurposed access rather than newly built tooling**, with the low end reflecting any genuinely new malware families surfacing since 28 February and the high end matching the historical prepositioning pattern CISA has already documented.
+
+**Resolving Challenge 2:** Both mechanisms proposed — state capability making proxies redundant, and covert-operation reporting bias — are plausible and not mutually exclusive; the public record available to this report cannot currently disentangle them, and asserting one over the other would overclaim. This is treated as a genuine open finding, not an unresolved gap.
+
+**Resolving Challenge 3:** Explicitly downgraded in this report's own language (see Ryan's tagging above and the Timeline's Evidence Tier column): Handala is described throughout as "Iran MOIS-linked per OSINT," never as "the Iranian government," and the Minnesota incident is described as "suspected, disputed" throughout, never as confirmed. The public dispute between US investigators and the President over Minnesota is itself notable and is surfaced rather than resolved in either direction.
+
+**Resolving Challenge 4:** Accepted, and operationalized via the three confidence bands used throughout this report (direct state attribution / state-linked proxy / independent hacktivism) rather than one flat list — this is how Bradlee's pre-flight scope decision (include attributed proxies) is applied without collapsing into "count everything anyone claims."
+
+**Forecasts** (ranges with a median, not point estimates or percentages):
+
+- *Further Iran-attributed cyber operations against US critical infrastructure, next 6 months:* Reframed from "will it happen" (it is arguably already continuous, given the active 12-state water campaign) to a count. The range runs from about **3 to 12 additional publicly reported Tier 1–2 Iran-attributed incidents against US targets over the next six months, with a median around 6–7**. The low end is driven by continued Iranian domestic disruption (leadership degradation, intermittent blackouts) suppressing coordination; the high end by the IRGC's explicit stated shift toward "powerful offensive operations" following the 17 August ceasefire lapse and the reimposed naval blockade.
+- *Time to formal (Tier 1, joint-advisory-level) US government attribution of the Minnesota incident to Iran:* The range runs from about **2 to 18 months, with a median around 7–8 months** — and a real possibility it never firms up at all. The low end assumes a discrete forensic artifact (a malware-family fingerprint match) surfaces; the high end reflects the political dispute (the President's public denial) creating an institutional incentive to leave the attribution informally hedged rather than formalized. This is reasoned judgment about institutional and political incentives, not a technical forensic estimate.
+- *Share of Israeli/US cyber activity that stays unattributed/classified rather than becoming publicly visible or branded, going forward:* The range runs from about **65% to 85%, with a median around 75%**. State-level actors have structural, legal, and deterrence-based incentives to keep offensive cyber capability unavowed — the opposite of Iran's hacktivist-branding strategy, which exists specifically to enable visible pressure without formal state responsibility. This is a degree/share estimate, not a timing forecast, since the underlying behavior (staying covert) is closer to a stable policy than a discrete future event.
+
+## Tufte: How Do We Make This Clear?
+
+The Timeline above is genuine tabular data (dated events across many campaigns) and stays a markdown table, per the standing convention. One relationship in this report — the size gap between the two hacktivist coalitions — is a magnitude comparison where a direct visual reads faster than two numbers in prose, so it was built as a rendered chart rather than approximated in text:
+
+<img src="https://raw.githubusercontent.com/raceBannon99/The-Nexus/main/reports/images/2026-08-21-israel-us-iran-cyber-operations/hacktivist-asymmetry.png" width="700">
+
+Built with the `dataviz` skill's color-formula validator (`validate_palette.js` — the blue/amber pair passed all checks: lightness band, chroma floor, CVD separation ΔE 23.6–28.4, contrast) and rendered via headless Chrome CLI per standing convention, matching the same muted palette and type system used across the Adversary Tracking Report's diagrams.
+
+**Adversary Tracking Report formatting:** per joint ownership with Ryan, the Iran and Israel category-table images and the overview heatmap were regenerated (`build_tables.py`, `build_heatmap.py`, headless-Chrome render + autocrop pipeline — no structural changes to the table format itself, since two added rows didn't require restructuring) to reflect the two new rows Ryan flagged above.
+
+## Turing: Should Any of This Become a Skill?
+
+No new skill from this run — say so plainly rather than manufacturing one. The one repeatable technique used here (retrying a blocked WebFetch via Chrome MCP navigate + get_page_text) is already documented as a standing rule in the `nexus` skill itself, confirmed working again today against SOCRadar (403 on WebFetch, clean retrieval via Chrome MCP) and Foreign Policy (paywalled either way, but Chrome MCP still returned the visible portion cleanly) — reinforcing existing guidance rather than adding new capability.
+
+## New Skills
+
+None. See Turing's note above.
+
+## Sources
+
+**Primary/official:**
+1. [Cyberwarfare during the 2026 Iran war — Wikipedia](https://en.wikipedia.org/wiki/Cyberwarfare_during_the_2026_Iran_war) — the single most comprehensive, citation-backed structured account of the war's cyber dimension; sourced throughout this report.
+2. [2026 Iran war — Wikipedia](https://en.wikipedia.org/wiki/2026_Iran_war) — kinetic-war background, dates, casualty/timeline context.
+3. [How Tehran's Use of Cyber Operations in the U.S.-Iran Conflict Has Evolved — CSIS](https://www.csis.org/analysis/how-tehrans-use-cyber-operations-us-iran-conflict-has-evolved) — analysis of Iran's shift toward cyber as a primary conflict instrument.
+4. [Iran War 2026 — Day 175 Update, 21 August 2026 — GlobalSecurity.org](https://www.globalsecurity.org/military/ops/iran-war-oprep.htm) — current-state confirmation of the 12-state water campaign holding steady, and of the war's ongoing/unresolved status as of publication.
+5. [2026 Minnesota water system cyberattack — Wikipedia](https://en.wikipedia.org/wiki/2026_Minnesota_water_system_cyberattack) — the disputed Minnesota incident.
+
+**Forensics/technical/threat-intelligence:**
+6. [Iran vs. Israel & US Cyber War 2026: Operation Epic Fury Threat Intelligence — SOCRadar](https://socradar.io/blog/cyber-reflections-us-israel-iran-war/) — day-by-day hacktivist timeline, Iranian APT group profiles, MITRE ATT&CK matrix, hacktivist coalition counts (70+ pro-Iran vs. ~11 pro-Israel/allied), Stryker/Handala incident detail. Retrieved via Chrome MCP after a WebFetch 403.
+7. [Predatory Sparrow — Inside the Cyber Warfare Targeting Iran's Critical Infrastructure — Picus Security](https://www.picussecurity.com/resource/blog/predatory-sparrow-inside-the-cyber-warfare-targeting-irans-critical-infrastructure) — Predatory Sparrow background/history.
+8. [The Hacktivist Cyber Attacks in the Iran-Israel Conflict — NSFOCUS](https://nsfocusglobal.com/the-hacktivist-cyber-attacks-in-the-iran-israel-conflict/) — background on the June 2025 Twelve-Day War pattern (used as historical precedent, not as Feb 2026 war reporting — retrieved and confirmed to be about the earlier conflict).
+9. [U.S.-Iran-Israel War Puts Offensive Cyberoperations Up Front — Foreign Policy](https://foreignpolicy.com/2026/03/11/iran-war-cyber-trump-israel-handala-strategy/) — confirms the Gen. Dan Caine on-the-record quote (paywalled beyond the lede; retrieved via Chrome MCP).
+
+**Internal Nexus precedent:**
+10. [CyberAv3ngers / Iran-Affiliated PLC-Exploitation TTP Pattern — nexus-artifacts fact sheet](https://github.com/raceBannon99/nexus-artifacts/blob/main/fact-sheets/cyberavengers-iran-plc-exploitation-ttp.md)
+11. [Campaign Attribution vs. Actor Attribution — nexus-artifacts fact sheet](https://github.com/raceBannon99/nexus-artifacts/blob/main/fact-sheets/campaign-vs-actor-attribution.md)
+12. [2026-08-07 Iran Water Infrastructure Kill Chain — The-Nexus](https://github.com/raceBannon99/The-Nexus/blob/main/reports/2026-08-07-iran-water-infrastructure-kill-chain.md)
+13. [2026-08-17 Daily Intelligence Report — "Iran's Cyberwar Is Moving Closer to the Battlefield" (Israel Defense) — The-Nexus](https://github.com/raceBannon99/The-Nexus/blob/main/reports/2026-08-17-daily-intelligence-report.md)
+14. [2026-08-07 Daily Intelligence Report — CSIS Tehran cyber-ops item — The-Nexus](https://github.com/raceBannon99/The-Nexus/blob/main/reports/2026-08-07-daily-intelligence-report.md)
+15. [Adversary Tracking Report — updated 2026-08-21 (this engagement)](https://github.com/raceBannon99/The-Nexus/blob/main/reports/2026-08-21-adversary-tracking-report.md)
+
+## Library Recommendations
+
+Evaluating every candidate flagged through the run (Alexandria, closing):
+
+- **The Timeline table structure and three-confidence-band framing used in this report** (direct state attribution / state-linked proxy / independent hacktivism) is a reusable analytical lens for any future multi-actor, multi-campaign war-spanning question — distinct from the existing Campaign vs. Actor Attribution fact sheet (which addresses a different axis: same operator vs. who that operator is) and from the Evidence Tier framework (which addresses confidence in identity, not organizational relationship to a state). **Recommended as a new fact-sheet**, tentatively titled "State / Proxy / Independent — a Third Axis for Wartime Cyber Attribution," category `fact-sheet`. Status: recommended, awaiting Rick's decision — not yet submitted.
+- No essay, book-review, or image candidate was flagged during this run beyond the one recommendation above — stated plainly rather than stretching a weak candidate into a submission.
+
+---
+
+*Pending artifact-repository approvals (unrelated to this engagement): none open (`gh pr list --repo raceBannon99/nexus-artifacts --state open` returned empty as of publication).*
