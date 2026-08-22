@@ -201,12 +201,13 @@ None. See Turing's note above.
 13. [2026-08-17 Daily Intelligence Report — "Iran's Cyberwar Is Moving Closer to the Battlefield" (Israel Defense) — The-Nexus](https://github.com/raceBannon99/The-Nexus/blob/main/reports/2026-08-17-daily-intelligence-report.md)
 14. [2026-08-07 Daily Intelligence Report — CSIS Tehran cyber-ops item — The-Nexus](https://github.com/raceBannon99/The-Nexus/blob/main/reports/2026-08-07-daily-intelligence-report.md)
 15. [Adversary Tracking Report — updated 2026-08-21 (this engagement)](https://github.com/raceBannon99/The-Nexus/blob/main/reports/2026-08-21-adversary-tracking-report.md)
+16. [State / Proxy / Independent — a Third Axis for Wartime Cyber Attribution — nexus-artifacts fact sheet](https://github.com/raceBannon99/nexus-artifacts/blob/main/fact-sheets/state-proxy-independent-wartime-cyber-attribution.md) — the three-band framework this report derived, now archived in the Library for reuse on future wartime/conflict-adjacent engagements.
 
 ## Library Recommendations
 
 Evaluating every candidate flagged through the run (Alexandria, closing):
 
-- **The Timeline table structure and three-confidence-band framing used in this report** (direct state attribution / state-linked proxy / independent hacktivism) is a reusable analytical lens for any future multi-actor, multi-campaign war-spanning question — distinct from the existing Campaign vs. Actor Attribution fact sheet (which addresses a different axis: same operator vs. who that operator is) and from the Evidence Tier framework (which addresses confidence in identity, not organizational relationship to a state). Submitted as a new fact-sheet, "State / Proxy / Independent — a Third Axis for Wartime Cyber Attribution," category `fact-sheet`. **Status: Submitted — [PR #14](https://github.com/raceBannon99/nexus-artifacts/pull/14), awaiting Rick's merge decision.**
+- **The Timeline table structure and three-confidence-band framing used in this report** (direct state attribution / state-linked proxy / independent hacktivism) is a reusable analytical lens for any future multi-actor, multi-campaign war-spanning question — distinct from the existing Campaign vs. Actor Attribution fact sheet (which addresses a different axis: same operator vs. who that operator is) and from the Evidence Tier framework (which addresses confidence in identity, not organizational relationship to a state). **Status: Added to Library** — [`fact-sheets/state-proxy-independent-wartime-cyber-attribution.md`](https://github.com/raceBannon99/nexus-artifacts/blob/main/fact-sheets/state-proxy-independent-wartime-cyber-attribution.md) (merged via [PR #14](https://github.com/raceBannon99/nexus-artifacts/pull/14)).
 - No essay, book-review, or image candidate was flagged during this run beyond the one recommendation above — stated plainly rather than stretching a weak candidate into a submission.
 
 ---
