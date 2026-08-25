@@ -8,7 +8,7 @@ A Skill is a folder on disk with one required file, `SKILL.md`, containing a sho
 
 Every Skill loads in three stages, and this is the idea to actually remember. **Level 1** is just the name and one-paragraph description — that's always sitting in Claude's context, for every installed Skill, costing about 100 tokens each. Claude compares your request against these descriptions to decide what's relevant. **Level 2** is the actual body of `SKILL.md` — the real instructions — and it only loads once Claude decides a Skill applies to what you're doing. **Level 3** is everything else the Skill bundles — reference docs, templates, scripts — and those load only if the Level 2 instructions point Claude at them, sometimes not at all. This is why you can have dozens of Skills installed with no real context cost: almost all of that content sits on disk, untouched, until it's actually needed. Tufte's diagram below shows this concretely, with the token costs at each stage.
 
-**Using** a Skill you already have is nothing — you don't do anything. Claude reads the installed Skills' descriptions automatically and reaches for one when your request matches. In Claude Code specifically, you can also force it directly by typing `/skill-name`, which is how you're reading this: this entire report ran because Rick typed `/nexus`, a Skill.
+**Using** a Skill you already have is nothing — you don't do anything. Claude reads the installed Skills' descriptions automatically and reaches for one when your request matches. In Claude Code specifically, you can also force it directly by typing `/skill-name`, which is how you're reading this: this entire report ran because Rick typed `/nexus`, a Skill. Euclid's section below doesn't leave that abstract — it walks through that exact Skill's real numbers.
 
 **Creating your own** is: make a folder, write a `SKILL.md` with a `name`/`description` header and instructions underneath. In Claude Code, drop it in `~/.claude/skills/` (personal — works in every project you open) or `.claude/skills/` inside a specific repo (project-only, and — critically for The Nexus — checked into git, so it travels with the repo and everyone with access gets it). On claude.ai you upload a zip through Settings instead. The two are separate installs; a Skill built in Claude Code doesn't automatically appear on claude.ai or vice versa.
 
@@ -46,6 +46,23 @@ Concretely, then:
 - **How you use one that exists:** nothing, usually — Claude reaches for it automatically when your request matches its description. In Claude Code you can also invoke it explicitly with `/skill-name`.
 - **How you create your own:** write the folder and file, save it to `~/.claude/skills/<name>/` (personal, all projects) or `.claude/skills/<name>/` (this project only, shareable via git). Claude Code detects it live.
 - **How you use someone else's:** get their folder into one of your Skills locations — by hand, via a Claude Code plugin marketplace (`/plugin install <skill>@<marketplace>`), or (for claude.ai) by uploading the zip they give you through Settings.
+
+### A Real-World Example: The `nexus` Skill Itself
+
+Every abstraction above maps onto something already sitting in this vault — the actual Skill that produced this report, `.claude/skills/nexus/SKILL.md`. It's a genuine project Skill, checked into the repo so anyone with access gets it, and Sherlock pulled its real numbers directly from the file rather than illustrating with round ones:
+
+```yaml
+---
+name: nexus
+description: Run an ad-hoc question or topic through The Nexus's nine-agent workflow (Bradlee first checks the question for clarifying questions, then Alexandria opens, then Sherlock, Ryan, Euclid, Popper, Seldon, Tufte, Turing, Bradlee synthesizes the answer, and Alexandria closes and publishes) and publish the result directly to main. Use when Rick brings a new question or topic to "The Nexus" outside of the recurring daily report — e.g. "let's use Nexus to figure out X," "ask the Nexus team about Y."
+---
+```
+
+- **Level 1 (metadata):** the `description` above is 495 characters — roughly 124 tokens, noticeably above the docs' rough ~100-token average. That's the description-tuning tradeoff Popper raises below, made visible with a real number: this Skill has to reliably trigger on loosely-phrased requests like "let's use Nexus to figure out X," so it spells out the full nine-agent roster up front rather than staying terse. A longer always-loaded pointer, paid on every single session, bought in exchange for triggering more reliably.
+- **Level 2 (instructions):** the full `SKILL.md` body — the eleven-stage sequence, the Update Pass triage table, the publishing mechanics — runs about 4,900 tokens across 75 lines. That sits right at the edge of the "under 5,000 tokens" ceiling the docs recommend for Level 2 content, and it loads in full only once Claude decides the Skill applies — when Rick actually types `/nexus` or asks a Nexus-shaped question — not on every turn of every session.
+- **Level 3 (resources and code):** this Skill doesn't bundle its own `scripts/` folder, but its instructions direct Claude to run existing repo scripts via bash — `.claude/scripts/nexus-search-reports.sh` for searching prior reports, `.claude/scripts/nexus-git-publish.sh` for the publish step that put this very report on `main`. Same Level 3 mechanic the docs describe — the script runs, only its output enters context, the script's own code never does — the resource just lives alongside the Skill in the repo rather than inside its own folder, which the format allows.
+
+It's also, concretely, the "using someone else's Skill" question turned inward: this one isn't from a stranger, it's Rick's own — first-party by construction, exactly the trust profile Popper's objection (below) says to look for. It's the version of Skill-sharing that already carries no open trust question, sitting right next to the version that does.
 
 ## Popper: Where This Gets Harder Than "Just a Markdown File"
 
@@ -110,6 +127,7 @@ None. This engagement was documentation lookup and synthesis against an already-
 
 **Internal precedent (raceBannon99/The-Nexus):**
 - `reports/2026-07-20-nexus-harness-architecture.md` — prior Nexus report documenting The Nexus's own agent chain as implemented via three Claude Code Skills (`nexus`, `nexus-daily-report`, `nexus-artifact-submit`). Supports: a concrete, working example of a project-level Skill, cited in Bradlee's synthesis and Euclid's draft. Note: this report predates Ryan and Bradlee joining the agent chain and describes internal Nexus architecture, not the Skills feature generally — background context, not a source for the feature-level claims above.
+- `.claude/skills/nexus/SKILL.md` (this project's local vault, `raceBannon99/The-Nexus` clone) — the actual Skill that ran this engagement. Supports: the worked example in Euclid's section — its real `description` length (495 characters / ~124 tokens) and full-body length (~4,900 tokens / 75 lines), read directly from the file rather than estimated, plus its references to `.claude/scripts/nexus-search-reports.sh` and `.claude/scripts/nexus-git-publish.sh` as its Level 3 resources.
 
 No claim in this report rests on an uncited or unverifiable source; nothing here needed general-coverage hedging.
 
@@ -119,7 +137,7 @@ No claim in this report rests on an uncited or unverifiable source; nothing here
 
 - **Candidate:** "Claude Skills: How They Work" (working title)
 - **Category:** `fact-sheets`
-- **Why it's reusable beyond this report:** This is exactly the kind of platform-mechanics reference the library is meant to hold — the three-level progressive-disclosure model, the where-skills-live table, and the trust-boundary caveat from Popper's stage don't change often and will be relevant to any future Nexus engagement that touches Skills, plugins, or Claude Code configuration (the `nexus-harness-architecture` precedent found above shows this has already come up once). Distilling Euclid's first-principles explanation and Tufte's diagram into a standalone fact sheet would save re-deriving this from Anthropic's docs on a future ad-hoc question.
+- **Why it's reusable beyond this report:** This is exactly the kind of platform-mechanics reference the library is meant to hold — the three-level progressive-disclosure model, the where-skills-live table, and the trust-boundary caveat from Popper's stage don't change often and will be relevant to any future Nexus engagement that touches Skills, plugins, or Claude Code configuration (the `nexus-harness-architecture` precedent found above shows this has already come up once). Distilling Euclid's first-principles explanation, the `nexus` Skill worked example, and Tufte's diagram into a standalone fact sheet would save re-deriving this from Anthropic's docs — and from this vault's own Skill files — on a future ad-hoc question.
 - **Status:** Recommended by Alexandria; final call is Rick's.
 
 No other artifact from this run rose to the same bar — Popper's and Seldon's sections are report-specific reasoning about *this* draft rather than durable reference material, so they weren't separately flagged.
