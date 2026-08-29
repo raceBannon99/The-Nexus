@@ -173,6 +173,29 @@ Addressing each of Popper's five objections in turn, then forecasting forward. E
 | Japan | Sakana AI | David Ha | — | Fugu Ultra | $2.65B (Nov 2025) |
 | Israel | AI21 Labs | Ori Goshen / Yoav Shoham (Co-CEOs) | — | Jamba (exiting frontier race) | Distressed |
 
+**Company / product / people table** (added at Rick's request, 2026-08-29 update pass — genuine tabular data, no new facts beyond what the Facts section above already sources):
+
+| Company | Product(s) | Country of Origin | CEO | Most Prominent Thought Leaders |
+|---|---|---|---|---|
+| OpenAI | ChatGPT / GPT-5.5 | United States | Sam Altman | Mark Chen, Noam Brown, Richard Ho |
+| Anthropic | Claude / Claude Fable 5 | United States | Dario Amodei | Chris Olah, Sam McCandlish, Jared Kaplan |
+| Google DeepMind | Gemini / Gemini 3.1 Pro | United States | *(no standalone CEO since Aug 2026 — Demis Hassabis is Chair/Alphabet Chief Scientist)* | Koray Kavukcuoglu; Jeff Dean, Oriol Vinyals, Sanjay Ghemawat, Quoc Le (departed Aug 2026 to found Discovery Loop) |
+| Meta Superintelligence Labs | Muse / Muse Spark | United States | Alexandr Wang (Chief AI Officer); Mark Zuckerberg (Meta CEO) | Shengjia Zhao |
+| xAI / SpaceXAI | Grok / Grok 4.5, Grok 5 (training) | United States | Elon Musk (Chairman) | Jimmy Ba, Tony Wu |
+| DeepSeek | DeepSeek-R1 / V3 / V4 | China | Liang Wenfeng | Daya Guo, Damai Dai, Chenggang Zhao |
+| Alibaba / Qwen (Tongyi Lab) | Qwen / Qwen3.8 Max | China | Eddie Wu (Alibaba Group CEO) | Zhou Jingren; Junyang Lin, Bowen Yu, Binyuan Hui (departed 2026) |
+| Moonshot AI | Kimi / Kimi K3 | China | Yang Zhilin | Zhou Xinyu, Wu Yuxin |
+| Zhipu AI / Z.ai | GLM / GLM-5.2 | China | Zhang Peng | Tang Jie, Li Juanzi |
+| Baidu | Ernie / ERNIE 5.0, 5.1 | China | Robin Li | Wang Haifeng |
+| Mistral AI | Mistral Large 3 | France | Arthur Mensch | Timothée Lacroix, Guillaume Lample |
+| Cohere (+ Aleph Alpha) | Command / Command A+ | Canada / Germany | Aidan Gomez | Phil Blunsom, Joëlle Pineau, Nick Frosst |
+| TII (Falcon) / G42 | Falcon / Falcon-H1R, Falcon-H1 Arabic | United Arab Emirates | Najwa Aaraj (TII); Peng Xiao (G42) | Ebtesam Almazrouei |
+| Naver | HyperCLOVA X / HyperCLOVA X THINK | South Korea | Choi Soo-yeon | Nako Sung |
+| Sakana AI | Fugu Ultra | Japan | David Ha | Llion Jones |
+| AI21 Labs | Jamba / Maestro | Israel | Ori Goshen, Yoav Shoham (Co-CEOs) | Amnon Shashua |
+
+*Where a company has no individually-bylined research staff below the founder level in available sourcing (DeepSeek's flat structure, Moonshot's founder-only public profile), the table lists the most senior technical co-founders rather than leaving the cell blank — see the Facts section above for the sourcing caveat on each.*
+
 **Investment by country** (Stanford HAI 2026 AI Index — genuine tabular data):
 
 | Country/Region | 2025 Private AI Investment | Note |
