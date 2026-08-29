@@ -214,6 +214,12 @@ The clustering makes visible what the prose above argues: this is not one ranked
 
 **First Principles Consulting mark:** applied bottom-left on the rendered diagram (bottom-right was already occupied by the blueprint-style title block stamp), per standing convention.
 
+**"Who's Who in Frontier AI" roster graphic** (added at Rick's request, 2026-08-29 update pass, for external/Substack distribution — same underlying facts as the company/product/people table above, no new claims): built via `epic-infographics` in the editorial design language — a Sunday-magazine feature treatment (Fraunces display serif, warm paper ground, a single oxblood accent) rather than another technical diagram, since this version is meant to travel outside the vault as a standalone shareable image rather than sit inside a sourced intelligence report:
+
+<img src="https://raw.githubusercontent.com/raceBannon99/The-Nexus/main/reports/images/2026-08-29-ai-marketplace-global-competitive-landscape/whos-who-frontier-ai.png" alt="Who's Who in Frontier AI: an editorial-style roster graphic listing all 16 companies from this report with their flagship products, country of origin, CEO, and most prominent thought leaders, led by a hero statistic on Anthropic's $965B valuation.">
+
+The hero figure ($965B, Anthropic's valuation) was chosen because it's the single most attention-grabbing fact in this dataset for a general audience, not because valuation is this report's preferred leadership signal — see Popper's P3 objection above on why valuation is a weak signal for the analytical argument. The two graphics serve different purposes: "The Two Races" argues the analytical point of this report, "Who's Who in Frontier AI" is a reference roster for readers who just want the facts. First Principles Consulting mark applied bottom-right in the dark-ink variant, matching the light paper background.
+
 ---
 
 ## New Skills (Turing)
