@@ -105,6 +105,10 @@ The relationships above are genuinely a flow — each stage structurally narrowe
 
 <img src="https://raw.githubusercontent.com/raceBannon99/The-Nexus/main/reports/images/2026-09-07-social-media-metrics/social-metrics-funnel.png" width="900">
 
+**Companion view, left to right.** Same metrics, same funnel logic, read horizontally instead of stacked — widest on the left where the population is largest (everyone exposed), narrowing to the right as the behavior gets rarer (the audience willing to amplify it further). Built in the `epic-infographics` skill's "Dark Glass" design language for a deliberately more dramatic, keynote-style treatment than the stacked version above.
+
+<img src="https://raw.githubusercontent.com/raceBannon99/The-Nexus/main/reports/images/2026-09-07-social-media-metrics/social-metrics-funnel-horizontal.png" width="900">
+
 ## New Skills
 
 None. This engagement used existing tools throughout — web research for definitions, the `epic-infographics` skill for the diagram — nothing about the process was repeatable-but-missing a skill wrapper. Turing reviewed the run and found no gap worth building.
