@@ -187,7 +187,7 @@ One candidate is recommended for the artifact library:
 - **Candidate:** "AGI vs. the Singularity — Two Distinct AI Forecasting Thresholds" (proposed fact-sheet)
 - **Category:** `fact-sheet`
 - **Why it's reusable:** This report had to explicitly relitigate, in Popper's objection 4 and Seldon's response, why AGI arrival (a capability milestone) and the Singularity (a loss-of-control milestone) are different questions that should never be merged into one forecast — the same category error the existing `campaign-vs-actor-attribution.md` fact-sheet prevents elsewhere in Nexus's methodology. A standing, citable fact-sheet stating this distinction, the specific external-forecaster figures behind each (Metaculus, Samotsvety, AI Impacts for AGI; the standing Nexus P5/P50/P95 for the Singularity), and the rule against merging disagreeing forecaster estimates into one fabricated triple, would let future reports reference it directly the way Popper's other standing checks are referenced, rather than re-deriving the distinction from scratch each time it comes up (as this report just had to).
-- **Status:** Recommended, awaiting Rick's decision — not yet submitted. If approved, submit via the `nexus-artifact-submit` skill as a separate step.
+- **Status:** Submitted — [PR #17](https://github.com/raceBannon99/nexus-artifacts/pull/17), awaiting merge. Rick approved 2026-09-17; submitted the same day via the `nexus-artifact-submit` skill.
 
 No other item from this engagement is recommended for archiving. The milestone timeline and narrative are specific to this one report rather than a reusable analytical lens, and the diagram itself is a one-off illustration rather than a reusable reference image.
 
