@@ -168,7 +168,7 @@ No discrepancies found. The AGI Forecast Report's own range was not changed by t
 **Candidate: "Named AGI Predictions — Frontier AI Leaders" fact-sheet.**
 - **Category:** fact-sheet.
 - **Why reusable beyond this report:** this engagement compiled, sourced, and confidence-rated ten individuals' dated AGI statements from scratch — exactly the kind of reference material future engagements (and future daily-report CIR matches to "AGI Arrival Timeline") will want to look up rather than re-research. Structured the same way `whos-who-in-frontier-ai.md` is (a living roster with an explicit shelf-life warning), it would give Nexus a standing, updatable ledger of who has said what, rather than re-deriving it inside a one-off report each time a leader makes a new statement.
-- **Status:** Recommended — awaiting Rick's decision. Not yet submitted; per the `nexus` skill, artifact PRs are not opened mid-run or without Rick's go-ahead.
+- **Status:** Submitted — [PR #18](https://github.com/raceBannon99/nexus-artifacts/pull/18), awaiting merge. Rick approved 2026-09-19; submitted the same day via the `nexus-artifact-submit` skill.
 
 **Also worth noting, not a separate library candidate:** the Jeff Dean/Oriol Vinyals August 2026 departure from Google DeepMind is a concrete, dated instance of `whos-who-in-frontier-ai.md`'s own shelf-life warning coming true within weeks of that fact-sheet's publication. This doesn't need its own artifact — it's a data point for whoever next updates that fact-sheet's roster, and is recorded here so it isn't lost.
 
@@ -176,4 +176,4 @@ No discrepancies found. The AGI Forecast Report's own range was not changed by t
 
 ## Update Notes
 
-None yet — this is the initial publish (2026-09-19). Per the standing convention in `Nexus Workflow.md`, future revisions to this report get dated entries here rather than inline near the top.
+- **2026-09-19, first revision (structural/presentational, per the `nexus-artifact-submit` skill):** Rick approved the "Named AGI Predictions — Frontier AI Leaders" fact-sheet candidate. Submitted the same day as [PR #18](https://github.com/raceBannon99/nexus-artifacts/pull/18) on `raceBannon99/nexus-artifacts`; this report's Library Recommendations status is updated above from "Recommended — awaiting decision" to "Submitted — PR #18, awaiting merge." No other section required a change.
