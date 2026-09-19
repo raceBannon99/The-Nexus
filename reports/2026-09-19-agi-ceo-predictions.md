@@ -160,6 +160,7 @@ No discrepancies found. The AGI Forecast Report's own range was not changed by t
 - `Intelligence Reports/Superintelligence Forecast Report.md` (P5 2029 · P50 2045 · P95 2100, cross-referenced for Wang's superintelligence claim, unchanged).
 - `fact-sheets/agi-vs-singularity-forecasting-thresholds.md` (nexus-artifacts, PR #17) — definitional split applied to sort Wang's claim out of the AGI range.
 - `fact-sheets/whos-who-in-frontier-ai.md` and `images/whos-who-in-frontier-ai.png` (nexus-artifacts) — source of the roster itself.
+- `fact-sheets/named-agi-predictions-frontier-ai-leaders.md` (nexus-artifacts) — this report's own named-predictor ledger, added to the library 2026-09-19 (see Library Recommendations below); now a standing citable artifact rather than something future reports need to re-derive.
 
 **Artifact-library candidate identified but not yet submitted:** see Library Recommendations below.
 
@@ -168,12 +169,16 @@ No discrepancies found. The AGI Forecast Report's own range was not changed by t
 **Candidate: "Named AGI Predictions — Frontier AI Leaders" fact-sheet.**
 - **Category:** fact-sheet.
 - **Why reusable beyond this report:** this engagement compiled, sourced, and confidence-rated ten individuals' dated AGI statements from scratch — exactly the kind of reference material future engagements (and future daily-report CIR matches to "AGI Arrival Timeline") will want to look up rather than re-research. Structured the same way `whos-who-in-frontier-ai.md` is (a living roster with an explicit shelf-life warning), it would give Nexus a standing, updatable ledger of who has said what, rather than re-deriving it inside a one-off report each time a leader makes a new statement.
-- **Status:** Submitted — [PR #18](https://github.com/raceBannon99/nexus-artifacts/pull/18), awaiting merge. Rick approved 2026-09-19; submitted the same day via the `nexus-artifact-submit` skill.
+- **Status:** Added to Library — [PR #18](https://github.com/raceBannon99/nexus-artifacts/pull/18) merged 2026-09-19. Final path: `fact-sheets/named-agi-predictions-frontier-ai-leaders.md` (nexus-artifacts).
+
+**Companion image, added at Rick's direction (not an Alexandria recommendation at closing time):** the Tufte diagram from this report's own Visualizing the Landscape section — "What Frontier AI's Leaders Say About When AGI Arrives" — was separately submitted to the library as `images/agi-ceo-predictions-timeline.png`, pairing with the fact-sheet above the same way `whos-who-in-frontier-ai.png` pairs with its own fact-sheet.
+- **Status:** Submitted — [PR #19](https://github.com/raceBannon99/nexus-artifacts/pull/19), awaiting merge.
 
 **Also worth noting, not a separate library candidate:** the Jeff Dean/Oriol Vinyals August 2026 departure from Google DeepMind is a concrete, dated instance of `whos-who-in-frontier-ai.md`'s own shelf-life warning coming true within weeks of that fact-sheet's publication. This doesn't need its own artifact — it's a data point for whoever next updates that fact-sheet's roster, and is recorded here so it isn't lost.
 
-**Pending artifact-library PRs:** none open on `raceBannon99/nexus-artifacts` as of this publish. PR #17 ("AGI vs. the Singularity — Two Distinct AI Forecasting Thresholds") merged 2026-09-18 — one day before this engagement, and after the last check recorded it as still open. Flagged here so the loop can be closed on the originating report per the `nexus-artifact-submit` skill's merged-PR check.
+**Pending artifact-library PRs:** [PR #19](https://github.com/raceBannon99/nexus-artifacts/pull/19) ("Add image: What Frontier AI's Leaders Say About When AGI Arrives (timeline)") is open as of this publish, awaiting Rick's review.
 
 ## Update Notes
 
 - **2026-09-19, first revision (structural/presentational, per the `nexus-artifact-submit` skill):** Rick approved the "Named AGI Predictions — Frontier AI Leaders" fact-sheet candidate. Submitted the same day as [PR #18](https://github.com/raceBannon99/nexus-artifacts/pull/18) on `raceBannon99/nexus-artifacts`; this report's Library Recommendations status is updated above from "Recommended — awaiting decision" to "Submitted — PR #18, awaiting merge." No other section required a change.
+- **2026-09-19, second revision (structural/presentational, per `Nexus Artifact Repository.md`'s "Closing the Loop on Reports That Recommended an Artifact"):** PR #18 merged the same day. This report's Library Recommendations status is updated above from "Submitted" to "Added to Library," and a new Sources entry cites the artifact directly. Separately, Rick asked that this report's own Tufte diagram also be added to the library; it was submitted as [PR #19](https://github.com/raceBannon99/nexus-artifacts/pull/19) and is recorded above pending Rick's review.
