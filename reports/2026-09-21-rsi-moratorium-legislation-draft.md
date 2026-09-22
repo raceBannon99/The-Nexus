@@ -182,8 +182,21 @@ If any provision of this Act, or the application of such provision to any person
 **SEC. 704. EFFECTIVE DATE.**
 The Commission shall be established not later than 90 days after the date of enactment of this Act. The prohibition under section 201 shall take effect 180 days after the date of enactment.
 
-**SEC. 705. AUTHORIZATION OF APPROPRIATIONS.**
-There is authorized to be appropriated to the Commission such sums as may be necessary to carry out this Act.
+#### TITLE VIII — FUNDING
+
+**SEC. 801. LICENSING AND USER FEES.**
+(a) APPLICATION FEES — The Commission shall, by rule, establish and collect a fee from each covered entity submitting a license application under section 301, in an amount sufficient to recover the full cost to the Commission of processing that application, including the cost of the corrigibility demonstration review and interruption-mechanism verification.
+(b) ANNUAL LICENSE FEES — The Commission shall, by rule, establish and collect an annual fee from each covered entity holding an Alignment Verification License, in an amount sufficient to recover the cost of the ongoing monitoring, audits, and inspections required under section 303. The fee shall be assessed on a schedule that scales with the licensee's global annual revenue or the computing scale of the licensed activity, as the Commission determines by rule.
+(c) FEE SCHEDULE REVIEW — The Commission shall review and, as necessary, revise the fee schedule under this section not less frequently than annually, through a rulemaking under section 553 of title 5, United States Code.
+(d) FRONTIER AI SAFETY COMMISSION FUND — There is established in the Treasury of the United States a fund to be known as the Frontier AI Safety Commission Fund. Fees collected under this section shall be deposited into the Fund and shall be available to the Commission, without further appropriation, to carry out this Act.
+(e) COST RECOVERY TARGET — The Commission shall structure the fees under this section with the goal of recovering not less than 90 percent of the Commission's total annual cost of administering this Act, consistent with the funding model historically applied to comparable independent safety regulators overseeing a small number of well-resourced, identifiable licensees (see section 102(6)).
+
+**SEC. 802. DISPOSITION OF CIVIL PENALTIES.**
+(a) IN GENERAL — Civil penalties collected under section 501 shall be deposited in the general fund of the Treasury, except as provided in subsection (b).
+(b) WHISTLEBLOWER AWARDS — Amounts owed as an award under section 601(b) shall be paid from civil penalties collected in the enforcement action giving rise to the award, before the remainder of those penalties is deposited under subsection (a).
+
+**SEC. 803. AUTHORIZATION OF APPROPRIATIONS.**
+There is authorized to be appropriated to the Commission such sums as may be necessary to carry out this Act, in addition to amounts available under section 801(d), to the extent fees collected under section 801 are insufficient to fully fund the Commission's costs of administering this Act.
 
 ---
 
@@ -284,3 +297,5 @@ Rick approved all three for submission on 2026-09-21; PRs #20, #21, and #22 open
 ## Update Notes
 
 **2026-09-21:** Rick approved all three Library Recommendations candidates above for submission. Status updated for each (Submitted — PR #20/#21/#22, awaiting merge) per the `nexus-artifact-submit` skill's close-the-loop step. Structural/presentational only — no new claims, no other agent re-run.
+
+**2026-09-21, second revision:** Rick asked whether the bill funds itself; it did not — the only prior funding text (old Sec. 705) was a bare, unfunded authorization-of-appropriations clause. **Agent Euclid** added a new **Title VIII — Funding**: Sec. 801 establishes application and annual license fees (scaled to a licensee's global revenue or compute scale), deposited into a dedicated Frontier AI Safety Commission Fund available without further appropriation, with a 90%-cost-recovery target modeled on the NRC's own fee-funded structure (already cited as the bill's structural analog in Sec. 102(6) and the companion "Emerging-Technology Licensing Design" fact-sheet); Sec. 802 clarifies that collected civil penalties fund whistleblower awards under Sec. 601(b) before the remainder reverts to the Treasury; Sec. 803 keeps a general appropriations authorization as a backstop for any shortfall. **Agent Popper** checked the new figures (90% cost-recovery target; the fee provisions' cross-reference to the existing 20%-of-penalties whistleblower-award cap in Sec. 601(b)) against every other place a number appears in the draft, including the rendered diagram — no inconsistency found; no other number in the report needed revision. **Agent Bradlee** re-reviewed the top-of-report Synthesis against this change and made no revision — the question the Synthesis answers (what the bill bans, and what happens if a covered entity violates it) is unaffected by how the Commission itself is funded, and no funding claim in the Synthesis needed correction since it made none. Per the Update Passes triage table, this touches Euclid's row (interpretation/framing change to the bill text) and required Popper's consistency-check row (new numbers); it did not trigger Popper's analytical stress-test row (no previously-challenged conclusion was touched) or Seldon/Tufte/Sherlock. The standalone Library artifact fact-sheet already submitted as [PR #20](https://github.com/raceBannon99/nexus-artifacts/pull/20) has not yet been updated to match — still open, not yet merged — and should be revised to include Title VIII before or immediately after merge.
