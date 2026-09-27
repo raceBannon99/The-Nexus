@@ -2,7 +2,9 @@
 
 <img src="https://raw.githubusercontent.com/raceBannon99/The-Nexus/main/assets/first-principles-consulting-logo.png" align="right" width="220">
 
-First Principles Newsletter Tracker: 1 thread under pressure, 0 revisit recommended (see [[First Principles Newsletter Tracker]]).
+**Today's CIR Matches (2):**
+- **AI Singularity Timeline** — Evidence on when the world might experience an irreversible, civilizational-scale loss of control over a frontier AI system — a control question, not a capability one.
+- **Adversary Playbook Activity** — Cybercrime, hacktivist, and nation-state threat-actor activity by country (China, Russia, Iran, North Korea, Pakistan, Israel, more), plus the Russia-Ukraine, Israel-Gaza, and US-Israel-Iran cyber wars specifically.
 
 ## AI Timeline Forecasting
 
