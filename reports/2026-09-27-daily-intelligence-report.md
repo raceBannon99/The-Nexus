@@ -6,11 +6,11 @@ First Principles Newsletter Tracker: 1 thread under pressure, 0 revisit recommen
 
 ## AI Timeline Forecasting
 
-**Forecasted AGI Milestone Dates:** P5 2028 · P50 2036 · P95 2100 (unchanged since 2026-09-18)
+**Forecasted AGI Milestone Dates:** P5 2028 · P50 2036 · P95 2100: a 72-year uncertainty window and a 50% chance we could reach this milestone in 8 years.(unchanged since 2026-09-18)
 
-**Forecasted Singularity Milestone Timeline:** P5 2027 · P50 2042 · P95 2100 (unchanged since 2026-09-14)
+**Forecasted Singularity Milestone Timeline:** P5 2027 · P50 2042 · P95 2100: a 73-year uncertainty window and a 50% chance we could reach this milestone in 15 years.(unchanged since 2026-09-14)
 
-**Forecasted Superintelligence Milestone Timeline:** P5 2029 · P50 2045 · P95 2100 (structural inference, no external forecaster basket — unchanged since 2026-09-18)
+**Forecasted Superintelligence Milestone Timeline:** P5 2029 · P50 2045 · P95 2100: a 71-year uncertainty window and a 50% chance we could reach this milestone in 16 years.(structural inference, no external forecaster basket — unchanged since 2026-09-18)
 
 ## AI Singularity Timeline
 
