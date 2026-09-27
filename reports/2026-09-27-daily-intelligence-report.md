@@ -14,7 +14,7 @@ First Principles Newsletter Tracker: 1 thread under pressure, 0 revisit recommen
 
 ## AI Singularity Timeline
 
-*Current range: P5 2027 · P50 2042 · P95 2100 (unchanged since 2026-09-14).*
+*Current range: P5 2027 · P50 2042 · P95 2100: a 73-year uncertainty window and a 50% chance we could reach this milestone in 15 years.(unchanged since 2026-09-14).*
 
 **[US and China Agree to Establish AI Safety Channel, Continue Trade and Military Talks](https://www.securityweek.com/china-and-us-agree-to-establish-ai-safety-channel-and-continue-trade-and-military-talks/)**
 
