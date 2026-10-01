@@ -2,7 +2,15 @@
 
 <img src="https://raw.githubusercontent.com/raceBannon99/The-Nexus/main/assets/first-principles-consulting-logo.png" align="right" width="220">
 
-**Today's CIR Matches:** Adversary Playbook Activity — Cybercrime, hacktivist, and nation-state threat-actor activity by country, plus the Russia-Ukraine, Israel-Gaza, and US-Israel-Iran cyber wars specifically. · AI Singularity Timeline — Evidence on when the world might experience an irreversible, civilizational-scale loss of control over a frontier AI system — a control question, not a capability one. · Law Enforcement Disruption — Government takedown/disruption operations against criminal or adversary infrastructure. · Government Surveillance — State surveillance programs and operations. · Data Breaches — Reported breaches of personal or organizational data. · Cybersecurity Executive Leadership Changes — New CISO, CSO, CIO, and CTO appointments across organizations generally. · Cybersecurity Workforce Development Tactics — Unconventional hiring/development approaches.
+**Today's CIR Matches:**
+
+- **Adversary Playbook Activity** — Cybercrime, hacktivist, and nation-state threat-actor activity by country, plus the Russia-Ukraine, Israel-Gaza, and US-Israel-Iran cyber wars specifically.
+- **AI Singularity Timeline** — Evidence on when the world might experience an irreversible, civilizational-scale loss of control over a frontier AI system — a control question, not a capability one.
+- **Law Enforcement Disruption** — Government takedown/disruption operations against criminal or adversary infrastructure.
+- **Government Surveillance** — State surveillance programs and operations.
+- **Data Breaches** — Reported breaches of personal or organizational data.
+- **Cybersecurity Executive Leadership Changes** — New CISO, CSO, CIO, and CTO appointments across organizations generally.
+- **Cybersecurity Workforce Development Tactics** — Unconventional hiring/development approaches.
 
 ## AI Timeline Forecasting
 
