@@ -193,7 +193,7 @@ Nothing in this engagement required a new repeatable procedure. Legislative rese
 Three items surfaced during this engagement that the team judges worth keeping in the artifact library, pending Rick's decision:
 
 1. **"US Federal AI Legislation Landscape, 119th Congress" (fact-sheet)** — a standalone, citation-backed fact sheet distilling the Bill Tracker table above (sponsor, chamber, mechanism, status for all eight bills plus the two in-force state laws), formatted to the Library's existing fact-sheet conventions (cf. `rsi-safety-act-draft-legislation.md`, `campaign-vs-actor-attribution.md`). **Why reusable:** this list will be stale within weeks — several bills are expected to move before the November 3 midterms — and having a maintained reference sheet means future engagements (and the daily report, if AI policy ever gets its own CIR category) can cite current bill status without re-researching it from scratch each time. **Status:** Added to Library — [`fact-sheets/us-federal-ai-legislation-landscape-119th-congress.md`](https://github.com/raceBannon99/nexus-artifacts/blob/main/fact-sheets/us-federal-ai-legislation-landscape-119th-congress.md) (merged via [PR #41](https://github.com/raceBannon99/nexus-artifacts/pull/41), 2026-10-12).
-2. **"Where Congress's AI Bills Sit" (image)** — the rendered spectrum diagram itself, as a standalone reusable graphic. **Why reusable:** the accelerate-versus-restrict framing is likely to stay useful well beyond this one report as new bills enter the landscape; the image could be refreshed and re-cited rather than rebuilt from scratch each time this subject comes up. **Status:** recommended, awaiting Rick's decision.
+2. **"Where Congress's AI Bills Sit" (image)** — the rendered spectrum diagram itself, as a standalone reusable graphic. **Why reusable:** the accelerate-versus-restrict framing is likely to stay useful well beyond this one report as new bills enter the landscape; the image could be refreshed and re-cited rather than rebuilt from scratch each time this subject comes up. **Status:** Submitted — [PR #42](https://github.com/raceBannon99/nexus-artifacts/pull/42), awaiting merge.
 3. **Pending artifact PRs:** none found open against `raceBannon99/nexus-artifacts` as of this run (checked via `gh pr list --repo raceBannon99/nexus-artifacts --state open`).
 
 Alexandria's own judgment: recommendation #1 is the stronger of the two — a maintained fact sheet has a much higher reuse rate in this fast-moving a policy area than a static diagram, which will visually date as soon as a bill's status changes. Both are deferred to Rick rather than submitted; no PR has been opened.
@@ -201,6 +201,8 @@ Alexandria's own judgment: recommendation #1 is the stronger of the two — a ma
 ---
 
 ## Update Notes
+
+**2026-10-12, third revision:** Rick approved Library Recommendation #2 (the spectrum diagram). Submitted as [PR #42](https://github.com/raceBannon99/nexus-artifacts/pull/42) against `raceBannon99/nexus-artifacts` — status updated above from "Recommended — awaiting decision" to "Submitted — awaiting merge." Structural/presentational only; no other agent re-ran.
 
 **2026-10-12, second revision:** Rick merged [PR #41](https://github.com/raceBannon99/nexus-artifacts/pull/41). Library Recommendations status updated above from "Submitted — awaiting merge" to "Added to Library," and the fact sheet added as a new Sources-section entry citing it directly. Structural/presentational only; no other agent re-ran.
 
