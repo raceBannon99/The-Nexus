@@ -169,7 +169,7 @@ None. This was a one-off historical engagement. The research technique, pulling 
 
 | Candidate | Category | Why it's reusable | Status |
 |---|---|---|---|
-| "Emacs at 50: lineage" diagram (`emacs-lineage.png`) | image | A sourced, single-image history of Emacs and the free-software license lineage. Reusable for any talk or essay on open source, software licensing, or developer-tool history | Recommended, awaiting Rick's decision; not submitted |
-| EMACS LORE (1978 emails), as a pointer/fact sheet | fact-sheet | The best primary source on who built Emacs and when, which is often misreported. Useful whenever Emacs/GNU origin claims come up | Recommended, awaiting Rick's decision; not submitted |
+| "Emacs at 50: lineage" diagram (`emacs-lineage.png`) | image | A sourced, single-image history of Emacs and the free-software license lineage. Reusable for any talk or essay on open source, software licensing, or developer-tool history | Submitted ([PR #53](https://github.com/raceBannon99/nexus-artifacts/pull/53)), awaiting merge |
+| EMACS LORE (1978 emails), as a pointer/fact sheet | fact-sheet | The best primary source on who built Emacs and when, which is often misreported. Useful whenever Emacs/GNU origin claims come up | Submitted ([PR #53](https://github.com/raceBannon99/nexus-artifacts/pull/53)), awaiting merge |
 
-No pending artifact approvals are open on `raceBannon99/nexus-artifacts`.
+Rick approved both on 2026-11-01. They were submitted together as [PR #53](https://github.com/raceBannon99/nexus-artifacts/pull/53): the fact sheet at `fact-sheets/emacs-lore-1978-origin-record.md` and the diagram at `images/emacs-at-50-lineage.png`.
