@@ -141,6 +141,7 @@ Every number in the synthesis, the timeline, and the diagram was checked against
 
 **Primary documents**
 - [EMACS LORE (Earl Killian, collected emails by Moon, Steele, Stallman, Greenberg, et al., July 1978)](https://github.com/PDP-10/its/blob/master/doc/eak/emacs.lore): the August 1976 start date, the "?" name, and the Steele/Moon/Stallman division of credit.
+- [Nexus Library: "EMACS LORE: The 1978 Primary Record of Who Built Emacs, and When" (fact sheet, added 2026-11-01)](https://github.com/raceBannon99/nexus-artifacts/blob/main/fact-sheets/emacs-lore-1978-origin-record.md) and ["Emacs at 50" lineage diagram](https://github.com/raceBannon99/nexus-artifacts/blob/main/images/emacs-at-50-lineage.png): archived from this report; the fact sheet also records the participants' conflicting accounts of how the editor was named.
 - [MITDDC, emacs-1976-1977 (MIT Distinctive Collections)](https://github.com/MITDDC/emacs-1976-1977): surviving late-1976 source; credits Stallman, Steele, and Moon.
 - [GNU Project initial announcement (Usenet, Sept. 27, 1983)](https://www.gnu.org/gnu/initial-announcement.html): the announcement date.
 - [Richard Stallman, "My Lisp Experiences and the Development of GNU Emacs" (International Lisp Conference, Oct. 28, 2002)](https://www.gnu.org/gnu/rms-lisp.html): the Gosling Emacs/mocklisp history, the minimal Lisp design, and the Lisp Machine context.
@@ -169,7 +170,7 @@ None. This was a one-off historical engagement. The research technique, pulling 
 
 | Candidate | Category | Why it's reusable | Status |
 |---|---|---|---|
-| "Emacs at 50: lineage" diagram (`emacs-lineage.png`) | image | A sourced, single-image history of Emacs and the free-software license lineage. Reusable for any talk or essay on open source, software licensing, or developer-tool history | Submitted ([PR #53](https://github.com/raceBannon99/nexus-artifacts/pull/53)), awaiting merge |
-| EMACS LORE (1978 emails), as a pointer/fact sheet | fact-sheet | The best primary source on who built Emacs and when, which is often misreported. Useful whenever Emacs/GNU origin claims come up | Submitted ([PR #53](https://github.com/raceBannon99/nexus-artifacts/pull/53)), awaiting merge |
+| "Emacs at 50: lineage" diagram (`emacs-lineage.png`) | image | A sourced, single-image history of Emacs and the free-software license lineage. Reusable for any talk or essay on open source, software licensing, or developer-tool history | Added to Library ([`images/emacs-at-50-lineage.png`](https://github.com/raceBannon99/nexus-artifacts/blob/main/images/emacs-at-50-lineage.png), PR #53) |
+| EMACS LORE (1978 emails), as a pointer/fact sheet | fact-sheet | The best primary source on who built Emacs and when, which is often misreported. Useful whenever Emacs/GNU origin claims come up | Added to Library ([`fact-sheets/emacs-lore-1978-origin-record.md`](https://github.com/raceBannon99/nexus-artifacts/blob/main/fact-sheets/emacs-lore-1978-origin-record.md), PR #53) |
 
-Rick approved both on 2026-11-01. They were submitted together as [PR #53](https://github.com/raceBannon99/nexus-artifacts/pull/53): the fact sheet at `fact-sheets/emacs-lore-1978-origin-record.md` and the diagram at `images/emacs-at-50-lineage.png`.
+Rick approved both on 2026-11-01. They were submitted together as [PR #53](https://github.com/raceBannon99/nexus-artifacts/pull/53), which Rick merged the same day.
