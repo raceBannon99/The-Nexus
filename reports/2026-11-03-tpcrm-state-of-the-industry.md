@@ -266,6 +266,10 @@ Bars and squares are computed from values. The ripple-loss squares are area-true
 - `reports/2026-07-22-resilience-vendor-landscape.md`, `reports/2026-08-16-cybersecurity-risk-heatmap-origin.md`.
 - Daily reports of 2026-10-23 (Storm-0940/ConnectWise), 2026-10-24 (third-party AI agents in bank accounts), and 2026-10-30 (Accenture/DOD contractor AI-agent incident); `Intelligence Reports/Adversary Tracking Report.md`.
 
+### Alexandria's Library (nexus-artifacts, private)
+- **TPCRM 2026 Baseline Statistics** (fact sheet). [`fact-sheets/tpcrm-2026-baseline-statistics.md`](https://github.com/raceBannon99/nexus-artifacts/blob/main/fact-sheets/tpcrm-2026-baseline-statistics.md): this report's verified numbers with caveats, archived for reuse.
+- **Exposure Has Outrun the Program** (image). [`images/tpcrm-exposure-vs-program.png`](https://github.com/raceBannon99/nexus-artifacts/blob/main/images/tpcrm-exposure-vs-program.png): the infographic above, with its re-renderable HTML source.
+
 ### Event
 - **Tenchi Conference 2026 – 4th Edition, "TPCRM: The New Era of Inside-Out."** [luma.com](https://luma.com/vvzsmej9)
 
@@ -281,8 +285,8 @@ None built. This run's work (sourcing survey stats, a status synthesis, one info
 
 | Candidate | Category | Why it's reusable | Status |
 |---|---|---|---|
-| **TPCRM 2026 Baseline Statistics**: the verified numbers from this report (DBIR 2026, Ponemon 2026, KPMG 2026, Cyentia 2025, regulatory dates) with source links and caveats | `fact-sheet` | Third-party risk will recur in panels, board-reporting questions, and daily-report context. A verified baseline avoids re-deriving it and keeps the vendor-sponsorship caveats attached to the numbers | Submitted: [PR #55](https://github.com/raceBannon99/nexus-artifacts/pull/55), awaiting merge |
-| **"Exposure has outrun the program" infographic** | `image` | Nexus-original, redistributable, panel- and slide-ready | Submitted: [PR #55](https://github.com/raceBannon99/nexus-artifacts/pull/55), awaiting merge |
+| **TPCRM 2026 Baseline Statistics**: the verified numbers from this report (DBIR 2026, Ponemon 2026, KPMG 2026, Cyentia 2025, regulatory dates) with source links and caveats | `fact-sheet` | Third-party risk will recur in panels, board-reporting questions, and daily-report context. A verified baseline avoids re-deriving it and keeps the vendor-sponsorship caveats attached to the numbers | Added to Library: [`fact-sheets/tpcrm-2026-baseline-statistics.md`](https://github.com/raceBannon99/nexus-artifacts/blob/main/fact-sheets/tpcrm-2026-baseline-statistics.md) ([PR #55](https://github.com/raceBannon99/nexus-artifacts/pull/55)) |
+| **"Exposure has outrun the program" infographic** | `image` | Nexus-original, redistributable, panel- and slide-ready | Added to Library: [`images/tpcrm-exposure-vs-program.png`](https://github.com/raceBannon99/nexus-artifacts/blob/main/images/tpcrm-exposure-vs-program.png), with source at `other/tpcrm-exposure-vs-program-infographic-source.html` ([PR #55](https://github.com/raceBannon99/nexus-artifacts/pull/55)) |
 | Ponemon/ProcessUnity 2026 and Cyentia *Ripples* 2025 reports | reference | Strong data, but third-party copyrighted. A link inside the fact sheet is enough; archiving the PDFs isn't recommended | Not recommended as standalone artifacts |
 
 ---
@@ -309,3 +313,5 @@ Every number was checked against its source and wherever it recurs, including th
 **2026-11-03, first revision:** CMMC Phase 2 suspension added as a US-specific data point, replacing an unverified CMMC-timing bullet. Source: the Nexus's own `reports/2026-07-14-cmmc-phase-2-suspension.md`, which the opening library check surfaced after first publish. Also added that report and `reports/2026-09-30-shinyhunters-fbi-kill-chain.md` as internal precedent. Agents re-run: Sherlock (new fact), Bradlee (one sentence added to the regulatory paragraph; the conclusion is unchanged), Popper (number recheck), Alexandria.
 
 **2026-11-03, second revision:** Rick approved both Library Recommendations. The fact sheet (`fact-sheets/tpcrm-2026-baseline-statistics.md`), the infographic (`images/tpcrm-exposure-vs-program.png`), and its HTML source were submitted together in [nexus-artifacts PR #55](https://github.com/raceBannon99/nexus-artifacts/pull/55). Status updated in Library Recommendations. Alexandria-only pass, no new claims.
+
+**2026-11-03, third revision:** Rick merged [nexus-artifacts PR #55](https://github.com/raceBannon99/nexus-artifacts/pull/55). Both Library Recommendations are now marked "Added to Library" with links to their final paths, and the Sources section cites them. Alexandria-only pass.
