@@ -15,7 +15,7 @@ The programs have not kept pace. In the same Ponemon survey of 1,465 practitione
 
 The questionnaire fails because it answers the wrong question. A vendor attestation describes controls at one moment. The losses of the last two years came through two different channels, and the questionnaire misses both. The first is the trust path: OAuth tokens and SaaS integrations, as in the 2025 Salesloft Drift campaign that reached more than 700 organizations' Salesforce data without touching Salesforce itself. The second is dependency concentration. CrowdStrike's faulty 2024 update cost the Fortune 500 an estimated $5.4 billion in direct losses, and Change Healthcare's 2024 ransomware attack exposed 192.7 million people's records and froze claims processing for much of US healthcare. Neither event was a control failure that a vendor survey would have caught. When a breach does ripple outward, it costs about ten times more than a contained one: a $4.7 million median loss against $469,000.
 
-The industry is moving, slowly, in the direction the panel's title suggests. The federal banking agencies proposed in September to replace their 2023 third-party guidance with a shorter framework focused on "the magnitude and likelihood of harm" rather than checklists. New York's financial regulator has told covered firms they cannot delegate responsibility for a vendor's security. Continuous outside-in monitoring is now common, but most of it still reports letter grades and color scores, which is the old heat map in a new costume.
+The industry is moving, slowly, in the direction the panel's title suggests. The federal banking agencies proposed in September to replace their 2023 third-party guidance with a shorter framework focused on "the magnitude and likelihood of harm" rather than checklists. New York's financial regulator has told covered firms they cannot delegate responsibility for a vendor's security. The Pentagon, meanwhile, paused its own independent assessment requirement for defense contractors in July: about 100,000 companies needed audits and only about 100 certified assessors existed. Point-in-time assessment does not scale, even for the federal government. Continuous outside-in monitoring is now common, but most of it still reports letter grades and color scores, which is the old heat map in a new costume.
 
 Your own prior position holds and is the right frame for the panel. Your "Outside-In and Inside-Out" method answers what the market lacks: an industry baseline for third-party loss, adjusted for the organization's own dependencies and controls and expressed as a probability of material loss, which is the language a board can act on. Expect the problem to get worse before programs catch up. Next year's Verizon report will most likely show third-party involvement between about 38% and 60% of breaches, with a median near 50%.
 
@@ -36,6 +36,8 @@ None asked. The question is well scoped: it names the panel, the topics, and the
 **Artifact library (`raceBannon99/nexus-artifacts`):** nothing specific to third-party risk. Two entries bear on the framing. The *First Principles Infographic* fact sheet maps capabilities to the "reduce the probability of a material impact over the next business cycle" thesis, and Omar Sangurima's review of *Cybersecurity First Principles* summarizes the book's risk-forecasting chapter. Both apply to the "give boards meaningful information" half of the panel brief. No open artifact PRs pending.
 
 **Prior Nexus reports (`raceBannon99/The-Nexus`):** no prior engagement on TPCRM. Three are relevant precedent:
+- `reports/2026-07-14-cmmc-phase-2-suspension.md`: the Department of War's suspension of CMMC Phase 2 third-party assessments, a direct US data point on assessment capacity (added in the same-day Update Pass, see Update Notes).
+- `reports/2026-09-30-shinyhunters-fbi-kill-chain.md`: concluded that an agency's real attack surface is the third-party commercial software it exposes, the same trust-path point made here (added in the Update Pass).
 - `reports/2026-07-22-resilience-vendor-landscape.md`: the resilience side of vendor dependency.
 - `reports/2026-08-16-cybersecurity-risk-heatmap-origin.md`: the history of the ordinal heat map, which most security-ratings products still effectively reproduce.
 - Recent daily reports logged third-party incidents directly: the Storm-0940 ConnectWise Cloud Backup supply-chain breach (2026-10-23), major US banks detecting unsanctioned third-party AI agents inside customer accounts (2026-10-24), and an Accenture contractor allegedly connecting a DOD system to a personal AI coding agent (2026-10-30, disputed by Accenture). All are already tracked in the Adversary Tracking Report or the First Principles Newsletter Tracker.
@@ -85,7 +87,7 @@ The Sources section starts here and builds through the run (see below).
 - **Federal banking agencies (OCC, Fed, FDIC, and for the first time NCUA), September 11, 2026:** proposed guidance to rescind and replace the June 2023 Interagency Guidance on Third-Party Relationships. It organizes TPRM into four components (risk identification and assessment, risk oversight, residual risk acceptance, governance), moves "away from broad labels and toward the magnitude and likelihood of harm," lightens diligence for low-risk vendors, and is expressly non-binding (OCC Bulletin 2026-46). Law-firm summaries report comments due **November 16, 2026**.
 - **NYDFS Part 500:** an October 2025 industry letter on third-party service provider risk (cloud, file transfer, AI, fintech) stresses that covered entities may not delegate Part 500 compliance responsibility to a provider. A **September 10, 2026** letter on risk assessments expects explicit evaluation of third-party service-provider risk.
 - **SEC 2023 cyber disclosure rule:** still in force. No 2026 amendments found. Materiality-based incident disclosure applies whether the incident started at a vendor or not, which is why third-party incidents now surface in 8-K filings.
-- **CMMC:** sources conflict on the timing of Phase 2 (November 2026 versus a reported pause). Not verified, so not used in the answer.
+- **CMMC Phase 2 suspended (July 13, 2026):** per the Nexus's own `reports/2026-07-14-cmmc-phase-2-suspension.md` (sourced to the Department of War's release, trade press, and law-firm alerts), the Department of War paused the requirement that defense contractors pass an independent third-party (C3PAO) Level 2 assessment, which was set to bind from November 10, 2026. Stated reason: roughly **100,000+** Defense Industrial Base companies would need assessments, with only about **100** certified assessors. The underlying NIST SP 800-171 controls, self-attestation, and False Claims Act liability remain. This is the largest US government third-party assessment program, and it stalled on exactly the capacity problem the private-sector surveys describe.
 
 ### First Principles Newsletter Tracker check
 
@@ -220,6 +222,7 @@ Bars and squares are computed from values. The ripple-loss squares are area-true
 | How does this fit ERM? | Mostly it doesn't yet | 18% fully integrated with ERM (KPMG) |
 | What should boards get? | Probability and dollars of a material third-party loss, not a grade | Ripple incidents: $4.7M median versus $469K single-firm |
 | Where are regulators going? | Less checklist, more "magnitude and likelihood of harm" | OCC/Fed/FDIC/NCUA proposal, Sept 11, 2026 |
+| Does assessment scale? | Not even for the Pentagon | CMMC Phase 2 paused: ~100,000 contractors, ~100 certified assessors |
 | What happens next? | Exposure keeps climbing before programs catch up | 2027 DBIR third-party share: ~38–60%, median ~50% |
 
 **Library candidates flagged:** the rendered infographic itself (image artifact, Nexus-original, redistributable).
@@ -258,6 +261,8 @@ Bars and squares are computed from values. The ripple-loss squares are area-true
 - ["SBOM Reliability"](https://diffuser.substack.com/p/sbom-reliability) (Jun 2025): software supply-chain visibility limits (standalone, not moved).
 
 ### Internal precedent
+- `reports/2026-07-14-cmmc-phase-2-suspension.md`: CMMC Phase 2 suspension, ~100,000 companies and ~100 assessors (Department of War, July 13, 2026).
+- `reports/2026-09-30-shinyhunters-fbi-kill-chain.md`: third-party commercial software as the real attack surface.
 - `reports/2026-07-22-resilience-vendor-landscape.md`, `reports/2026-08-16-cybersecurity-risk-heatmap-origin.md`.
 - Daily reports of 2026-10-23 (Storm-0940/ConnectWise), 2026-10-24 (third-party AI agents in bank accounts), and 2026-10-30 (Accenture/DOD contractor AI-agent incident); `Intelligence Reports/Adversary Tracking Report.md`.
 
@@ -295,3 +300,10 @@ Every number was checked against its source and wherever it recurs, including th
 - **Banking agencies proposal:** Sept 11, 2026 and Nov 16, 2026 comment deadline are consistent ✓. The comment deadline comes from law-firm summaries and is labeled that way in the Facts.
 - **Tufte's cheat sheet:** "40+ hours and 4+ months" matches Ponemon (63% over 40 hours; 64% of large orgs at 4+ months) ✓.
 - **No mismatches found.** Nothing was sent back.
+- **Update Pass recheck (CMMC):** "about 100,000 companies" and "about 100 certified assessors" in the synthesis, Facts, cheat sheet, and Sources match the 2026-07-14 report's "≈100,000+" and "≈100" ✓. July 13, 2026 and November 10, 2026 match that report ✓.
+
+---
+
+## Update Notes
+
+**2026-11-03, first revision:** CMMC Phase 2 suspension added as a US-specific data point, replacing an unverified CMMC-timing bullet. Source: the Nexus's own `reports/2026-07-14-cmmc-phase-2-suspension.md`, which the opening library check surfaced after first publish. Also added that report and `reports/2026-09-30-shinyhunters-fbi-kill-chain.md` as internal precedent. Agents re-run: Sherlock (new fact), Bradlee (one sentence added to the regulatory paragraph; the conclusion is unchanged), Popper (number recheck), Alexandria.
