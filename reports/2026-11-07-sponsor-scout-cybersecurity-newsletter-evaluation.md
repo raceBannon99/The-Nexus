@@ -307,3 +307,15 @@ Not recommended: the Sponsor Scout ranking itself. It is a sponsor-weighted comm
 5. Trial Cybersecurity Dive for 30 runs.
 
 Each new entry should carry a "low daily hit rate is expected; judge on gap-category hits" note. Review all five after 30 runs.
+
+**Update (2026-11-07, Rick's decision): all five approved and implemented.** `Sources.md` now carries:
+
+| # | Source | Status |
+|---|---|---|
+| 21 | Risky.Biz | Promoted. Excluded from the Gmail bucket via `-from:risky-biz@ghost.io` |
+| 22 | tl;dr sec | Added |
+| 23 | Detection Engineering Weekly | Added |
+| 24 | Resilient Cyber | Added |
+| 25 | Cybersecurity Dive | Trial, review on 2026-12-07 |
+
+Every entry pulls everything published since the last daily run, not just items dated today. Each has a crediting rule against duplicate stories, and the weekly entries carry a gap-category success criterion. `Source Scorecard.md` has a pending note so the next daily run adds the five columns and sets each Active Since date.
