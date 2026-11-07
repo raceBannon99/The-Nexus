@@ -304,7 +304,7 @@ Building the skill caught two errors in this report, both now corrected:
 
 | Candidate | Category | Why reusable | Status |
 |---|---|---|---|
-| CIR coverage-rate table, 2026-10-17 to 2026-11-07 (Sherlock's section) | fact-sheet | A dated baseline for judging whether the 10-17 additions, and any additions from this report, actually moved thin categories. It updates the 2026-08-31 baseline. | Recommended, awaiting Rick's decision. Not yet submitted. |
+| CIR coverage-rate table, 2026-10-17 to 2026-11-07 (Sherlock's section) | fact-sheet | A dated baseline for judging whether the 10-17 additions, and any additions from this report, actually moved thin categories. It updates the 2026-08-31 baseline. | **Submitted, [PR #58](https://github.com/raceBannon99/nexus-artifacts/pull/58), awaiting merge** (2026-11-07). Submitted as `fact-sheets/nexus-cir-coverage-baseline-2026-11.md`, extended with a Before window (2026-09-22 to 10-16) for comparison. |
 
 Not recommended: the Sponsor Scout ranking itself. It is a sponsor-weighted commercial list with duplicate entries and mislabeled frequencies, so it has no lasting reference value for source quality.
 
