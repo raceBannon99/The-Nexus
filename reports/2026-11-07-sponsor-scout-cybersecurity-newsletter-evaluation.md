@@ -279,6 +279,7 @@ The per-newsletter table is sorted in the ranking's own order so Rick can check 
 - `Intelligence Reports/Sources.md` (vault). Supports which sources are already tracked.
 - 15 published daily reports, 2026-10-17 through 2026-11-07 (raceBannon99/The-Nexus `reports/`). Support the CIR coverage counts, by section-header grep.
 - 74 published daily reports (all to date). Support the citation counts for Risky.Biz (about 10), SecurityWeek (56), Venture in Security (2), and Cybersecurity Dive (2).
+- Alexandria's Library, "Nexus CIR Coverage Baseline, Fall 2026" (`raceBannon99/nexus-artifacts`, `fact-sheets/nexus-cir-coverage-baseline-2026-11.md`, added 2026-11-07). The archived version of this report's coverage table, extended with a Before window (2026-09-22 to 10-16). It is the baseline for future source reviews.
 - Gmail `label:newsletters` search, 2026-11-07. Supports which listed newsletters Rick already receives.
 - `Intelligence Reports/First Principles Newsletter Tracker.md` (vault). No thesis bears directly. Its 2026-10-13 Thread 2 entry (*Heatmaps to Histograms*) shows a CIR-valuable niche newsletter missing from this ranking.
 
@@ -304,7 +305,7 @@ Building the skill caught two errors in this report, both now corrected:
 
 | Candidate | Category | Why reusable | Status |
 |---|---|---|---|
-| CIR coverage-rate table, 2026-10-17 to 2026-11-07 (Sherlock's section) | fact-sheet | A dated baseline for judging whether the 10-17 additions, and any additions from this report, actually moved thin categories. It updates the 2026-08-31 baseline. | **Submitted, [PR #58](https://github.com/raceBannon99/nexus-artifacts/pull/58), awaiting merge** (2026-11-07). Submitted as `fact-sheets/nexus-cir-coverage-baseline-2026-11.md`, extended with a Before window (2026-09-22 to 10-16) for comparison. |
+| CIR coverage-rate table, 2026-10-17 to 2026-11-07 (Sherlock's section) | fact-sheet | A dated baseline for judging whether the 10-17 additions, and any additions from this report, actually moved thin categories. It updates the 2026-08-31 baseline. | **Added to Library**: `fact-sheets/nexus-cir-coverage-baseline-2026-11.md` in `raceBannon99/nexus-artifacts`, merged 2026-11-07 via [PR #58](https://github.com/raceBannon99/nexus-artifacts/pull/58). Submitted as `fact-sheets/nexus-cir-coverage-baseline-2026-11.md`, extended with a Before window (2026-09-22 to 10-16) for comparison. |
 
 Not recommended: the Sponsor Scout ranking itself. It is a sponsor-weighted commercial list with duplicate entries and mislabeled frequencies, so it has no lasting reference value for source quality.
 
