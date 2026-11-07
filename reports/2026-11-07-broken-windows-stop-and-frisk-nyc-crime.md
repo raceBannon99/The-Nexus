@@ -207,6 +207,9 @@ The verified data points are tabular (a year-by-value timeline), so the markdown
 - Malcolm Gladwell, "The Tipping Point I Got Wrong," TED (Oct. 2024): https://www.ted.com/talks/malcolm_gladwell_the_tipping_point_i_got_wrong
 - Transcript (Singju Post, third-party): https://singjupost.com/transcript-the-tipping-point-i-got-wrong-malcolm-gladwell/ (quotes used above; the transcript doesn't name the judge)
 
+**Library artifact**
+- Alexandria's Library, "Broken Windows & Stop-and-Frisk: Evidence Fact Sheet": `fact-sheets/broken-windows-stop-and-frisk-evidence.md` in `raceBannon99/nexus-artifacts` (private). This is the distilled, reusable version of this report.
+
 **Internal precedent**
 - None. There are no prior Nexus reports or library artifacts on this topic.
 
@@ -222,7 +225,7 @@ None. The research used standard search plus a single transcript fetch, with not
 
 | Candidate | Category | Why it's reusable | Status |
 |---|---|---|---|
-| **Broken Windows & Stop-and-Frisk: Evidence Fact Sheet** (distilled from this report: the *Floyd* ruling's actual scope, the stop and misdemeanor-arrest timelines, the DOI 2016 finding, and the Braga 2024 meta-analysis split) | `fact-sheet` | Rick is reviewing two Gladwell books, and this is the factual spine for both. It's also a reusable reference for any future review or essay touching *Tipping Point*-style causal claims or policing-as-security-control analogies. | **Submitted:** [PR #59](https://github.com/raceBannon99/nexus-artifacts/pull/59), awaiting Rick's merge. |
+| **Broken Windows & Stop-and-Frisk: Evidence Fact Sheet** (distilled from this report: the *Floyd* ruling's actual scope, the stop and misdemeanor-arrest timelines, the DOI 2016 finding, and the Braga 2024 meta-analysis split) | `fact-sheet` | Rick is reviewing two Gladwell books, and this is the factual spine for both. It's also a reusable reference for any future review or essay touching *Tipping Point*-style causal claims or policing-as-security-control analogies. | **Added to Library:** `fact-sheets/broken-windows-stop-and-frisk-evidence.md` ([PR #59](https://github.com/raceBannon99/nexus-artifacts/pull/59), merged 2026-11-07). |
 
 Considered and not recommended separately: the DOI 2016 report and the Braga 2024 meta-analysis themselves. Both are stable public sources, better linked from the fact sheet than archived as copies.
 
@@ -233,3 +236,4 @@ Considered and not recommended separately: the DOI 2016 report and the Braga 202
 ## Update Notes
 
 - **2026-11-07, first revision:** Rick approved the Library Recommendation. Alexandria submitted the fact sheet as [PR #59](https://github.com/raceBannon99/nexus-artifacts/pull/59) (`fact-sheets/broken-windows-stop-and-frisk-evidence.md`). Status updated from "Recommended" to "Submitted." This was an Alexandria-only pass with no new claims.
+- **2026-11-07, second revision:** PR #59 merged. Status updated to "Added to Library," and the artifact was added to Sources as a Library artifact. This was an Alexandria-only pass.
