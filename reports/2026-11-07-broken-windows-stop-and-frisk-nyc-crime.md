@@ -222,8 +222,14 @@ None. The research used standard search plus a single transcript fetch, with not
 
 | Candidate | Category | Why it's reusable | Status |
 |---|---|---|---|
-| **Broken Windows & Stop-and-Frisk: Evidence Fact Sheet** (distilled from this report: the *Floyd* ruling's actual scope, the stop and misdemeanor-arrest timelines, the DOI 2016 finding, and the Braga 2024 meta-analysis split) | `fact-sheet` | Rick is reviewing two Gladwell books, and this is the factual spine for both. It's also a reusable reference for any future review or essay touching *Tipping Point*-style causal claims or policing-as-security-control analogies. | Recommended, awaiting Rick's decision. Not yet submitted. |
+| **Broken Windows & Stop-and-Frisk: Evidence Fact Sheet** (distilled from this report: the *Floyd* ruling's actual scope, the stop and misdemeanor-arrest timelines, the DOI 2016 finding, and the Braga 2024 meta-analysis split) | `fact-sheet` | Rick is reviewing two Gladwell books, and this is the factual spine for both. It's also a reusable reference for any future review or essay touching *Tipping Point*-style causal claims or policing-as-security-control analogies. | **Submitted:** [PR #59](https://github.com/raceBannon99/nexus-artifacts/pull/59), awaiting Rick's merge. |
 
 Considered and not recommended separately: the DOI 2016 report and the Braga 2024 meta-analysis themselves. Both are stable public sources, better linked from the fact sheet than archived as copies.
 
 *Number check (Popper, second pass):* every figure in the synthesis, tables, and rewrite was checked against §§1–6 and the cited sources: 685,724; 191,558; ~12,000; ~98%; 2,245; 333; 352; 335; ~290; ~305; 688; 10.8%; ~6%; ~50%; 1,839,414 (rounded to 1.8M); 650,000; 59 tests. One correction made before publication: the suggested rewrite originally said New York "barely moved" in 2015, but NYC murders rose ~6%, so it now reads "about half as much." Also confirmed: "about 13%" (333 → ~290) for 2014–2017, and "nearly 11 percent" matches 10.8%.
+
+---
+
+## Update Notes
+
+- **2026-11-07, first revision:** Rick approved the Library Recommendation. Alexandria submitted the fact sheet as [PR #59](https://github.com/raceBannon99/nexus-artifacts/pull/59) (`fact-sheets/broken-windows-stop-and-frisk-evidence.md`). Status updated from "Recommended" to "Submitted." This was an Alexandria-only pass with no new claims.
