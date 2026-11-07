@@ -6,7 +6,7 @@
 
 Of the 50 newsletters on Sponsor Scout's list, the Nexus should add three, run one more as a trial, and change how it tracks one it already receives. Six entries (five publishers) are already in the pipeline. Eight are worth watching but not adding, 31 can be ignored, and one (#3) is a duplicate listing.
 
-**Add:** *tl;dr sec* (Clint Gibler), *Detection Engineering Weekly* (Zack Allen), and *Resilient Cyber* (Chris Hughes). **Trial for 30 days:** *Cybersecurity Dive*. **Promote:** *Risky.Biz*, meaning both the *Risky Bulletin* daily and Tom Uren's weekly *Seriously Risky Business*. It already lands in the Gmail newsletters bucket about five times a week, but only 16 of 74 daily reports have cited it. That is the same buried-signal problem SecurityWeek had before it got its own tracked source on Aug. 31.
+**Add:** *tl;dr sec* (Clint Gibler), *Detection Engineering Weekly* (Zack Allen), and *Resilient Cyber* (Chris Hughes). **Trial for 30 days:** *Cybersecurity Dive*. **Promote:** *Risky.Biz*, meaning both the *Risky Bulletin* daily and Tom Uren's weekly *Seriously Risky Business*. It already lands in the Gmail newsletters bucket about five times a week, but only about 10 of 74 daily reports have cited it. That is the same buried-signal problem SecurityWeek had before it got its own tracked source on Aug. 31.
 
 **Already have:** *The Hacker News* (#1), *CyberWire Daily Briefing* (#7), and *CyberScoop* (#8) are tracked sources. *Risky.Biz* (#6) and *Risky Bulletin* (#33) are one publisher, and *Venture in Security* (#24) also arrives through Gmail.
 
@@ -72,9 +72,9 @@ The page carries a "Want your newsletter to be listed?" solicitation and also sa
 
 No messages were found from tl;dr sec, TLDR, Krebs, Cybersecurity Dive/Industry Dive, Troy Hunt, Miessler, Vulnerable U, CISO Series, BleepingComputer, Graham Cluley, Zack Whittaker, Axios, Decryption Digest, Return on Security, Detection Engineering, Security Ledger, eSecurityPlanet, Cybersecurity Pulse, Software Analyst, Cyber Security News, Cybervizer, or Packt.
 
-Report grep across all 74 published daily reports: Risky.Biz is cited in 16, SecurityWeek in 56, Venture in Security in 2, Cybersecurity Dive in 2, and tl;dr sec and Miessler in none.
+Report grep across all 74 published daily reports: Risky.Biz is cited in about 10 ("Risky Bulletin" 10, "news.risky.biz" 8; an earlier bare-word count of 16 overcounted the ordinary word "risky"), SecurityWeek in 56, Venture in Security in 2, Cybersecurity Dive in 2, and tl;dr sec and Miessler in none.
 
-**CIR coverage since the Oct. 17 source additions** was measured by counting which of the 15 daily reports from 2026-10-17 through 2026-11-06 contain each category's section header:
+**CIR coverage since the Oct. 17 source additions** was measured by counting which of the 15 daily reports from 2026-10-17 through 2026-11-07 contain each category's section header:
 
 | Coverage | CIR categories (appearances out of 15) |
 |---|---|
@@ -277,8 +277,8 @@ The per-newsletter table is sorted in the ranking's own order so Rick can check 
 - `reports/2026-10-16-cir-source-recommendations.md` (raceBannon99/The-Nexus). Supports the per-category purpose-built source list and the "no more incident aggregators" rule.
 - `Intelligence Reports/Source Scorecard.md` (vault). Supports the contribution-rate analogs used in the forecasts.
 - `Intelligence Reports/Sources.md` (vault). Supports which sources are already tracked.
-- 15 published daily reports, 2026-10-17 through 2026-11-06 (raceBannon99/The-Nexus `reports/`). Support the CIR coverage counts, by section-header grep.
-- 74 published daily reports (all to date). Support the citation counts for Risky.Biz (16), SecurityWeek (56), Venture in Security (2), and Cybersecurity Dive (2).
+- 15 published daily reports, 2026-10-17 through 2026-11-07 (raceBannon99/The-Nexus `reports/`). Support the CIR coverage counts, by section-header grep.
+- 74 published daily reports (all to date). Support the citation counts for Risky.Biz (about 10), SecurityWeek (56), Venture in Security (2), and Cybersecurity Dive (2).
 - Gmail `label:newsletters` search, 2026-11-07. Supports which listed newsletters Rick already receives.
 - `Intelligence Reports/First Principles Newsletter Tracker.md` (vault). No thesis bears directly. Its 2026-10-13 Thread 2 entry (*Heatmaps to Histograms*) shows a CIR-valuable niche newsletter missing from this ranking.
 
@@ -290,11 +290,21 @@ The CIR coverage-rate audit has now been run by hand for the second time. The me
 
 It is recommended, not built unrequested. Rick can say the word.
 
+**Update (2026-11-07): built at Rick's request** as `nexus-source-coverage-audit`, with its script at `.claude/scripts/nexus-coverage-audit.sh`.
+
+- **Speed:** a shallow, sparse clone fetches only the daily-report markdown. It runs in about one second instead of the ~20 minutes a full clone takes.
+- **Mapping:** a fixed table maps each CIR category to its report headers. It checks itself against `CIR-Definition.md` and flags legacy-format reports and unmapped headers.
+- **Optional source-citation counts:** the skill tells you to use distinctive terms.
+
+Building the skill caught two errors in this report, both now corrected:
+- The coverage window ran through 2026-11-07, not 11-06. The counts were already right.
+- Risky.Biz's citation count was inflated by searching for the ordinary word "risky." The true count is about 10 of 74, not 16. This strengthens the promotion case.
+
 ## Library Recommendations (Agent Alexandria, closing)
 
 | Candidate | Category | Why reusable | Status |
 |---|---|---|---|
-| CIR coverage-rate table, 2026-10-17 to 2026-11-06 (Sherlock's section) | fact-sheet | A dated baseline for judging whether the 10-17 additions, and any additions from this report, actually moved thin categories. It updates the 2026-08-31 baseline. | Recommended, awaiting Rick's decision. Not yet submitted. |
+| CIR coverage-rate table, 2026-10-17 to 2026-11-07 (Sherlock's section) | fact-sheet | A dated baseline for judging whether the 10-17 additions, and any additions from this report, actually moved thin categories. It updates the 2026-08-31 baseline. | Recommended, awaiting Rick's decision. Not yet submitted. |
 
 Not recommended: the Sponsor Scout ranking itself. It is a sponsor-weighted commercial list with duplicate entries and mislabeled frequencies, so it has no lasting reference value for source quality.
 
