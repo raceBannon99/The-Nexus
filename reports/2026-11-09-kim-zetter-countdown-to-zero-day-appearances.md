@@ -220,6 +220,10 @@ Appearances by year, counting both direct and adjacent items (excluding pre-publ
 |---|---|---|
 | C-SPAN *The Communicators* with Kim Zetter ("first digital weapon") | [c-span.org](https://www.c-span.org/program/book-tv/communicators-with-kim-zetter/373910) | (U) Check the date on the page before citing |
 
+### Alexandria's Library (internal)
+- Nexus Artifacts, "Kim Zetter / Countdown to Zero Day: Appearance Bibliography 2014–2026" ([`fact-sheets/kim-zetter-countdown-to-zero-day-appearance-bibliography.md`](https://github.com/raceBannon99/nexus-artifacts/blob/main/fact-sheets/kim-zetter-countdown-to-zero-day-appearance-bibliography.md)). A standalone copy of this report's catalog, archived 2026-11-09 for reuse.
+- Nexus Artifacts, Kim Zetter House written testimony, July 22, 2025 ([`other/kim-zetter-house-testimony-stuxnet-15-years-2025-07-22.pdf`](https://github.com/raceBannon99/nexus-artifacts/blob/main/other/kim-zetter-house-testimony-stuxnet-15-years-2025-07-22.pdf)). An archived reference copy of the docs.house.gov statement cited above.
+
 ### Context and reference
 - The Cyber Guild, "Community Book Club: Countdown to Zero Day," Nov. 10, 2026 ([thecyberguild.org](https://thecyberguild.org/events/community-book-club-countdown-to-zero-day/)). The event itself.
 - Penguin Random House book page ([penguinrandomhouse.com](https://www.penguinrandomhouse.com/books/219931/countdown-to-zero-day-by-kim-zetter/)). Publication details.
@@ -238,5 +242,5 @@ Appearances by year, counting both direct and adjacent items (excluding pre-publ
 
 | Candidate | Category | Why it's reusable | Status |
 |---|---|---|---|
-| *Kim Zetter / Countdown to Zero Day: Appearance Bibliography 2014–2026* (the Sources catalog above, extracted as a standalone sheet) | `fact-sheet` | Reusable for any future Canon Hall of Fame event, podcast, or write-up involving Zetter or Stuxnet. It saves re-running this search, which took real effort to verify | Submitted, [PR #60](https://github.com/raceBannon99/nexus-artifacts/pull/60), awaiting merge |
-| Zetter's July 22, 2025 House written testimony (PDF) | `reference` | Public-domain government document; her most authoritative recent statement on Stuxnet's legacy and on critical-infrastructure risk | Submitted, [PR #60](https://github.com/raceBannon99/nexus-artifacts/pull/60), awaiting merge |
+| *Kim Zetter / Countdown to Zero Day: Appearance Bibliography 2014–2026* (the Sources catalog above, extracted as a standalone sheet) | `fact-sheet` | Reusable for any future Canon Hall of Fame event, podcast, or write-up involving Zetter or Stuxnet. It saves re-running this search, which took real effort to verify | Added to Library ([PR #60](https://github.com/raceBannon99/nexus-artifacts/pull/60), merged 2026-11-09): [`fact-sheets/kim-zetter-countdown-to-zero-day-appearance-bibliography.md`](https://github.com/raceBannon99/nexus-artifacts/blob/main/fact-sheets/kim-zetter-countdown-to-zero-day-appearance-bibliography.md) |
+| Zetter's July 22, 2025 House written testimony (PDF) | `other` (PDF) | Part of the public congressional record (as a private witness's testimony, it is not automatically public domain, so confirm rights before mirroring it publicly); her most authoritative recent statement on Stuxnet's legacy and on critical-infrastructure risk | Added to Library ([PR #60](https://github.com/raceBannon99/nexus-artifacts/pull/60), merged 2026-11-09): [`other/kim-zetter-house-testimony-stuxnet-15-years-2025-07-22.pdf`](https://github.com/raceBannon99/nexus-artifacts/blob/main/other/kim-zetter-house-testimony-stuxnet-15-years-2025-07-22.pdf) |
