@@ -238,5 +238,5 @@ Appearances by year, counting both direct and adjacent items (excluding pre-publ
 
 | Candidate | Category | Why it's reusable | Status |
 |---|---|---|---|
-| *Kim Zetter / Countdown to Zero Day: Appearance Bibliography 2014–2026* (the Sources catalog above, extracted as a standalone sheet) | `fact-sheet` | Reusable for any future Canon Hall of Fame event, podcast, or write-up involving Zetter or Stuxnet. It saves re-running this search, which took real effort to verify | Recommended. Awaiting Rick's decision; not submitted |
-| Zetter's July 22, 2025 House written testimony (PDF) | `reference` | Public-domain government document; her most authoritative recent statement on Stuxnet's legacy and on critical-infrastructure risk | Recommended. Awaiting Rick's decision; not submitted |
+| *Kim Zetter / Countdown to Zero Day: Appearance Bibliography 2014–2026* (the Sources catalog above, extracted as a standalone sheet) | `fact-sheet` | Reusable for any future Canon Hall of Fame event, podcast, or write-up involving Zetter or Stuxnet. It saves re-running this search, which took real effort to verify | Submitted, [PR #60](https://github.com/raceBannon99/nexus-artifacts/pull/60), awaiting merge |
+| Zetter's July 22, 2025 House written testimony (PDF) | `reference` | Public-domain government document; her most authoritative recent statement on Stuxnet's legacy and on critical-infrastructure risk | Submitted, [PR #60](https://github.com/raceBannon99/nexus-artifacts/pull/60), awaiting merge |
