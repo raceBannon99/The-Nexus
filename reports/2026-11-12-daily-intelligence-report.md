@@ -34,7 +34,7 @@
 
 5. **Forecasted Harm Probability:** Central ~30% (90% credible interval: 15%–55%): a 40-percentage-point range, with the central estimate sitting 15 points above the low end.(unchanged since 2026-11-03) This answers a different, bounded question from entry 4. Entry 4 asks *when* a system that has escaped meaningful human control would cause harm. This one asks *how likely* that system is to cause a catastrophe killing over 10% of the human population within 10 years of losing control. WIRED's ten-expert panel leans skeptical of extinction, but it doesn't address this conditional question.
 
-*Seldon's floor checks: neither the AGI nor the Superintelligence range moved, so no floor or gap-model follow applied. No range moved today, so the AI Timeline Forecasting chart in Alexandria's Library needs no refresh beyond what 11-11 already flagged (see the footer).*
+*Seldon's floor checks: neither the AGI nor the Superintelligence range moved, so no floor or gap-model follow applied. No range moved today, and the AI Timeline Forecasting chart in Alexandria's Library already reflects the 11-11 moves, so it needs no refresh.*
 
 ## Adversary Playbook
 
@@ -233,4 +233,4 @@
 
 *Pending artifact approvals: none. No open PRs on raceBannon99/nexus-artifacts.*
 
-*No forecast range moved today. The AI Timeline Forecasting chart in Alexandria's Library (`images/ai-timeline-forecasting.png`) is still out of date from 11-11, when the AGI, Superintelligence, and P(Doom) ranges moved. It can be refreshed with the `nexus-ai-timeline-chart-refresh` skill, which opens a PR for Rick's approval.*
+*No forecast range moved today. The AI Timeline Forecasting chart in Alexandria's Library (`images/ai-timeline-forecasting.png`) is current: its 11-11 refresh was merged that day, and its figures match all five forecast files. (Corrected 11-12: this footer originally said the chart was out of date.)*
