@@ -2,7 +2,19 @@
 
 <img src="https://raw.githubusercontent.com/raceBannon99/The-Nexus/main/assets/first-principles-consulting-logo.png" align="right" width="220">
 
-*Wednesday, Nov. 25. Covers everything published after the 11-24 run. 14 of 30 sources contributed. The headlines: a breach of an unclassified CIA and ODNI open-source-intelligence system, reportedly with the ARTEX hacking agent, capped a day that also saw Treasury's FinCEN take systems offline and Colorado's state ID app go dark with data on about 150,000 people likely stolen; the US is investigating hacks of up to 50 energy tankers, with Iran the top suspect; GreyNoise found a suspected AI-driven actor already inside 24 Check Point firewall management servers at 22 organizations; Britain's NCSC reports a "marked rise" in attacks run through agentic offensive frameworks, none using new weaknesses; Check Point named a new Iranian espionage group, Volant Manticore; and a card skimmer sat on about 80 US newspapers' subscription pages for ten days. No forecast range moved.*
+## Summary
+
+Date: Wednesday, November 25th, 2026\
+Source Contribution: 14 of 30 sources contributed\
+The Headlines:
+
+- None of the five AI timeline forecasts changed.
+- A breach of an unclassified CIA and ODNI open-source-intelligence system, reportedly with the ARTEX hacking agent, capped a day that also saw Treasury's FinCEN take systems offline and Colorado's state ID app go dark with data on about 150,000 people likely stolen.
+- The US is investigating hacks of up to 50 energy tankers, with Iran the top suspect.
+- GreyNoise found a suspected AI-driven actor already inside 24 Check Point firewall management servers at 22 organizations.
+- Britain's NCSC reports a "marked rise" in attacks run through agentic offensive frameworks, none using new weaknesses.
+- Check Point named a new Iranian espionage group, Volant Manticore.
+- A card skimmer sat on about 80 US newspapers' subscription pages for ten days.
 
 ## AI Timeline Forecasting
 
