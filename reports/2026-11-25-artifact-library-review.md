@@ -20,7 +20,7 @@ The eight updates fall into three groups.
 
 The ledger has a second, more urgent problem. It hasn't gained a row since September 19, and three of its ten predictions (Altman, Amodei, Musk) name the end of 2026. They resolve in five weeks. Scoring them in January would be worth more than almost anything else in the library.
 
-**Two attribution fact sheets have been overtaken by newer evidence.** The CyberAv3ngers fact sheet calls the attribution "a live, unresolved dispute." It no longer is. On September 7 the State Department named the IRGC Cyber-Electronic Command leader, Amir Yaryab, and posted a $10 million reward, which makes this a Tier 1 government attribution. On November 10 France attributed sabotage of refrigeration controllers at about 700 retail sites to the same IRGC unit. The sheet's TTP mapping still stands, but its attribution section needs rewriting.
+**Two attribution fact sheets have been overtaken by newer evidence.** The CyberAv3ngers fact sheet calls the attribution "a live, unresolved dispute." For the US water-utility campaign it no longer is. On September 7 the State Department named the IRGC Cyber-Electronic Command leader, Amir Yaryab, and posted a $10 million reward, which makes this a Tier 1 government attribution. A new dispute has opened on a second campaign. On November 10 France attributed sabotage of refrigeration controllers at about 700 retail sites to the same IRGC unit, but US intelligence reportedly holds that link at only low confidence, so it stays Tier 2. *(Corrected 2026-11-25 during the update pass: the first version of this report said the dispute was over without separating the two campaigns.)* The sheet's TTP mapping still stands, but its attribution section needs rewriting.
 
 The Tool vs. Campaign vs. Actor fact sheet's worked example counts eight ARTEX-linked campaigns, four of them with a named operator. Since November 12 the Adversary Tracking Report has added three more ARTEX-linked rows, all unattributed:
 
@@ -92,8 +92,8 @@ Each time-sensitive artifact was checked against the current standing files and 
 
 Two artifacts are adversary-specific, and both are behind the tracker.
 
-1. **CyberAv3ngers.** This is now a named-leader, Tier 1 government attribution, not a contested one.
-   - The vendor-assigned group name (CyberAv3ngers) and the sponsor (IRGC Cyber-Electronic Command) are now joined by an official US government finding, and by a second government (France) attributing a second campaign to the same unit.
+1. **CyberAv3ngers.** The water-utility campaign is now a named-leader, Tier 1 government attribution. The French refrigeration wave is government-attributed (France) but contested (US intelligence holds it at low confidence, per the NYT), so it is Tier 2.
+   - The vendor-assigned group name (CyberAv3ngers) and the sponsor (IRGC Cyber-Electronic Command) are now joined by an official US government finding. A second government (France) attributes a second campaign to the same unit, but an allied intelligence service doubts it.
    - Keep the technique section. The opportunistic exploitation of internet-exposed Unitronics/Schneider PLCs is unchanged.
    - Rewrite the attribution section. Its "how to write about contested attribution" lesson should become a before-and-after case of a disputed attribution that later got confirmed. That is more useful for teaching than the original.
 2. **ARTEX worked example.** Keep tool, campaign, actor and sponsor as four separate labels exactly as the sheet says. Its own rule held up across all three new rows: none was linked to an operator through the tool alone. The count and the named share need refreshing, not the method.
@@ -243,7 +243,7 @@ A per-file decision table is the right tool here, since every row has the same c
 
 ## Turing: Should Any of This Become a Skill?
 
-No skill built. A library audit is plausibly recurring (quarterly, say), but this is the first one. The useful part of the method was:
+**Update, 2026-11-25:** at Rick's direction, this method is now the `nexus-library-audit` skill, run quarterly. The original assessment follows. No skill built. A library audit is plausibly recurring (quarterly, say), but this is the first one. The useful part of the method was:
 
 - reading each artifact's own shelf-life warning;
 - diffing quoted forecast ranges against the live files;
@@ -276,7 +276,7 @@ That method is written down in this report. If Rick wants this on a schedule, th
 
 ## New Skills
 
-None this run. See Turing's section.
+**`nexus-library-audit`** (built 2026-11-25 at Rick's direction, after publication). Quarterly audit of the private artifact library. It classifies every `INDEX.md` row as delete, update, or keep using this report's three tests (durable method, dated snapshot, living reference) and its staleness checks: shelf-life warnings, quoted forecast ranges against the live files, worked examples against the Adversary Tracking Report, and calendar-dated items. It publishes a review report, then opens grouped PRs only on Rick's approval. This report is its first worked example.
 
 ## Library Recommendations
 
@@ -284,8 +284,14 @@ Nothing new is recommended for archiving. This engagement's recommendations conc
 
 | Candidate | Category | Action | Status |
 |---|---|---|---|
-| `images/ai-timeline-forecasting-summary.png` | image | Delete (superseded) | Recommended, awaiting Rick's decision |
-| The 8 items in "Find an Updated Version" | fact-sheet / image | Refresh, one PR each (or one PR for each pair: legislation sheet + diagram, AGI ledger + timeline image) | Recommended, awaiting Rick's decision |
-| `INDEX.md` AI Timeline row | index | Trim the changelog to current figures plus a pointer | Recommended, awaiting Rick's decision |
+| `images/ai-timeline-forecasting-summary.png` | image | Delete (superseded) | Submitted ([PR #80](https://github.com/raceBannon99/nexus-artifacts/pull/80)), awaiting merge |
+| `INDEX.md` AI Timeline row | index | Trim the changelog to current figures plus a pointer | Submitted ([PR #80](https://github.com/raceBannon99/nexus-artifacts/pull/80)), awaiting merge |
+| AGI ledger, AGI timeline image, AGI vs. Singularity fact sheet | fact-sheet / image | Refresh | Submitted ([PR #75](https://github.com/raceBannon99/nexus-artifacts/pull/75)), awaiting merge |
+| AI legislation fact sheet and spectrum diagram | fact-sheet / image | Lame-duck refresh; freeze Jan. 3, 2027 | Submitted ([PR #76](https://github.com/raceBannon99/nexus-artifacts/pull/76)), awaiting merge; public copy (go/29) needs a re-sync after merge |
+| CyberAv3ngers fact sheet | fact-sheet | Rewrite attribution section | Submitted ([PR #77](https://github.com/raceBannon99/nexus-artifacts/pull/77)), awaiting merge |
+| Tool vs. Campaign vs. Actor fact sheet | fact-sheet | Extend ARTEX worked example | Submitted ([PR #78](https://github.com/raceBannon99/nexus-artifacts/pull/78)), awaiting merge |
+| Broken Windows fact sheet | fact-sheet | Confirm 2025 NYPD figures | Submitted ([PR #79](https://github.com/raceBannon99/nexus-artifacts/pull/79)), awaiting merge |
+
+All approved by Rick on 2026-11-25. The changes were grouped into six PRs whose `INDEX.md` edits don't touch neighboring rows, and a local test merge confirmed that all of them, plus #74, merge cleanly in any order.
 
 Pending approvals: 1 open PR, [#74 Add image: How Nvidia and OpenAI Fuel the AI Money Machine (Bloomberg)](https://github.com/raceBannon99/nexus-artifacts/pull/74).
