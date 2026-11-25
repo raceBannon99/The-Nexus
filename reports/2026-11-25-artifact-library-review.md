@@ -284,13 +284,13 @@ Nothing new is recommended for archiving. This engagement's recommendations conc
 
 | Candidate | Category | Action | Status |
 |---|---|---|---|
-| `images/ai-timeline-forecasting-summary.png` | image | Delete (superseded) | Submitted ([PR #80](https://github.com/raceBannon99/nexus-artifacts/pull/80)), awaiting merge |
-| `INDEX.md` AI Timeline row | index | Trim the changelog to current figures plus a pointer | Submitted ([PR #80](https://github.com/raceBannon99/nexus-artifacts/pull/80)), awaiting merge |
-| AGI ledger, AGI timeline image, AGI vs. Singularity fact sheet | fact-sheet / image | Refresh | Submitted ([PR #75](https://github.com/raceBannon99/nexus-artifacts/pull/75)), awaiting merge |
-| AI legislation fact sheet and spectrum diagram | fact-sheet / image | Lame-duck refresh; freeze Jan. 3, 2027 | Submitted ([PR #76](https://github.com/raceBannon99/nexus-artifacts/pull/76)), awaiting merge; public copy (go/29) needs a re-sync after merge |
-| CyberAv3ngers fact sheet | fact-sheet | Rewrite attribution section | Submitted ([PR #77](https://github.com/raceBannon99/nexus-artifacts/pull/77)), awaiting merge |
-| Tool vs. Campaign vs. Actor fact sheet | fact-sheet | Extend ARTEX worked example | Submitted ([PR #78](https://github.com/raceBannon99/nexus-artifacts/pull/78)), awaiting merge |
-| Broken Windows fact sheet | fact-sheet | Confirm 2025 NYPD figures | Submitted ([PR #79](https://github.com/raceBannon99/nexus-artifacts/pull/79)), awaiting merge |
+| `images/ai-timeline-forecasting-summary.png` | image | Delete (superseded) | Removed ([PR #80](https://github.com/raceBannon99/nexus-artifacts/pull/80), merged 2026-11-25) |
+| `INDEX.md` AI Timeline row | index | Trim the changelog to current figures plus a pointer | Updated ([PR #80](https://github.com/raceBannon99/nexus-artifacts/pull/80), merged 2026-11-25) |
+| AGI ledger, AGI timeline image, AGI vs. Singularity fact sheet | fact-sheet / image | Refresh | Updated ([PR #75](https://github.com/raceBannon99/nexus-artifacts/pull/75), merged 2026-11-25) |
+| AI legislation fact sheet and spectrum diagram | fact-sheet / image | Lame-duck refresh; freeze Jan. 3, 2027 | Updated ([PR #76](https://github.com/raceBannon99/nexus-artifacts/pull/76)), merged 2026-11-25; public copy (go/29) is stale, re-sync offered to Rick |
+| CyberAv3ngers fact sheet | fact-sheet | Rewrite attribution section | Updated ([PR #77](https://github.com/raceBannon99/nexus-artifacts/pull/77), merged 2026-11-25) |
+| Tool vs. Campaign vs. Actor fact sheet | fact-sheet | Extend ARTEX worked example | Updated ([PR #78](https://github.com/raceBannon99/nexus-artifacts/pull/78), merged 2026-11-25) |
+| Broken Windows fact sheet | fact-sheet | Confirm 2025 NYPD figures | Updated ([PR #79](https://github.com/raceBannon99/nexus-artifacts/pull/79), merged 2026-11-25) |
 
 All approved by Rick on 2026-11-25. The changes were grouped into six PRs whose `INDEX.md` edits don't touch neighboring rows, and a local test merge confirmed that all of them, plus #74, merge cleanly in any order.
 
