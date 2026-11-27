@@ -250,18 +250,18 @@ Two rows processed, both queued 11-26 and read from Rick's vault clippings since
 1. **Forecasted AGI Milestone Dates:** P5 2029 · P50 2045 · P95 2075: a 46-year uncertainty window and a 50% chance we could reach this milestone in 16 years. **(unchanged since 2026-11-11)**
    - Nothing matched today.
    - Considered: Daniel Kokotajlo's expectation of "AI-powered euphoria" next year (NYT, Nov. 25).
-   - *Source:* AI Futures Project lead, quoted in a feature; Credentialed expert judgment.
+   - *Source:* AI Futures Project lead, quoted in a feature; Credentialed expert judgment. [NYT, Nov. 25](https://www.nytimes.com/2026/11/25/technology/thanksgiving-ai-doom-family.html)
    - *Effect:* none; his dated forecasts were logged 11-13 and this restates them.
 
 2. **Forecasted Singularity Milestone Timeline:** P5 2031 · P50 2046 · P95 2075: a 44-year uncertainty window and a 50% chance we could reach this milestone in 15 years. **(unchanged since 2026-11-17)**
-   - One item matched today, from the Pending Evidence Queue: the NYT's feature on how AI insiders talk about doom with their families.
+   - One item matched today, from the Pending Evidence Queue: the NYT's feature on how AI insiders talk about doom with their families. [NYT, Nov. 25](https://www.nytimes.com/2026/11/25/technology/thanksgiving-ai-doom-family.html)
    - Range held; see the AI Singularity Timeline section above.
 
 3. **Forecasted Superintelligence Milestone Timeline:** P5 2030 · P50 2046 · P95 2076: a 46-year uncertainty window and a 50% chance we could reach this milestone in 16 years. **(unchanged since 2026-11-11)**
    - This file remains the most derivative of the five standing forecasts: the AGI range plus a stated one-year gap, not an independent seed.
    - Nothing matched today.
    - Considered: the NYT feature's retelling of "AI 2027".
-   - *Source:* Commentary.
+   - *Source:* Commentary. [NYT, Nov. 25](https://www.nytimes.com/2026/11/25/technology/thanksgiving-ai-doom-family.html)
    - *Effect:* none; nothing on transition speed beyond the 11-13 AI Futures update.
 
 4. **Forecasted Harm Timeline (P(Doom)):** P5 2034 · P50 2063 · P95 2091: a 57-year uncertainty window and a 50% chance we could reach this milestone in 29 years. **(unchanged since 2026-11-11)**
@@ -270,7 +270,7 @@ Two rows processed, both queued 11-26 and read from Rick's vault clippings since
    - Entry 5 below answers the separate question of how likely that is in the first place.
    - Nothing matched today.
    - Considered: Nate Soares's "real chance" AI wipes out humanity "in the next few years" (NYT, Nov. 25).
-   - *Source:* MIRI president, co-author of "If Anyone Builds It, Everyone Dies"; Commentary/advocacy with no number.
+   - *Source:* MIRI president, co-author of "If Anyone Builds It, Everyone Dies"; Commentary/advocacy with no number. [NYT, Nov. 25](https://www.nytimes.com/2026/11/25/technology/thanksgiving-ai-doom-family.html)
    - *Effect:* none; it runs together when control is lost and whether harm follows, and his position has been on record here since September.
 
 5. **Forecasted Harm Probability:** Central ~30% (90% credible interval: 15%–55%): a 40-percentage-point range, with the central estimate sitting 15 points above the low end. **(unchanged since 2026-11-03)**
@@ -279,7 +279,7 @@ Two rows processed, both queued 11-26 and read from Rick's vault clippings since
    - This one asks *how likely* that system is to cause a catastrophe killing over 10% of the human population within 10 years of losing control.
    - Nothing matched today.
    - Considered: Soares against Naveen Rao and Robin Hanson in the same NYT feature.
-   - *Source:* three credentialed voices restating known positions; Commentary/advocacy.
+   - *Source:* three credentialed voices restating known positions; Commentary/advocacy. [NYT, Nov. 25](https://www.nytimes.com/2026/11/25/technology/thanksgiving-ai-doom-family.html)
    - *Effect:* none; the views point both ways and none addresses this file's conditional.
 
 *Seldon's floor checks: the AGI and Superintelligence ranges didn't move, so no floor or gap-model follow applied. No range moved, so the AI Timeline Forecasting chart doesn't need a refresh.*
