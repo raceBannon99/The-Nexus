@@ -16,20 +16,6 @@ The Headlines:
 - Britain's Department for Work and Pensions took online services offline after a cyber incident.
 - The North Korea-linked PolinRider campaign has poisoned more than 7,600 GitHub repositories.
 
-## AI Timeline Forecasting
-
-1. **Forecasted AGI Milestone Dates:** P5 2029 · P50 2045 · P95 2075: a 46-year uncertainty window and a 50% chance we could reach this milestone in 16 years.(unchanged since 2026-11-11) Nothing matched today. Considered: Daniel Kokotajlo's expectation of "AI-powered euphoria" next year (NYT, Nov. 25). *Source:* AI Futures Project lead, quoted in a feature; Credentialed expert judgment. *Effect:* none; his dated forecasts were logged 11-13 and this restates them.
-
-2. **Forecasted Singularity Milestone Timeline:** P5 2031 · P50 2046 · P95 2075: a 44-year uncertainty window and a 50% chance we could reach this milestone in 15 years.(unchanged since 2026-11-17) One item matched today, from the Pending Evidence Queue: the NYT's feature on how AI insiders talk about doom with their families. Range held; see the AI Singularity Timeline section below.
-
-3. **Forecasted Superintelligence Milestone Timeline:** P5 2030 · P50 2046 · P95 2076: a 46-year uncertainty window and a 50% chance we could reach this milestone in 16 years.(unchanged since 2026-11-11) This file remains the most derivative of the five standing forecasts: the AGI range plus a stated one-year gap, not an independent seed. Nothing matched today. Considered: the NYT feature's retelling of "AI 2027" (*Source:* Commentary. *Effect:* none; nothing on transition speed beyond the 11-13 AI Futures update).
-
-4. **Forecasted Harm Timeline (P(Doom)):** P5 2034 · P50 2063 · P95 2091: a 57-year uncertainty window and a 50% chance we could reach this milestone in 29 years.(unchanged since 2026-11-11) This isn't a prediction that disaster will happen, only a guess at when, if it ever does. It assumes an uncontrollable AI eventually gets built *and* ends up hurting people, then asks: if that's true, around what year would it happen? Entry 5 below answers the separate question of how likely that is in the first place. Nothing matched today. Considered: Nate Soares's "real chance" AI wipes out humanity "in the next few years" (NYT, Nov. 25). *Source:* MIRI president, co-author of "If Anyone Builds It, Everyone Dies"; Commentary/advocacy with no number. *Effect:* none; it runs together when control is lost and whether harm follows, and his position has been on record here since September.
-
-5. **Forecasted Harm Probability:** Central ~30% (90% credible interval: 15%–55%): a 40-percentage-point range, with the central estimate sitting 15 points above the low end.(unchanged since 2026-11-03) This answers a different, bounded question from entry 4. Entry 4 asks *when* a system that has escaped meaningful human control would cause harm. This one asks *how likely* that system is to cause a catastrophe killing over 10% of the human population within 10 years of losing control. Nothing matched today. Considered: Soares against Naveen Rao and Robin Hanson in the same NYT feature. *Source:* three credentialed voices restating known positions; Commentary/advocacy. *Effect:* none; the views point both ways and none addresses this file's conditional.
-
-*Seldon's floor checks: the AGI and Superintelligence ranges didn't move, so no floor or gap-model follow applied. No range moved, so the AI Timeline Forecasting chart doesn't need a refresh.*
-
 ## Adversary Playbook
 
 *The Adversary Tracking Report was updated this run: 17 new rows and 1 row updated. Active campaigns: 506, up from 489. [Dated snapshot](https://github.com/raceBannon99/The-Nexus/blob/main/reports/2026-11-27-adversary-tracking-report.md).*
@@ -258,3 +244,42 @@ Two rows processed, both queued 11-26 and read from Rick's vault clippings since
 **Crediting notes:** The Hacker News for the Swiss AI-agent attacks, PolinRider, Q-Dir/DesktopOK, the Cacti zero-day, and (via ThreatsDay) the Scam Center Strike Force, PowerPanel, and NCC's October ransomware count; The Record for the DWP incident; SecurityWeek (site listing) for SAP; Risky.Biz (Risky Bulletin, Nov. 26) for Todoist, the Flanders theft, Chile, Sea-Watch, CheckFirst, Azalea Agent, Keenadu/Triada, MadApe, Vinci, GodFather.Tech, WalletGuard, NFS2ROOT, Joomla, Belgium's police advice, Huawei, Hardy, Character.AI, Russia's GitHub plan, and CDT's spyware report; WIRED for the Be Ready campaign; (ISC)² for Romania's academy; CISO Tribune for Machado; Gmail (Google Alerts) for the Black Friday claims data and the Turkish arrests. **Recirculations excluded:** Hex.pm (covered 11-25; Risky Bulletin's lead and SecurityWeek's 11-27 story), myColorado (covered 11-25; SecurityWeek now estimates about 100,000 affected against the 150,000 reported then), FIFA, 1Password, FinCEN, Drupal, ARTEX's adoption by four APT groups, Peninsula Energy, Optimizely, DIVD, Rackspace Spot, the casino exploit kits, ChatGPT Sites, Copeland XWEB, and Fragnesia (all covered 11-16 to 11-26), Volant Manticore (Iran row 22, covered 11-25), SecurityWeek's Juniper Session Smart story (in the 11-25 KEV update), and The Hacker News's ThreatsDay items on Todoist, CrowdStrike–Zscaler, the Binance seizure, ShinyHunters, Anthropic's safeguards, BankWeaver, BYOD, NGINX2Root, and the IPTV takedown (all covered earlier). **Considered, no CIR fit:** The Hacker News's contributed piece on security metrics (vendor content), SAP's 10,000 layoffs, Anthropic's block of Epic Games accounts, X's teen parental controls, GitHub's advisory roles, and Google Alerts snippets on Gartner placements, SASE market sizing, and cyber-insurance products. **Tooling notes:** Gmail `search_threads` again returned no snippets, so the Google Alerts digest was read with `get_thread`; SecurityWeek's RSS feed failed to parse, so its homepage was read through headless Chrome; The Hacker News bodies, the Canon Project, and CSIS were read through Chrome MCP; the NFS2ROOT write-up (opensec.in) didn't load at any tier.
 
 *Pending artifact approvals (raceBannon99/nexus-artifacts): none open.*
+
+## AI Timeline Current State and Definitions
+
+1. **Forecasted AGI Milestone Dates:** P5 2029 · P50 2045 · P95 2075: a 46-year uncertainty window and a 50% chance we could reach this milestone in 16 years. **(unchanged since 2026-11-11)**
+   - Nothing matched today.
+   - Considered: Daniel Kokotajlo's expectation of "AI-powered euphoria" next year (NYT, Nov. 25).
+   - *Source:* AI Futures Project lead, quoted in a feature; Credentialed expert judgment.
+   - *Effect:* none; his dated forecasts were logged 11-13 and this restates them.
+
+2. **Forecasted Singularity Milestone Timeline:** P5 2031 · P50 2046 · P95 2075: a 44-year uncertainty window and a 50% chance we could reach this milestone in 15 years. **(unchanged since 2026-11-17)**
+   - One item matched today, from the Pending Evidence Queue: the NYT's feature on how AI insiders talk about doom with their families.
+   - Range held; see the AI Singularity Timeline section above.
+
+3. **Forecasted Superintelligence Milestone Timeline:** P5 2030 · P50 2046 · P95 2076: a 46-year uncertainty window and a 50% chance we could reach this milestone in 16 years. **(unchanged since 2026-11-11)**
+   - This file remains the most derivative of the five standing forecasts: the AGI range plus a stated one-year gap, not an independent seed.
+   - Nothing matched today.
+   - Considered: the NYT feature's retelling of "AI 2027".
+   - *Source:* Commentary.
+   - *Effect:* none; nothing on transition speed beyond the 11-13 AI Futures update.
+
+4. **Forecasted Harm Timeline (P(Doom)):** P5 2034 · P50 2063 · P95 2091: a 57-year uncertainty window and a 50% chance we could reach this milestone in 29 years. **(unchanged since 2026-11-11)**
+   - This isn't a prediction that disaster will happen, only a guess at when, if it ever does.
+   - It assumes an uncontrollable AI eventually gets built *and* ends up hurting people, then asks: if that's true, around what year would it happen?
+   - Entry 5 below answers the separate question of how likely that is in the first place.
+   - Nothing matched today.
+   - Considered: Nate Soares's "real chance" AI wipes out humanity "in the next few years" (NYT, Nov. 25).
+   - *Source:* MIRI president, co-author of "If Anyone Builds It, Everyone Dies"; Commentary/advocacy with no number.
+   - *Effect:* none; it runs together when control is lost and whether harm follows, and his position has been on record here since September.
+
+5. **Forecasted Harm Probability:** Central ~30% (90% credible interval: 15%–55%): a 40-percentage-point range, with the central estimate sitting 15 points above the low end. **(unchanged since 2026-11-03)**
+   - This answers a different, bounded question from entry 4.
+   - Entry 4 asks *when* a system that has escaped meaningful human control would cause harm.
+   - This one asks *how likely* that system is to cause a catastrophe killing over 10% of the human population within 10 years of losing control.
+   - Nothing matched today.
+   - Considered: Soares against Naveen Rao and Robin Hanson in the same NYT feature.
+   - *Source:* three credentialed voices restating known positions; Commentary/advocacy.
+   - *Effect:* none; the views point both ways and none addresses this file's conditional.
+
+*Seldon's floor checks: the AGI and Superintelligence ranges didn't move, so no floor or gap-model follow applied. No range moved, so the AI Timeline Forecasting chart doesn't need a refresh.*
